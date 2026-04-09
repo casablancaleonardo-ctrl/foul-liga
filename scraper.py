@@ -20,8 +20,12 @@ def parse_table(url):
                 cols = [td.get_text(strip=True) for td in tds]
                 if not cols:
                     continue
+                # Zone aus CSS-Klasse
                 cl = ' '.join(tr.get('class', []))
-                zone = 'up' if 'aufstieg' in cl or 'zone-up' in cl else ('bar' if 'barrage' in cl or 'zone-bar' in cl else ('down' if 'abstieg' in cl or 'zone-down' in cl else ''))
+                zone = 'up' if 'aufstieg' in cl or 'zone-up' in cl else (
+                       'bar' if 'barrage' in cl or 'zone-bar' in cl else (
+                       'down' if 'abstieg' in cl or 'zone-down' in cl else ''))
+                # Teamname via Link
                 link = tds[0].find('a') if tds else None
                 team = link.get_text(strip=True) if link else (cols[0] if cols else '')
                 rows.append({'team': team, 'cols': cols[1:], 'zone': zone})
@@ -32,8 +36,10 @@ def parse_spielplan(url):
     r = requests.get(url, timeout=15)
     soup = BeautifulSoup(r.text, 'html.parser')
     spieltage = []
+    # Spieltage sind in <li> Elementen mit Datum-Text
     for li in soup.select('main ul > li, .content ul > li, ul > li'):
         text = li.get_text(' ', strip=True)
+        # Datum suchen (DD.MM.YYYY)
         datum = ''
         for word in text.split():
             if len(word) == 10 and word.count('.') == 2:
@@ -41,35 +47,56 @@ def parse_spielplan(url):
                     datetime.strptime(word, '%d.%m.%Y')
                     datum = word
                     break
-                except: pass
-        if not datum: continue
+                except:
+                    pass
+        if not datum:
+            continue
         spiele = []
         for tr in li.find_all('tr')[1:]:
             tds = tr.find_all('td')
-            if len(tds) < 3: continue
+            if len(tds) < 3:
+                continue
             links = tds[1].find_all('a')
             heim = links[0].get_text(strip=True) if len(links) > 0 else ''
             gast = links[1].get_text(strip=True) if len(links) > 1 else ''
             tore = tds[2].get_text(strip=True) if len(tds) > 2 else ''
-            fp = tds[3].get_text(strip=True) if len(tds) > 3 else ''
+            fp   = tds[3].get_text(strip=True) if len(tds) > 3 else ''
             schiri = tds[4].get_text(strip=True) if len(tds) > 4 else ''
             spiele.append({
-+                'anpfiff': tds[0].get_text(strip=True),
+                'anpfiff': tds[0].get_text(strip=True),
                 'heim': heim, 'gast': gast,
                 'tore': tore, 'fp': fp, 'schiri': schiri
             })
-        if spiele: spieltage.append({'datum': datum, 'spiele': spiele})
+        if spiele:
+            spieltage.append({'datum': datum, 'spiele': spiele})
     return spieltage
 
 print("Scraping foul.ch...")
 tabelle = parse_table('https://foul.ch/giele/tabelle')
 spielplan = parse_spielplan('https://foul.ch/giele/spielplan')
+
+# Letzten Spieltag mit Resultaten ermitteln
 letzter_spieltag = None
 for st in reversed(spielplan):
     for sp in st['spiele']:
-        tore = sp.get('tore','').strip()
-        if tore and tore != ':' and ':' in tore:
-            letzter_spieltag = st; break
-    if letzter_spieltag: break
-data = {'updated': datetime.now().isoformat(), 'tabelle': tabelle, 'spielplan': spielplan, 'letzter_spieltag': letzter_spieltag}
-with open('data.json','w',encoding='utf-8') as f: print(f'OK. {list(tabelle.keys())}')
+        if ':' in sp.get('tore', '') and sp['tore'].replace(' ','').replace(':','').replace('0123456789','').strip() == '':
+            tore = sp['tore'].strip()
+            if tore and tore != ':':
+                letzter_spieltag = st
+                break
+    if letzter_spieltag:
+        break
+
+data = {
+    'updated': datetime.now().isoformat(),
+    'tabelle': tabelle,
+    'spielplan': spielplan,
+    'letzter_spieltag': letzter_spieltag
+}
+
+with open('data.json', 'w', encoding='utf-8') as f:
+    json.dump(data, f, ensure_ascii=False, indent=2)
+
+print(f"OK. Tabellen: {list(tabelle.keys())}")
+print(f"Spieltage: {len(spielplan)}")
+print(f"Letzter Spieltag: {letzter_spieltag['datum'] if letzter_spieltag else 'keiner'}")
