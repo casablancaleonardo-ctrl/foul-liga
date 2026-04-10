@@ -2,7 +2,8 @@ name: Scrape foul.ch
 
 on:
   schedule:
-    - cron: '0 15,17,19,21 * * 0'  # Jeden Sonntag 15/17/19/21 Uhr UTC
+    - cron: '0 15,17,19,21 * * 0'  # Sonntag 17/19/21/23 Uhr CH
+    - cron: '0 15,17,19,21 * * 6'  # Samstag 17/19/21/23 Uhr CH
   workflow_dispatch:
 
 permissions:
