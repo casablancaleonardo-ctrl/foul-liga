@@ -26,18 +26,24 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 .team-name { flex: 1; font-size: 13px; line-height: 1.3; } .team-name.right { text-align: right; } .team-name.bold { font-weight: 700; }
 .score { font-size: 16px; font-weight: 700; min-width: 52px; text-align: center; padding: 3px 6px; background: #f0f0ea; border-radius: 7px; white-space: nowrap; }
 .match-meta { display: flex; justify-content: space-between; flex-wrap: wrap; margin-top: 7px; padding-top: 7px; border-top: 1px solid #f0f0ea; font-size: 11px; color: #bbb; gap: 4px; }
+.date-chip { display: inline-block; background: #f0f0ea; border-radius: 5px; padding: 2px 7px; font-size: 11px; font-weight: 600; color: #666; margin-bottom: 5px; }
 .fp-val { font-weight: 600; color: #888; }
 .result-badge { font-size: 10px; font-weight: 700; padding: 2px 6px; border-radius: 4px; text-transform: uppercase; }
 .result-badge.sieg { background: #e6f7f1; color: #1D9E75; } .result-badge.niederlage { background: #fdeaea; color: #E24B4A; } .result-badge.unentschieden { background: #fef4e6; color: #EF9F27; }
 .section-label { font-size: 11px; font-weight: 700; color: #888; text-transform: uppercase; letter-spacing: 0.07em; margin: 14px 0 7px; }
 .next-card { background: #fff; border-radius: 11px; padding: 12px 14px; box-shadow: 0 1px 3px rgba(0,0,0,0.07); margin-bottom: 8px; border-left: 4px solid #bbb; }
 .next-card.cup-event { border-left-color: #8B5CF6; }
-.next-date { font-size: 11px; color: #bbb; margin-bottom: 4px; }
+.next-date-row { display: flex; align-items: center; gap: 7px; margin-bottom: 6px; }
+.next-day { font-size: 22px; font-weight: 800; color: #1a1a1a; line-height: 1; }
+.next-month-year { display: flex; flex-direction: column; }
+.next-month { font-size: 12px; font-weight: 700; color: #888; text-transform: uppercase; letter-spacing: 0.04em; }
+.next-weekday { font-size: 11px; color: #bbb; }
+.next-time { margin-left: auto; font-size: 13px; font-weight: 700; color: #1a1a1a; background: #f0f0ea; padding: 3px 8px; border-radius: 6px; }
 .next-teams { font-size: 14px; font-weight: 600; margin-bottom: 5px; }
 .next-teams span { color: #1D9E75; }
 .next-info { font-size: 12px; color: #888; }
 .next-info strong { color: #555; }
-.cup-badge { display: inline-block; font-size: 10px; font-weight: 700; padding: 2px 7px; border-radius: 4px; background: #ede9fe; color: #8B5CF6; margin-bottom: 5px; }
+.cup-badge { display: inline-block; font-size: 10px; font-weight: 700; padding: 2px 7px; border-radius: 4px; background: #ede9fe; color: #8B5CF6; margin-bottom: 6px; }
 .schiri-card { background: #fff; border-radius: 11px; padding: 11px 13px; box-shadow: 0 1px 3px rgba(0,0,0,0.07); margin-bottom: 8px; display: flex; align-items: center; gap: 10px; }
 .schiri-status { width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 17px; flex-shrink: 0; }
 .schiri-status.erledigt { background: #e6f7f1; } .schiri-status.ausstehend { background: #fef4e6; }
@@ -52,7 +58,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 </head>
 <body>
 <div class="header">
-  <img src="https://foul.ch/assets/teams/paerkli-boys-united/_logo/pbu_foul.png" alt="Pärkli Boys United Logo">
+  <img src="https://foul.ch/assets/teams/paerkli-boys-united/_logo/pbu_foul.png" alt="Pärkli Boys United">
   <h1>Pärkli Boys United</h1>
   <p>Saison 2025/26 · Liga Giele 1</p>
 </div>
@@ -71,20 +77,42 @@ function showTab(id, el) {
   document.getElementById(id).classList.add('active');
   el.classList.add('active');
 }
-function formatDate(dateStr) {
-  const d = new Date(dateStr + 'T12:00:00');
-  const days = ['So','Mo','Di','Mi','Do','Fr','Sa'];
-  const months = ['Jan','Feb','Mär','Apr','Mai','Jun','Jul','Aug','Sep','Okt','Nov','Dez'];
-  return days[d.getDay()] + ', ' + d.getDate() + '. ' + months[d.getMonth()] + ' ' + d.getFullYear();
+
+const WOCHENTAGE = ['So','Mo','Di','Mi','Do','Fr','Sa'];
+const MONATE = ['Januar','Februar','März','April','Mai','Juni','Juli','August','September','Oktober','November','Dezember'];
+const MONATE_KURZ = ['Jan','Feb','Mär','Apr','Mai','Jun','Jul','Aug','Sep','Okt','Nov','Dez'];
+
+function parseDate(dateStr) {
+  return new Date(dateStr + 'T12:00:00');
 }
+
+// Datum-Chip für Resultate: "So · 26. Okt 2025"
+function formatDateChip(dateStr) {
+  const d = parseDate(dateStr);
+  return WOCHENTAGE[d.getDay()] + ' · ' + d.getDate() + '. ' + MONATE_KURZ[d.getMonth()] + ' ' + d.getFullYear();
+}
+
+// Datum-Block für kommende Spiele: grosse Zahl + Monat + Wochentag
+function dateBlock(dateStr, zeitStr) {
+  const d = parseDate(dateStr);
+  return '<div class="next-date-row">'
+    + '<div class="next-day">' + d.getDate() + '</div>'
+    + '<div class="next-month-year">'
+    + '<span class="next-month">' + MONATE[d.getMonth()] + ' ' + d.getFullYear() + '</span>'
+    + '<span class="next-weekday">' + WOCHENTAGE[d.getDay()] + '</span>'
+    + '</div>'
+    + '<div class="next-time">' + zeitStr + '</div>'
+    + '</div>';
+}
+
 function getResult(s) {
   const t = s.tore.trim();
   if (!t || t === ':' || t === ' : ' || !t.includes(':')) return 'ausstehend';
   const parts = t.split(':').map(x => parseInt(x.trim()));
   if (isNaN(parts[0]) || isNaN(parts[1])) return 'ausstehend';
-  const paerkliIsGast = s.gast.includes('Pärkli');
-  const pT = paerkliIsGast ? parts[1] : parts[0];
-  const gT = paerkliIsGast ? parts[0] : parts[1];
+  const pg = s.gast.includes('Pärkli');
+  const pT = pg ? parts[1] : parts[0];
+  const gT = pg ? parts[0] : parts[1];
   if (pT > gT) return 'sieg'; if (pT < gT) return 'niederlage'; return 'unentschieden';
 }
 function resLabel(r) { return {sieg:'Sieg',niederlage:'Niederlage',unentschieden:'Unent.'}[r]||''; }
@@ -102,22 +130,40 @@ function renderSaison(spiele) {
     + '<div class="stat-box nied"><div class="val">'+nied+'</div><div class="lbl">Niederl.</div></div>'
     + '</div>';
 
+  // Cup als eigenes Objekt damit es in der richtigen Reihenfolge erscheint
+  const CUP_DATE = '2026-05-23';
+  const cupCard = '<div class="next-card cup-event">'
+    + dateBlock(CUP_DATE, '08:00')
+    + '<div class="cup-badge">🏆 Cup-Tagesturnier</div>'
+    + '<div class="next-teams"><span>Pärkli Boys United</span></div>'
+    + '<div class="next-info">Ganztages-Event · bis ca. 16:00</div>'
+    + '</div>';
+
+  // Kommende Spiele + Cup zusammen sortiert
   html += '<div class="section-label">📅 Kommende Spiele</div>';
-  kommend.forEach(s => {
+
+  // Alle kommenden als Array mit Datum, dann zusammen mit Cup sortieren
+  let kommendCards = kommend.map(s => {
     const pHeim = s.heim.includes('Pärkli');
     const gegner = (pHeim ? s.gast : s.heim).replace(' Chilefäud','');
     const matchup = pHeim ? '<span>Pärkli Boys United</span> vs '+gegner : gegner+' vs <span>Pärkli Boys United</span>';
-    html += '<div class="next-card"><div class="next-date">'+formatDate(s.date)+' · '+s.zeit+'</div>'
-      +'<div class="next-teams">'+matchup+'</div>'
-      +'<div class="next-info"><strong>Schiri:</strong> '+s.schiri+'</div></div>';
+    return {
+      date: s.date,
+      html: '<div class="next-card">'
+        + dateBlock(s.date, s.zeit)
+        + '<div class="next-teams">'+matchup+'</div>'
+        + '<div class="next-info"><strong>Schiri:</strong> '+s.schiri+'</div>'
+        + '</div>'
+    };
   });
 
-  html += '<div class="next-card cup-event">'
-    +'<div class="cup-badge">🏆 Cup-Tagesturnier</div>'
-    +'<div class="next-teams"><span>Pärkli Boys United</span></div>'
-    +'<div class="next-date">Sa, 23. Mai 2026 · 08:00 – 16:00</div>'
-    +'<div class="next-info"><strong>Ganztages-Event</strong></div></div>';
+  // Cup einfügen
+  kommendCards.push({ date: CUP_DATE, html: cupCard });
+  // Sortieren nach Datum
+  kommendCards.sort((a,b) => a.date.localeCompare(b.date));
+  kommendCards.forEach(c => { html += c.html; });
 
+  // Resultate
   html += '<div class="section-label">📊 Saisonresultate</div>';
   vergangen.forEach(s => {
     const res = getResult(s);
@@ -130,7 +176,7 @@ function renderSaison(spiele) {
       +'<span class="score">'+s.tore.trim()+'</span>'
       +'<span class="team-name'+(!pHeim?' bold':'')+'">'+( pHeim?gegner:'Pärkli Boys')+'</span>'
       +'</div><div class="match-meta">'
-      +'<span>'+formatDate(s.date)+'</span>'
+      +'<span class="date-chip">'+formatDateChip(s.date)+'</span>'
       +(fp&&fp!==':'?'<span>FP: <span class="fp-val">'+fp+'</span></span>':'')
       +'<span>Schiri: '+s.schiri+'</span>'
       +'<span class="result-badge '+res+'">'+resLabel(res)+'</span>'
@@ -149,7 +195,7 @@ function renderSchiri(dienste) {
     ausstehend.forEach(d => {
       html += '<div class="schiri-card"><div class="schiri-status ausstehend">🟡</div>'
         +'<div class="schiri-info"><div class="schiri-game">'+d.heim+' vs '+d.gast+'</div>'
-        +'<div class="schiri-date">'+formatDate(d.date)+' · '+d.zeit+'</div></div>'
+        +'<div class="schiri-date">'+formatDateChip(d.date)+' · '+d.zeit+'</div></div>'
         +'<div class="schiri-badge ausstehend">Ausstehend</div></div>';
     });
   }
@@ -160,7 +206,7 @@ function renderSchiri(dienste) {
       const res = t&&t!==':'?' · Resultat: '+t:'';
       html += '<div class="schiri-card"><div class="schiri-status erledigt">✅</div>'
         +'<div class="schiri-info"><div class="schiri-game">'+d.heim+' vs '+d.gast+'</div>'
-        +'<div class="schiri-date">'+formatDate(d.date)+' · '+d.zeit+res+'</div></div>'
+        +'<div class="schiri-date">'+formatDateChip(d.date)+' · '+d.zeit+res+'</div></div>'
         +'<div class="schiri-badge erledigt">Erledigt</div></div>';
     });
   }
@@ -176,7 +222,7 @@ async function loadData() {
     const d = new Date(data.updated);
     document.getElementById('update-info').textContent = 'Stand: ' + d.toLocaleString('de-CH');
   } catch(e) {
-    document.getElementById('saison').innerHTML = '<div class="loading">⚠️ Fehler beim Laden.</div>';
+    document.getElementById('saison').innerHTML = '<div class="loading">⚠️ Fehler beim Laden.<br><small>'+e.message+'</small></div>';
   }
 }
 loadData();
