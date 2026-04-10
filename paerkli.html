@@ -21,6 +21,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 .stat-box.sieg .val { color: #1D9E75; } .stat-box.unent .val { color: #EF9F27; } .stat-box.nied .val { color: #E24B4A; } .stat-box.spiele .val { color: #888; }
 .match-card { background: #fff; border-radius: 11px; padding: 10px 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.07); margin-bottom: 8px; border-left: 4px solid #ddd; }
 .match-card.sieg { border-left-color: #1D9E75; } .match-card.niederlage { border-left-color: #E24B4A; } .match-card.unentschieden { border-left-color: #EF9F27; } .match-card.ausstehend { border-left-color: #bbb; }
+.match-card.cup { border-left-color: #8B5CF6; }
 .match-row { display: flex; align-items: center; gap: 6px; }
 .team-name { flex: 1; font-size: 13px; line-height: 1.3; } .team-name.right { text-align: right; } .team-name.bold { font-weight: 700; }
 .score { font-size: 16px; font-weight: 700; min-width: 52px; text-align: center; padding: 3px 6px; background: #f0f0ea; border-radius: 7px; white-space: nowrap; }
@@ -29,13 +30,16 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 .fp-val { font-weight: 600; color: #888; }
 .result-badge { font-size: 10px; font-weight: 700; padding: 2px 6px; border-radius: 4px; text-transform: uppercase; }
 .result-badge.sieg { background: #e6f7f1; color: #1D9E75; } .result-badge.niederlage { background: #fdeaea; color: #E24B4A; } .result-badge.unentschieden { background: #fef4e6; color: #EF9F27; }
+.result-badge.cup { background: #ede9fe; color: #8B5CF6; }
 .section-label { font-size: 11px; font-weight: 700; color: #888; text-transform: uppercase; letter-spacing: 0.07em; margin: 14px 0 7px; }
-.next-card { background: #fff; border-radius: 11px; padding: 12px 14px; box-shadow: 0 1px 3px rgba(0,0,0,0.07); margin-bottom: 8px; }
-.next-date { font-size: 11px; color: #bbb; margin-bottom: 6px; }
-.next-teams { font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+.next-card { background: #fff; border-radius: 11px; padding: 12px 14px; box-shadow: 0 1px 3px rgba(0,0,0,0.07); margin-bottom: 8px; border-left: 4px solid #bbb; }
+.next-card.cup-event { border-left-color: #8B5CF6; }
+.next-date { font-size: 11px; color: #bbb; margin-bottom: 4px; }
+.next-teams { font-size: 14px; font-weight: 600; margin-bottom: 5px; }
 .next-teams span { color: #1D9E75; }
 .next-info { font-size: 12px; color: #888; }
 .next-info strong { color: #555; }
+.cup-badge { display: inline-block; font-size: 10px; font-weight: 700; padding: 2px 7px; border-radius: 4px; background: #ede9fe; color: #8B5CF6; margin-bottom: 5px; }
 .schiri-card { background: #fff; border-radius: 11px; padding: 11px 13px; box-shadow: 0 1px 3px rgba(0,0,0,0.07); margin-bottom: 8px; display: flex; align-items: center; gap: 10px; }
 .schiri-status { width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 17px; flex-shrink: 0; }
 .schiri-status.erledigt { background: #e6f7f1; } .schiri-status.ausstehend { background: #fef4e6; }
@@ -44,135 +48,27 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 .schiri-date { font-size: 11px; color: #bbb; margin-top: 2px; }
 .schiri-badge { font-size: 10px; font-weight: 700; padding: 3px 8px; border-radius: 5px; text-transform: uppercase; flex-shrink: 0; }
 .schiri-badge.erledigt { background: #e6f7f1; color: #1D9E75; } .schiri-badge.ausstehend { background: #fef4e6; color: #EF9F27; }
+.loading { text-align: center; padding: 30px; color: #bbb; font-size: 13px; }
+.update-info { text-align: center; font-size: 11px; color: #bbb; margin-top: 14px; padding-bottom: 8px; }
 </style>
 </head>
 <body>
-<div class="header"><h1>⚽ Pärkli Boys United</h1><p>Saison 2025/26 · Liga Giele 1</p></div>
+<div class="header">
+  <h1>⚽ Pärkli Boys United</h1>
+  <p id="subtitle">Saison 2025/26 · Liga Giele 1</p>
+</div>
 <div class="tabs">
   <button class="tab active" onclick="showTab('saison',this)">Saison</button>
   <button class="tab" onclick="showTab('schiri',this)">Schiri</button>
 </div>
 <div id="saison" class="section active">
-  <div class="stat-bar">
-    <div class="stat-box spiele"><div class="val">5</div><div class="lbl">Spiele</div></div>
-    <div class="stat-box sieg"><div class="val">5</div><div class="lbl">Siege</div></div>
-    <div class="stat-box unent"><div class="val">0</div><div class="lbl">Unent.</div></div>
-    <div class="stat-box nied"><div class="val">0</div><div class="lbl">Niederl.</div></div>
-  </div>
-  <div class="section-label">📅 Kommende Spiele</div>
-  <div class="next-card">
-    <div class="next-date">So, 26. April 2026 · 11:00</div>
-    <div class="next-teams"><span>Pärkli Boys United</span> vs AC Diva</div>
-    <div class="next-info"><strong>Schiri:</strong> West Bärn United</div>
-  </div>
-  <div class="next-card">
-    <div class="next-date">Sa, 2. Mai 2026 · 13:00</div>
-    <div class="next-teams"><span>Pärkli Boys United</span> vs Roter Stern Bollwerk</div>
-    <div class="next-info"><strong>Schiri:</strong> 5ème Etage</div>
-  </div>
-  <div class="next-card">
-    <div class="next-date">So, 17. Mai 2026 · 11:00</div>
-    <div class="next-teams"><span>Pärkli Boys United</span> vs Energie Bitzius</div>
-    <div class="next-info"><strong>Schiri:</strong> 5ème Etage</div>
-  </div>
-  <div class="next-card">
-    <div class="next-date">So, 21. Juni 2026 · 15:00</div>
-    <div class="next-teams">SpVgg Lokomotive vs <span>Pärkli Boys United</span></div>
-    <div class="next-info"><strong>Schiri:</strong> 5ème Etage</div>
-  </div>
-  <div class="section-label">📊 Saisonresultate</div>
-  <div class="match-card sieg">
-    <div class="match-row">
-      <span class="team-name right">Sunnesite Allstars</span>
-      <span class="score">3 : 4</span>
-      <span class="team-name bold">Pärkli Boys</span>
-    </div>
-    <div class="match-meta">
-      <span>So, 26. Okt 2025</span><span>FP: <span class="fp-val">5:5</span></span>
-      <span>Schiri: West Bärn United</span><span class="result-badge sieg">Sieg</span>
-    </div>
-  </div>
-  <div class="match-card sieg">
-    <div class="match-row">
-      <span class="team-name right">Dynamo Chop</span>
-      <span class="score">0 : 5</span>
-      <span class="team-name bold">Pärkli Boys</span>
-    </div>
-    <div class="match-meta">
-      <span>So, 19. Okt 2025</span><span>FP: <span class="fp-val">5:5</span></span>
-      <span>Schiri: West Bärn United</span><span class="result-badge sieg">Sieg</span>
-    </div>
-  </div>
-  <div class="match-card sieg">
-    <div class="match-row">
-      <span class="team-name right">IFC Berne</span>
-      <span class="score">0 : 3</span>
-      <span class="team-name bold">Pärkli Boys</span>
-    </div>
-    <div class="match-meta">
-      <span>So, 28. Sep 2025</span><span>FP: <span class="fp-val">4:4</span></span>
-      <span>Schiri: Olympique Troissept</span><span class="result-badge sieg">Sieg</span>
-    </div>
-  </div>
-  <div class="match-card sieg">
-    <div class="match-row">
-      <span class="team-name right">Obstberg United</span>
-      <span class="score">1 : 7</span>
-      <span class="team-name bold">Pärkli Boys</span>
-    </div>
-    <div class="match-meta">
-      <span>So, 14. Sep 2025</span><span>FP: <span class="fp-val">5:5</span></span>
-      <span>Schiri: West Bärn United</span><span class="result-badge sieg">Sieg</span>
-    </div>
-  </div>
-  <div class="match-card sieg">
-    <div class="match-row">
-      <span class="team-name bold right">Pärkli Boys</span>
-      <span class="score">4 : 0</span>
-      <span class="team-name">Deportivo Gordo C.</span>
-    </div>
-    <div class="match-meta">
-      <span>So, 31. Aug 2025</span><span>FP: <span class="fp-val">5:5</span></span>
-      <span>Schiri: Spartak Bern FC</span><span class="result-badge sieg">Sieg</span>
-    </div>
-  </div>
+  <div id="saison-content"><div class="loading">⏳ Lade Daten von foul.ch...</div></div>
 </div>
 <div id="schiri" class="section">
-  <div class="section-label">⏳ Ausstehend</div>
-  <div class="schiri-card">
-    <div class="schiri-status ausstehend">🟡</div>
-    <div class="schiri-info">
-      <div class="schiri-game">West Bärn United vs Raclette Rangerz</div>
-      <div class="schiri-date">So, 26. April 2026 · 13:00</div>
-    </div>
-    <div class="schiri-badge ausstehend">Ausstehend</div>
-  </div>
-  <div class="section-label" style="margin-top:18px;">✅ Erledigt</div>
-  <div class="schiri-card">
-    <div class="schiri-status erledigt">✅</div>
-    <div class="schiri-info">
-      <div class="schiri-game">West Bärn United vs 5ème Etage</div>
-      <div class="schiri-date">So, 19. Okt 2025 · 11:00 · Resultat: 0:19</div>
-    </div>
-    <div class="schiri-badge erledigt">Erledigt</div>
-  </div>
-  <div class="schiri-card">
-    <div class="schiri-status erledigt">✅</div>
-    <div class="schiri-info">
-      <div class="schiri-game">Spartak Bern FC vs Raclette Rangerz</div>
-      <div class="schiri-date">So, 28. Sep 2025 · 15:00 · Resultat: 6:1</div>
-    </div>
-    <div class="schiri-badge erledigt">Erledigt</div>
-  </div>
-  <div class="schiri-card">
-    <div class="schiri-status erledigt">✅</div>
-    <div class="schiri-info">
-      <div class="schiri-game">West Bärn United vs Spartak Bern FC</div>
-      <div class="schiri-date">So, 17. Aug 2025 · 09:00 · Resultat: 1:11</div>
-    </div>
-    <div class="schiri-badge erledigt">Erledigt</div>
-  </div>
+  <div id="schiri-content"><div class="loading">⏳ Lade Daten von foul.ch...</div></div>
 </div>
+<div class="update-info" id="update-info"></div>
+
 <script>
 function showTab(id, el) {
   document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
@@ -180,6 +76,200 @@ function showTab(id, el) {
   document.getElementById(id).classList.add('active');
   el.classList.add('active');
 }
+
+function formatDate(dateStr) {
+  const d = new Date(dateStr);
+  const days = ['So','Mo','Di','Mi','Do','Fr','Sa'];
+  const months = ['Jan','Feb','Mär','Apr','Mai','Jun','Jul','Aug','Sep','Okt','Nov','Dez'];
+  return days[d.getDay()] + ', ' + d.getDate() + '. ' + months[d.getMonth()] + ' ' + d.getFullYear();
+}
+
+function getResult(spiel) {
+  const tore = spiel.tore.trim();
+  if (!tore || tore === ':' || tore === ' :  ' || tore === ': ') return 'ausstehend';
+  const parts = tore.split(':').map(s => s.trim());
+  if (parts.length !== 2) return 'ausstehend';
+  const h = parseInt(parts[0]); const g = parseInt(parts[1]);
+  if (isNaN(h) || isNaN(g)) return 'ausstehend';
+  const paerkliIsGast = spiel.gast.includes('Pärkli');
+  const paerkliTore = paerkliIsGast ? g : h;
+  const gegnerTore = paerkliIsGast ? h : g;
+  if (paerkliTore > gegnerTore) return 'sieg';
+  if (paerkliTore < gegnerTore) return 'niederlage';
+  return 'unentschieden';
+}
+
+function getResultLabel(res) {
+  if (res === 'sieg') return 'Sieg';
+  if (res === 'niederlage') return 'Niederlage';
+  if (res === 'unentschieden') return 'Unent.';
+  return '';
+}
+
+function getPaerkliScore(spiel) {
+  const tore = spiel.tore.trim();
+  if (!tore || tore === ':' || tore === ': ' || tore === ' : ') return null;
+  const parts = tore.split(':').map(s => s.trim());
+  if (parts.length !== 2 || isNaN(parseInt(parts[0]))) return null;
+  const paerkliIsGast = spiel.gast.includes('Pärkli');
+  const h = parseInt(parts[0]); const g = parseInt(parts[1]);
+  return paerkliIsGast ? g + ' : ' + h : h + ' : ' + g;
+}
+
+async function loadData() {
+  try {
+    const resp = await fetch('https://foul.ch/giele/spielplan', { cache: 'no-store' });
+    const text = await resp.text();
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(text, 'text/html');
+
+    const days = doc.querySelectorAll('li.game-day');
+    let spiele = []; let schiriDienste = [];
+
+    days.forEach(day => {
+      const timeEl = day.querySelector(':scope > label time');
+      if (!timeEl) return;
+      const dateAttr = timeEl.getAttribute('datetime');
+
+      day.querySelectorAll('tr').forEach(row => {
+        const teamsEl = row.querySelector('td.teams');
+        if (!teamsEl) return;
+        const links = teamsEl.querySelectorAll('a');
+        const anpfiff = row.querySelector('td.anpfiff time');
+        const toreEl = row.querySelector('td.tore');
+        const fpEl = row.querySelector('td.fairplay');
+        const schiriEl = row.querySelector('td.schiri a');
+        const heim = links[0] ? links[0].innerText.trim() : '';
+        const gast = links[1] ? links[1].innerText.trim() : '';
+
+        if (heim.includes('Pärkli') || gast.includes('Pärkli')) {
+          spiele.push({ date: dateAttr, zeit: anpfiff ? anpfiff.innerText.trim() : '', heim, gast, tore: toreEl ? toreEl.innerText.trim() : '', fp: fpEl ? fpEl.innerText.trim() : '', schiri: schiriEl ? schiriEl.innerText.trim() : '' });
+        }
+        if (schiriEl && schiriEl.innerText.includes('Pärkli')) {
+          schiriDienste.push({ date: dateAttr, zeit: anpfiff ? anpfiff.innerText.trim() : '', heim, gast, tore: toreEl ? toreEl.innerText.trim() : '' });
+        }
+      });
+    });
+
+    renderSaison(spiele);
+    renderSchiri(schiriDienste);
+    document.getElementById('update-info').textContent = 'Zuletzt aktualisiert: ' + new Date().toLocaleString('de-CH');
+  } catch(e) {
+    document.getElementById('saison-content').innerHTML = '<div class="loading">⚠️ Daten konnten nicht geladen werden.<br><small>' + e.message + '</small></div>';
+  }
+}
+
+function renderSaison(spiele) {
+  const heute = new Date().toISOString().split('T')[0];
+  const vergangen = spiele.filter(s => s.date < heute || (s.date <= heute && getResult(s) !== 'ausstehend')).sort((a,b) => b.date.localeCompare(a.date));
+  const kommend = spiele.filter(s => getResult(s) === 'ausstehend').sort((a,b) => a.date.localeCompare(b.date));
+
+  // Statistik
+  let siege = 0, niederlagen = 0, unent = 0;
+  vergangen.forEach(s => { const r = getResult(s); if(r==='sieg') siege++; else if(r==='niederlage') niederlagen++; else if(r==='unentschieden') unent++; });
+  const total = siege + niederlagen + unent;
+
+  // Cup-Termin (fix)
+  const cupCard = `<div class="next-card cup-event">
+    <div class="cup-badge">🏆 Cup-Tagesturnier</div>
+    <div class="next-teams"><span>Pärkli Boys United</span></div>
+    <div class="next-date">Sa, 23. Mai 2026 · 08:00 – 16:00</div>
+    <div class="next-info"><strong>Tagesturnier</strong> · Ganztages-Event</div>
+  </div>`;
+
+  let html = `<div class="stat-bar">
+    <div class="stat-box spiele"><div class="val">${total}</div><div class="lbl">Spiele</div></div>
+    <div class="stat-box sieg"><div class="val">${siege}</div><div class="lbl">Siege</div></div>
+    <div class="stat-box unent"><div class="val">${unent}</div><div class="lbl">Unent.</div></div>
+    <div class="stat-box nied"><div class="val">${niederlagen}</div><div class="lbl">Niederl.</div></div>
+  </div>`;
+
+  if (kommend.length > 0 || true) {
+    html += '<div class="section-label">📅 Kommende Spiele</div>';
+    kommend.forEach(s => {
+      const paerkliHeim = s.heim.includes('Pärkli');
+      const gegner = paerkliHeim ? s.gast : s.heim;
+      const matchup = paerkliHeim
+        ? `<span>Pärkli Boys United</span> vs ${gegner}`
+        : `${s.heim} vs <span>Pärkli Boys United</span>`;
+      html += `<div class="next-card">
+        <div class="next-date">${formatDate(s.date)} · ${s.zeit}</div>
+        <div class="next-teams">${matchup}</div>
+        <div class="next-info"><strong>Schiri:</strong> ${s.schiri}</div>
+      </div>`;
+    });
+    html += cupCard;
+  }
+
+  html += '<div class="section-label">📊 Saisonresultate</div>';
+  vergangen.forEach(s => {
+    const res = getResult(s);
+    const paerkliHeim = s.heim.includes('Pärkli');
+    const gegner = paerkliHeim ? s.gast.replace(' Chilefäud','') : s.heim.replace(' Chilefäud','');
+    const tore = s.tore.trim();
+    const fp = s.fp.replace(/s/g,'');
+    html += `<div class="match-card ${res}">
+      <div class="match-row">
+        <span class="team-name right${paerkliHeim?' bold':''}">${paerkliHeim?'Pärkli Boys':gegner}</span>
+        <span class="score">${tore}</span>
+        <span class="team-name${!paerkliHeim?' bold':''}">${paerkliHeim?gegner:'Pärkli Boys'}</span>
+      </div>
+      <div class="match-meta">
+        <span>${formatDate(s.date)}</span>
+        ${fp&&fp!==':'?'<span>FP: <span class="fp-val">'+fp+'</span></span>':''}
+        <span>Schiri: ${s.schiri}</span>
+        ${res!=='ausstehend'?'<span class="result-badge '+res+'">'+getResultLabel(res)+'</span>':''}
+      </div>
+    </div>`;
+  });
+
+  document.getElementById('saison-content').innerHTML = html;
+}
+
+function renderSchiri(dienste) {
+  const heute = new Date().toISOString().split('T')[0];
+  const ausstehend = dienste.filter(d => d.date >= heute).sort((a,b) => a.date.localeCompare(b.date));
+  const erledigt = dienste.filter(d => d.date < heute).sort((a,b) => b.date.localeCompare(a.date));
+
+  let html = '';
+
+  if (ausstehend.length === 0 && erledigt.length === 0) {
+    html = '<div class="loading">Keine Schiedsrichterdienste gefunden.</div>';
+  } else {
+    if (ausstehend.length > 0) {
+      html += '<div class="section-label">⏳ Ausstehend</div>';
+      ausstehend.forEach(d => {
+        html += `<div class="schiri-card">
+          <div class="schiri-status ausstehend">🟡</div>
+          <div class="schiri-info">
+            <div class="schiri-game">${d.heim} vs ${d.gast}</div>
+            <div class="schiri-date">${formatDate(d.date)} · ${d.zeit}</div>
+          </div>
+          <div class="schiri-badge ausstehend">Ausstehend</div>
+        </div>`;
+      });
+    }
+    if (erledigt.length > 0) {
+      html += '<div class="section-label" style="margin-top:18px">✅ Erledigt</div>';
+      erledigt.forEach(d => {
+        const tore = d.tore.trim();
+        const resText = tore && tore !== ':' ? ' · Resultat: ' + tore : '';
+        html += `<div class="schiri-card">
+          <div class="schiri-status erledigt">✅</div>
+          <div class="schiri-info">
+            <div class="schiri-game">${d.heim} vs ${d.gast}</div>
+            <div class="schiri-date">${formatDate(d.date)} · ${d.zeit}${resText}</div>
+          </div>
+          <div class="schiri-badge erledigt">Erledigt</div>
+        </div>`;
+      });
+    }
+  }
+
+  document.getElementById('schiri-content').innerHTML = html;
+}
+
+loadData();
 </script>
 </body>
 </html>
