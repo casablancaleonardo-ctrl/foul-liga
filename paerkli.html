@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pärkli Boys United</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f5f5f0; color: #1a1a1a; padding: 12px; max-width: 540px; margin: 0 auto; -webkit-tap-highlight-color: transparent; }
+.header { text-align: center; margin-bottom: 18px; padding-top: 6px; }
+.header h1 { font-size: 18px; font-weight: 700; }
+.header p { font-size: 12px; color: #888; margin-top: 3px; }
+.tabs { display: flex; gap: 5px; margin-bottom: 14px; background: #e8e8e3; padding: 3px; border-radius: 10px; }
+.tab { flex: 1; padding: 8px 4px; font-size: 13px; font-weight: 600; border: none; border-radius: 8px; background: transparent; color: #666; cursor: pointer; text-align: center; }
+.tab.active { background: #fff; color: #1a1a1a; box-shadow: 0 1px 3px rgba(0,0,0,0.13); }
+.section { display: none; } .section.active { display: block; }
+.stat-bar { display: flex; gap: 8px; margin-bottom: 14px; }
+.stat-box { flex: 1; background: #fff; border-radius: 10px; padding: 10px 6px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.07); }
+.stat-box .val { font-size: 22px; font-weight: 700; }
+.stat-box .lbl { font-size: 10px; color: #999; margin-top: 2px; text-transform: uppercase; letter-spacing: 0.04em; }
+.stat-box.sieg .val { color: #1D9E75; } .stat-box.unent .val { color: #EF9F27; } .stat-box.nied .val { color: #E24B4A; } .stat-box.spiele .val { color: #888; }
+.match-card { background: #fff; border-radius: 11px; padding: 10px 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.07); margin-bottom: 8px; border-left: 4px solid #ddd; }
+.match-card.sieg { border-left-color: #1D9E75; } .match-card.niederlage { border-left-color: #E24B4A; } .match-card.unentschieden { border-left-color: #EF9F27; } .match-card.ausstehend { border-left-color: #bbb; }
+.match-row { display: flex; align-items: center; gap: 6px; }
+.team-name { flex: 1; font-size: 13px; line-height: 1.3; } .team-name.right { text-align: right; } .team-name.bold { font-weight: 700; }
+.score { font-size: 16px; font-weight: 700; min-width: 52px; text-align: center; padding: 3px 6px; background: #f0f0ea; border-radius: 7px; white-space: nowrap; }
+.score.ausstehend { font-size: 13px; color: #bbb; background: #f5f5f0; }
+.match-meta { display: flex; justify-content: space-between; flex-wrap: wrap; margin-top: 7px; padding-top: 7px; border-top: 1px solid #f0f0ea; font-size: 11px; color: #bbb; gap: 4px; }
+.fp-val { font-weight: 600; color: #888; }
+.result-badge { font-size: 10px; font-weight: 700; padding: 2px 6px; border-radius: 4px; text-transform: uppercase; }
+.result-badge.sieg { background: #e6f7f1; color: #1D9E75; } .result-badge.niederlage { background: #fdeaea; color: #E24B4A; } .result-badge.unentschieden { background: #fef4e6; color: #EF9F27; }
+.section-label { font-size: 11px; font-weight: 700; color: #888; text-transform: uppercase; letter-spacing: 0.07em; margin: 14px 0 7px; }
+.next-card { background: #fff; border-radius: 11px; padding: 12px 14px; box-shadow: 0 1px 3px rgba(0,0,0,0.07); margin-bottom: 8px; }
+.next-date { font-size: 11px; color: #bbb; margin-bottom: 6px; }
+.next-teams { font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+.next-teams span { color: #1D9E75; }
+.next-info { font-size: 12px; color: #888; }
+.next-info strong { color: #555; }
+.schiri-card { background: #fff; border-radius: 11px; padding: 11px 13px; box-shadow: 0 1px 3px rgba(0,0,0,0.07); margin-bottom: 8px; display: flex; align-items: center; gap: 10px; }
+.schiri-status { width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 17px; flex-shrink: 0; }
+.schiri-status.erledigt { background: #e6f7f1; } .schiri-status.ausstehend { background: #fef4e6; }
+.schiri-info { flex: 1; }
+.schiri-game { font-size: 13px; font-weight: 600; line-height: 1.3; }
+.schiri-date { font-size: 11px; color: #bbb; margin-top: 2px; }
+.schiri-badge { font-size: 10px; font-weight: 700; padding: 3px 8px; border-radius: 5px; text-transform: uppercase; flex-shrink: 0; }
+.schiri-badge.erledigt { background: #e6f7f1; color: #1D9E75; } .schiri-badge.ausstehend { background: #fef4e6; color: #EF9F27; }
+</style>
+</head>
+<body>
+<div class="header"><h1>⚽ Pärkli Boys United</h1><p>Saison 2025/26 · Liga Giele 1</p></div>
+<div class="tabs">
+  <button class="tab active" onclick="showTab('saison',this)">Saison</button>
+  <button class="tab" onclick="showTab('schiri',this)">Schiri</button>
+</div>
+<div id="saison" class="section active">
+  <div class="stat-bar">
+    <div class="stat-box spiele"><div class="val">5</div><div class="lbl">Spiele</div></div>
+    <div class="stat-box sieg"><div class="val">5</div><div class="lbl">Siege</div></div>
+    <div class="stat-box unent"><div class="val">0</div><div class="lbl">Unent.</div></div>
+    <div class="stat-box nied"><div class="val">0</div><div class="lbl">Niederl.</div></div>
+  </div>
+  <div class="section-label">📅 Kommende Spiele</div>
+  <div class="next-card">
+    <div class="next-date">So, 26. April 2026 · 11:00</div>
+    <div class="next-teams"><span>Pärkli Boys United</span> vs AC Diva</div>
+    <div class="next-info"><strong>Schiri:</strong> West Bärn United</div>
+  </div>
+  <div class="next-card">
+    <div class="next-date">Sa, 2. Mai 2026 · 13:00</div>
+    <div class="next-teams"><span>Pärkli Boys United</span> vs Roter Stern Bollwerk</div>
+    <div class="next-info"><strong>Schiri:</strong> 5ème Etage</div>
+  </div>
+  <div class="next-card">
+    <div class="next-date">So, 17. Mai 2026 · 11:00</div>
+    <div class="next-teams"><span>Pärkli Boys United</span> vs Energie Bitzius</div>
+    <div class="next-info"><strong>Schiri:</strong> 5ème Etage</div>
+  </div>
+  <div class="next-card">
+    <div class="next-date">So, 21. Juni 2026 · 15:00</div>
+    <div class="next-teams">SpVgg Lokomotive vs <span>Pärkli Boys United</span></div>
+    <div class="next-info"><strong>Schiri:</strong> 5ème Etage</div>
+  </div>
+  <div class="section-label">📊 Saisonresultate</div>
+  <div class="match-card sieg">
+    <div class="match-row">
+      <span class="team-name right">Sunnesite Allstars</span>
+      <span class="score">3 : 4</span>
+      <span class="team-name bold">Pärkli Boys</span>
+    </div>
+    <div class="match-meta">
+      <span>So, 26. Okt 2025</span><span>FP: <span class="fp-val">5:5</span></span>
+      <span>Schiri: West Bärn United</span><span class="result-badge sieg">Sieg</span>
+    </div>
+  </div>
+  <div class="match-card sieg">
+    <div class="match-row">
+      <span class="team-name right">Dynamo Chop</span>
+      <span class="score">0 : 5</span>
+      <span class="team-name bold">Pärkli Boys</span>
+    </div>
+    <div class="match-meta">
+      <span>So, 19. Okt 2025</span><span>FP: <span class="fp-val">5:5</span></span>
+      <span>Schiri: West Bärn United</span><span class="result-badge sieg">Sieg</span>
+    </div>
+  </div>
+  <div class="match-card sieg">
+    <div class="match-row">
+      <span class="team-name right">IFC Berne</span>
+      <span class="score">0 : 3</span>
+      <span class="team-name bold">Pärkli Boys</span>
+    </div>
+    <div class="match-meta">
+      <span>So, 28. Sep 2025</span><span>FP: <span class="fp-val">4:4</span></span>
+      <span>Schiri: Olympique Troissept</span><span class="result-badge sieg">Sieg</span>
+    </div>
+  </div>
+  <div class="match-card sieg">
+    <div class="match-row">
+      <span class="team-name right">Obstberg United</span>
+      <span class="score">1 : 7</span>
+      <span class="team-name bold">Pärkli Boys</span>
+    </div>
+    <div class="match-meta">
+      <span>So, 14. Sep 2025</span><span>FP: <span class="fp-val">5:5</span></span>
+      <span>Schiri: West Bärn United</span><span class="result-badge sieg">Sieg</span>
+    </div>
+  </div>
+  <div class="match-card sieg">
+    <div class="match-row">
+      <span class="team-name bold right">Pärkli Boys</span>
+      <span class="score">4 : 0</span>
+      <span class="team-name">Deportivo Gordo C.</span>
+    </div>
+    <div class="match-meta">
+      <span>So, 31. Aug 2025</span><span>FP: <span class="fp-val">5:5</span></span>
+      <span>Schiri: Spartak Bern FC</span><span class="result-badge sieg">Sieg</span>
+    </div>
+  </div>
+</div>
+<div id="schiri" class="section">
+  <div class="section-label">⏳ Ausstehend</div>
+  <div class="schiri-card">
+    <div class="schiri-status ausstehend">🟡</div>
+    <div class="schiri-info">
+      <div class="schiri-game">West Bärn United vs Raclette Rangerz</div>
+      <div class="schiri-date">So, 26. April 2026 · 13:00</div>
+    </div>
+    <div class="schiri-badge ausstehend">Ausstehend</div>
+  </div>
+  <div class="section-label" style="margin-top:18px;">✅ Erledigt</div>
+  <div class="schiri-card">
+    <div class="schiri-status erledigt">✅</div>
+    <div class="schiri-info">
+      <div class="schiri-game">West Bärn United vs 5ème Etage</div>
+      <div class="schiri-date">So, 19. Okt 2025 · 11:00 · Resultat: 0:19</div>
+    </div>
+    <div class="schiri-badge erledigt">Erledigt</div>
+  </div>
+  <div class="schiri-card">
+    <div class="schiri-status erledigt">✅</div>
+    <div class="schiri-info">
+      <div class="schiri-game">Spartak Bern FC vs Raclette Rangerz</div>
+      <div class="schiri-date">So, 28. Sep 2025 · 15:00 · Resultat: 6:1</div>
+    </div>
+    <div class="schiri-badge erledigt">Erledigt</div>
+  </div>
+  <div class="schiri-card">
+    <div class="schiri-status erledigt">✅</div>
+    <div class="schiri-info">
+      <div class="schiri-game">West Bärn United vs Spartak Bern FC</div>
+      <div class="schiri-date">So, 17. Aug 2025 · 09:00 · Resultat: 1:11</div>
+    </div>
+    <div class="schiri-badge erledigt">Erledigt</div>
+  </div>
+</div>
+<script>
+function showTab(id, el) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  el.classList.add('active');
+}
+</script>
+</body>
+</html>
