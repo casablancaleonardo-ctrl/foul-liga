@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>F.O.U.L – Liga Giele</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f5f5f0; color: #1a1a1a; padding: 12px; max-width: 540px; margin: 0 auto; -webkit-tap-highlight-color: transparent; }
+.header { text-align: center; margin-bottom: 18px; padding-top: 6px; }
+.header h1 { font-size: 17px; font-weight: 700; }
+.header p { font-size: 12px; color: #888; margin-top: 3px; }
+.updated { font-size: 11px; color: #bbb; text-align: center; margin-bottom: 14px; }
+.tabs { display: flex; gap: 5px; margin-bottom: 14px; background: #e8e8e3; padding: 3px; border-radius: 10px; }
+.tab { flex: 1; padding: 8px 4px; font-size: 13px; font-weight: 600; border: none; border-radius: 8px; background: transparent; color: #666; cursor: pointer; text-align: center; }
+.tab.active { background: #fff; color: #1a1a1a; box-shadow: 0 1px 3px rgba(0,0,0,0.13); }
+.section { display: none; }
+.section.active { display: block; }
+.liga-block { margin-bottom: 18px; }
+.liga-title { font-size: 11px; font-weight: 700; color: #888; text-transform: uppercase; letter-spacing: 0.07em; margin-bottom: 7px; }
+.match-date { font-size: 11px; color: #bbb; margin-bottom: 7px; }
+.match-list { display: flex; flex-direction: column; gap: 7px; }
+.match-card { background: #fff; border-radius: 11px; padding: 10px 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.07); }
+.match-row { display: flex; align-items: center; gap: 6px; }
+.team-name { flex: 1; font-size: 13px; line-height: 1.3; }
+.team-name.right { text-align: right; }
+.score { font-size: 16px; font-weight: 700; min-width: 50px; text-align: center; padding: 3px 6px; background: #f0f0ea; border-radius: 7px; white-space: nowrap; }
+.match-meta { display: flex; justify-content: space-between; margin-top: 7px; padding-top: 7px; border-top: 1px solid #f0f0ea; font-size: 11px; color: #bbb; flex-wrap: wrap; gap: 4px; }
+.fp-val { font-weight: 600; color: #888; }
+.table-outer { background: #fff; border-radius: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); overflow: hidden; }
+.table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.scroll-hint { font-size: 10px; color: #bbb; text-align: right; padding: 4px 8px 0; }
+table { border-collapse: collapse; font-size: 12px; white-space: nowrap; width: 100%; }
+thead th { font-size: 10px; font-weight: 700; color: #aaa; text-align: center; padding: 7px 6px; background: #fafaf8; border-bottom: 1px solid #f0f0ea; text-transform: uppercase; }
+thead th.col-team { text-align: left; position: sticky; left: 0; z-index: 3; background: #fafaf8; min-width: 130px; padding-left: 10px; }
+tbody tr { border-bottom: 1px solid #f5f5f0; }
+tbody tr:last-child { border-bottom: none; }
+tbody td { padding: 8px 6px; text-align: center; }
+tbody td.col-team { text-align: left; position: sticky; left: 0; z-index: 1; background: #fff; min-width: 130px; padding-left: 0; }
+.zone-up td.col-team { border-left: 3px solid #1D9E75; }
+.zone-bar td.col-team { border-left: 3px solid #EF9F27; }
+.zone-down td.col-team { border-left: 3px solid #E24B4A; }
+.row-inner { display: flex; align-items: center; gap: 4px; padding-left: 7px; }
+.rank { color: #ccc; font-size: 10px; min-width: 14px; text-align: right; flex-shrink: 0; }
+.team-label { font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100px; display: block; }
+.pkt { font-weight: 700; }
+.diff-pos { color: #1D9E75; }
+.diff-neg { color: #E24B4A; }
+.legend { display: flex; gap: 12px; margin-top: 9px; flex-wrap: wrap; }
+.legend-item { display: flex; align-items: center; gap: 5px; font-size: 11px; color: #888; }
+.legend-dot { width: 8px; height: 8px; border-radius: 2px; flex-shrink: 0; }
+.loading { text-align: center; padding: 2rem; color: #888; font-size: 14px; }
+.no-results { text-align: center; padding: 1.5rem; color: #bbb; font-size: 13px; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>F.O.U.L – Liga Giele</h1>
+  <p>Automatische Spieltagsübersicht</p>
+</div>
+<div class="updated" id="updated">Wird geladen...</div>
+
+<div class="tabs">
+  <button class="tab active" onclick="showTab('resultate',this)">Resultate</button>
+  <button class="tab" onclick="showTab('giele1',this)">Liga 1</button>
+  <button class="tab" onclick="showTab('giele2',this)">Liga 2</button>
+</div>
+
+<div id="resultate" class="section active"><div class="loading">Laden...</div></div>
+<div id="giele1" class="section"><div class="loading">Laden...</div></div>
+<div id="giele2" class="section"><div class="loading">Laden...</div></div>
+
+<script>
+function showTab(id, el) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  el.classList.add('active');
+}
+
+function formatDatum(str) {
+  if (!str) return '';
+  const [d, m, y] = str.split('.');
+  const monate = ['','Januar','Februar','März','April','Mai','Juni','Juli','August','September','Oktober','November','Dezember'];
+  const tage = ['So','Mo','Di','Mi','Do','Fr','Sa'];
+  const dt = new Date(y, m-1, d);
+  return tage[dt.getDay()] + ', ' + parseInt(d) + '. ' + monate[parseInt(m)] + ' ' + y;
+}
+
+function renderResultate(spieltag) {
+  if (!spieltag) return '<div class="no-results">Noch keine Resultate verfügbar.</div>';
+  let html = '';
+  const spiele = spieltag.spiele || [];
+  const mitResultat = spiele.filter(s => s.tore && s.tore !== ':' && s.tore.includes(':'));
+  if (mitResultat.length === 0) return '<div class="no-results">Noch keine Resultate verfügbar.</div>';
+  html += `<div class="liga-block"><div class="liga-title">Letzter Spieltag</div><div class="match-date">${formatDatum(spieltag.datum)}</div><div class="match-list">`;
+  for (const sp of mitResultat) {
+    const tore = sp.tore || ':';
+    const fp = sp.fp || '';
+    const schiri = sp.schiri || '';
+    html += `<div class="match-card"><div class="match-row"><span class="team-name right">${sp.heim}</span><span class="score">${tore}</span><span class="team-name">${sp.gast}</span></div>${(fp || schiri) ? `<div class="match-meta">${fp ? `<span>FP: <span class="fp-val">${fp}</span></span>` : ''}${schiri ? `<span>Schiri: ${schiri}</span>` : ''}</div>` : ''}</div>`;
+  }
+  html += '</div></div>';
+  return html;
+}
+
+function renderTabelle(ligaData, ligaKey) {
+  if (!ligaData || !ligaData[ligaKey] || !ligaData[ligaKey][0]) return '<div class="no-results">Keine Daten verfügbar.</div>';
+  const tbl = ligaData[ligaKey][0];
+  const headers = tbl.headers || [];
+  const rows = tbl.rows || [];
+  let html = `<div class="liga-block"><div class="liga-title">${ligaKey} – Tabelle</div><div class="table-outer"><div class="scroll-hint">← wischen für mehr →</div><div class="table-scroll"><table><thead><tr><th class="col-team">Team</th>`;
+  for (let i = 1; i < headers.length; i++) html += `<th>${headers[i]}</th>`;
+  html += '</tr></thead><tbody>';
+  rows.forEach((row, idx) => {
+    const zone = row.zone ? `zone-${row.zone}` : '';
+    html += `<tr class="${zone}"><td class="col-team"><div class="row-inner"><span class="rank">${idx+1}</span><span class="team-label">${row.team}</span></div></td>`;
+    row.cols.forEach((col, ci) => {
+      const isPkt = ci === row.cols.length - 1;
+      const isDiff = headers[ci+2] === '+/-';
+      let cls = isPkt ? 'pkt' : (isDiff ? (col.startsWith('-') ? 'diff-neg' : (col.startsWith('+') ? 'diff-pos' : '')) : '');
+      html += `<td class="${cls}">${col}</td>`;
+    });
+    html += '</tr>';
+  });
+  html += `</tbody></table></div></div><div class="legend"><div class="legend-item"><div class="legend-dot" style="background:#1D9E75"></div>Aufstieg</div><div class="legend-item"><div class="legend-dot" style="background:#EF9F27"></div>Barrage</div><div class="legend-item"><div class="legend-dot" style="background:#E24B4A"></div>Abstieg</div></div></div>`;
+  return html;
+}
+
+fetch('data.json?v=' + Date.now())
+  .then(r => r.json())
+  .then(data => {
+    const dt = new Date(data.updated);
+    document.getElementById('updated').textContent = 'Stand: ' + dt.toLocaleDateString('de-CH') + ' ' + dt.toLocaleTimeString('de-CH',{hour:'2-digit',minute:'2-digit'});
+    document.getElementById('resultate').innerHTML = renderResultate(data.letzter_spieltag);
+    const tabelle = data.tabelle || {};
+    const keys = Object.keys(tabelle);
+    document.getElementById('giele1').innerHTML = keys[0] ? renderTabelle(tabelle,keys[0]) : '<div class="no-results">Keine Daten.</div>';
+    document.getElementById('giele2').innerHTML = keys[1] ? renderTabelle(tabelle,keys[1]) : '<div class="no-results">Keine Daten.</div>';
+    if (keys[0]) document.querySelectorAll('.tab')[1].textContent = keys[0].replace('Liga ','L');
+    if (keys[1]) document.querySelectorAll('.tab')[2].textContent = keys[1].replace('Liga ','L');
+  }).catch(err => { document.getElementById('updated').textContent = 'Fehler beim Laden'; console.error(err); });
+</script>
+</body>
+</html>
