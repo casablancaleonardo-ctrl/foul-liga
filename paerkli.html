@@ -169,7 +169,7 @@ function renderSchiri(dienste) {
 
 async function loadData() {
   try {
-    const resp = await fetch('data-paerkli.json?v=' + Date.now());
+    const resp = await fetch('https://casablancaleonardo-ctrl.github.io/foul-liga/data-paerkli.json?v=' + Date.now());
     const data = await resp.json();
     renderSaison(data.spiele);
     renderSchiri(data.schiri);
