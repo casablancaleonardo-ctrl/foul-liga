@@ -1,0 +1,31 @@
+name: Scrape PBU
+
+on:
+  schedule:
+    - cron: '0 15,17,19,21 * * 0'
+    - cron: '0 15,17,19,21 * * 6'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Python setup
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4
+      - name: Run scraper
+        run: python scraper_pbu.py
+      - name: Commit data_pbu.json
+        run: |
+          git config user.name "foul-bot"
+          git config user.email "bot@foul.ch"
+          git add data_pbu.json
+          git diff --cached --quiet || git commit -m "PBU Update: $(date '+%d.%m.%Y %H:%M')"
+          git push
