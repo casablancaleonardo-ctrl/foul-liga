@@ -1,0 +1,104 @@
+{
+  "updated": "2025-10-26T21:00:00",
+  "gespielt": [
+    {
+      "datum": "17.08.2025",
+      "anpfiff": "11:00",
+      "heim": "Pärkli Boys United",
+      "gast": "Deportivo Gordo Cojones",
+      "tore": "4 : 0",
+      "fp": "5 : 5",
+      "schiri": "Spartak Bern FC"
+    },
+    {
+      "datum": "24.08.2025",
+      "anpfiff": "13:00",
+      "heim": "Obstberg United",
+      "gast": "Pärkli Boys United",
+      "tore": "1 : 7",
+      "fp": "5 : 5",
+      "schiri": "West Bärn United"
+    },
+    {
+      "datum": "28.09.2025",
+      "anpfiff": "13:00",
+      "heim": "International FC Berne",
+      "gast": "Pärkli Boys United",
+      "tore": "0 : 3",
+      "fp": "4 : 4",
+      "schiri": "Olympique Troissept"
+    },
+    {
+      "datum": "19.10.2025",
+      "anpfiff": "09:00",
+      "heim": "Dynamo Chop",
+      "gast": "Pärkli Boys United",
+      "tore": "0 : 5",
+      "fp": "5 : 5",
+      "schiri": "West Bärn United"
+    },
+    {
+      "datum": "26.10.2025",
+      "anpfiff": "13:00",
+      "heim": "Sunnesite Allstars Chilefäud",
+      "gast": "Pärkli Boys United",
+      "tore": "3 : 4",
+      "fp": "5 : 5",
+      "schiri": "West Bärn United"
+    }
+  ],
+  "kommend": [
+    {
+      "datum": "26.04.2026",
+      "anpfiff": "11:00",
+      "heim": "Pärkli Boys United",
+      "gast": "AC Diva",
+      "tore": "",
+      "fp": "",
+      "schiri": "West Bärn United"
+    },
+    {
+      "datum": "02.05.2026",
+      "anpfiff": "13:00",
+      "heim": "Pärkli Boys United",
+      "gast": "Roter Stern Bollwerk",
+      "tore": "",
+      "fp": "",
+      "schiri": "5ème Etage"
+    },
+    {
+      "datum": "17.05.2026",
+      "anpfiff": "11:00",
+      "heim": "Pärkli Boys United",
+      "gast": "Energie Bitzius",
+      "tore": "",
+      "fp": "",
+      "schiri": "5ème Etage"
+    },
+    {
+      "datum": "21.06.2026",
+      "anpfiff": "15:00",
+      "heim": "SpVgg Lokomotive",
+      "gast": "Pärkli Boys United",
+      "tore": "",
+      "fp": "",
+      "schiri": "5ème Etage"
+    }
+  ],
+  "schiri_dienste": [
+    {
+      "datum": "26.04.2026",
+      "anpfiff": "13:00",
+      "heim": "West Bärn United",
+      "gast": "Raclette Rangerz",
+      "schiri": "Pärkli Boys United"
+    },
+    {
+      "datum": "26.04.2026",
+      "anpfiff": "13:00",
+      "heim": "Fortuna Galgenfeld",
+      "gast": "Olympique Troissept",
+      "schiri": "Sunnesite Allstars Chilefäud"
+    }
+  ]
+}
