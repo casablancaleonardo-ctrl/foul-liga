@@ -6,6 +6,9 @@ on:
     - cron: '0 15,17,19,21 * * 0'  # Sonntag 17/19/21/23 Uhr CH
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   scrape:
     runs-on: ubuntu-latest
