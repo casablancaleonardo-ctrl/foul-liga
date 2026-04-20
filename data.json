@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-19T22:04:59.063021",
+  "updated": "2026-04-20T15:13:10.608345",
   "tabelle": {
     "Liga 1": [
       {
@@ -1224,5 +1224,41 @@
       ]
     }
   ],
-  "letzter_spieltag": null
+  "letzter_spieltag": {
+    "datum": "17.08.2025",
+    "spiele": [
+      {
+        "anpfiff": "09:00",
+        "heim": "West Bärn United",
+        "gast": "Spartak Bern FC",
+        "tore": "1 : 11",
+        "fp": "5 : 5",
+        "schiri": "Pärkli Boys United"
+      },
+      {
+        "anpfiff": "11:00",
+        "heim": "5ème Etage",
+        "gast": "Valti Traktor",
+        "tore": "2 : 2",
+        "fp": "5 : 5",
+        "schiri": "Dynamo Chop"
+      },
+      {
+        "anpfiff": "13:00",
+        "heim": "Standfest Breitenrain",
+        "gast": "Fortuna Galgenfeld",
+        "tore": "0 : 9",
+        "fp": "5 : 5",
+        "schiri": "Energie Bitzius"
+      },
+      {
+        "anpfiff": "15:00",
+        "heim": "Raclette Rangerz",
+        "gast": "Les Mecs Sportifs",
+        "tore": "3 : 4",
+        "fp": "5 : 5",
+        "schiri": "SpVgg Lokomotive"
+      }
+    ]
+  }
 }
