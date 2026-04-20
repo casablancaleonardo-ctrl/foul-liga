@@ -79,9 +79,10 @@ spielplan = parse_spielplan('https://foul.ch/giele/spielplan')
 letzter_spieltag = None
 for st in reversed(spielplan):
     for sp in st['spiele']:
-        if ':' in sp.get('tore', '') and sp['tore'].replace(' ','').replace(':','').replace('0123456789','').strip() == '':
-            tore = sp['tore'].strip()
-            if tore and tore != ':':
+        tore = sp.get('tore', '').strip()
+        if ':' in tore and tore != ':':
+            parts = tore.split(':')
+            if len(parts) == 2 and parts[0].strip().isdigit() and parts[1].strip().isdigit():
                 letzter_spieltag = st
                 break
     if letzter_spieltag:
