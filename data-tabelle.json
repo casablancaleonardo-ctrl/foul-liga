@@ -15,7 +15,7 @@
     },
     {
       "rang": 2,
-      "team": "Sunnesite Allstars Chilefäud",
+      "team": "Sunnesite Allstars",
       "sp": "6",
       "s": "4",
       "n": "1",
@@ -225,6 +225,19 @@
     },
     {
       "rang": 8,
+      "team": "Raclette Rangerz",
+      "sp": "6",
+      "s": "1",
+      "n": "4",
+      "u": "1",
+      "gplus": "13",
+      "gminus": "22",
+      "diff": "-9",
+      "fp": "30",
+      "pkt": "4"
+    },
+    {
+      "rang": 9,
       "team": "Olympique Troissept",
       "sp": "5",
       "s": "1",
@@ -237,30 +250,18 @@
       "pkt": "4"
     },
     {
-      "rang": 9,
-      "team": "Raclette Rangerz",
-      "sp": "6",
-      "s": "0",
-      "n": "4",
-      "u": "2",
-      "gplus": "8",
-      "gminus": "21",
-      "diff": "-13",
-      "fp": "25",
-      "pkt": "2"
-    },
-    {
       "rang": 10,
       "team": "West Bärn United",
       "sp": "6",
       "s": "0",
-      "n": "5",
-      "u": "1",
-      "gplus": "8",
-      "gminus": "56",
-      "diff": "-48",
-      "fp": "25",
-      "pkt": "1"
+      "n": "6",
+      "u": "0",
+      "gplus": "9",
+      "gminus": "61",
+      "diff": "-52",
+      "fp": "30",
+      "pkt": "0"
     }
-  ]
+  ],
+  "updated": "2026-04-26T19:51:43.450991Z"
 }
