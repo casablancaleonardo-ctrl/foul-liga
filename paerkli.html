@@ -157,8 +157,9 @@ function renderTabelle(liga1) {
 
 function renderSchiri(dienste) {
   const heute=new Date().toISOString().split('T')[0];
-  const aus=dienste.filter(d=>d.date>=heute).sort((a,b)=>a.date.localeCompare(b.date));
-  const erl=dienste.filter(d=>d.date<heute).sort((a,b)=>b.date.localeCompare(a.date));
+  const hatRes=d=>{const t=(d.tore||'').trim();return t&&t!==':'&&t.includes(':')&&t!==': ';};
+  const aus=dienste.filter(d=>d.date>heute||(d.date===heute&&!hatRes(d))).sort((a,b)=>a.date.localeCompare(b.date));
+  const erl=dienste.filter(d=>d.date<heute||(d.date===heute&&hatRes(d))).sort((a,b)=>b.date.localeCompare(a.date));
   let h='';
   if(aus.length){h+='<div class="section-label">⏳ Ausstehend</div>';aus.forEach(d=>{h+='<div class="schiri-card"><div class="schiri-icon ausstehend">🟡</div><div class="schiri-info"><div class="schiri-game">'+d.heim+' vs '+d.gast+'</div><div class="schiri-date">'+chip(d.date)+' · '+d.zeit+'</div></div><div class="schiri-badge ausstehend">Ausstehend</div></div>';});}
   if(erl.length){h+='<div class="section-label" style="margin-top:18px">✅ Erledigt</div>';erl.forEach(d=>{const t=d.tore.trim();const res=t&&t!==':'?' · Resultat: '+t:'';h+='<div class="schiri-card"><div class="schiri-icon erledigt">✅</div><div class="schiri-info"><div class="schiri-game">'+d.heim+' vs '+d.gast+'</div><div class="schiri-date">'+chip(d.date)+' · '+d.zeit+res+'</div></div><div class="schiri-badge erledigt">Erledigt</div></div>';});}
