@@ -28,4 +28,5 @@ jobs:
           git config user.email "bot@foul.ch"
           git add data_pbu.json
           git diff --cached --quiet || git commit -m "PBU Update: $(date '+%d.%m.%Y %H:%M')"
+          git pull --rebase
           git push
