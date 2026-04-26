@@ -98,6 +98,36 @@ data = {
 with open('data.json', 'w', encoding='utf-8') as f:
     json.dump(data, f, ensure_ascii=False, indent=2)
 
+# data-tabelle.json generieren (Format für paerkli.html)
+def make_tabelle_json(tabelle):
+    result = {}
+    for liga_name, tables in tabelle.items():
+        if not tables:
+            continue
+        rows = tables[0]['rows']
+        key = 'liga1' if '1' in liga_name else 'liga2'
+        result[key] = []
+        for rang, row in enumerate(rows, 1):
+            cols = row['cols']
+            result[key].append({
+                'rang': rang,
+                'team': row['team'],
+                'sp':     cols[0]  if len(cols) > 0 else '',
+                's':      cols[1]  if len(cols) > 1 else '',
+                'n':      cols[2]  if len(cols) > 2 else '',
+                'u':      cols[3]  if len(cols) > 3 else '',
+                'gplus':  cols[4]  if len(cols) > 4 else '',
+                'gminus': cols[5]  if len(cols) > 5 else '',
+                'diff':   cols[6]  if len(cols) > 6 else '',
+                'fp':     cols[7]  if len(cols) > 7 else '',
+                'pkt':    cols[-1] if cols else '',
+            })
+    return result
+
+tabelle_json = make_tabelle_json(tabelle)
+with open('data-tabelle.json', 'w', encoding='utf-8') as f:
+    json.dump(tabelle_json, f, ensure_ascii=False, indent=2)
+
 print(f"OK. Tabellen: {list(tabelle.keys())}")
 print(f"Spieltage: {len(spielplan)}")
 print(f"Letzter Spieltag: {letzter_spieltag['datum'] if letzter_spieltag else 'keiner'}")
