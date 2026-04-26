@@ -1,6 +1,15 @@
 {
-  "updated": "2026-04-19T23:03:15.143000",
+  "updated": "2026-04-26T19:28:49.559608",
   "gespielt": [
+    {
+      "datum": "26.04.2026",
+      "anpfiff": "11:00",
+      "heim": "Pärkli Boys United",
+      "gast": "AC Diva",
+      "tore": "10 : 2",
+      "fp": "5 : 5",
+      "schiri": "West Bärn United"
+    },
     {
       "datum": "26.10.2025",
       "anpfiff": "13:00",
@@ -74,15 +83,6 @@
       "tore": ":",
       "fp": ":",
       "schiri": "5ème Etage"
-    },
-    {
-      "datum": "26.04.2026",
-      "anpfiff": "11:00",
-      "heim": "Pärkli Boys United",
-      "gast": "AC Diva",
-      "tore": ":",
-      "fp": ":",
-      "schiri": "West Bärn United"
     }
   ],
   "schiri_dienste": [
