@@ -26,7 +26,7 @@ jobs:
         run: |
           git config user.name "foul-bot"
           git config user.email "bot@foul.ch"
-          git add data.json data-tabelle.json
+          git add data.json
           git diff --cached --quiet || git commit -m "Update: $(date '+%d.%m.%Y %H:%M')"
           git pull --rebase
           git push
