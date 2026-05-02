@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-26T21:03:03.270965",
+  "updated": "2026-05-02T17:32:20.617806",
   "gespielt": [
     {
       "datum": "26.04.2026",
@@ -85,13 +85,5 @@
       "schiri": "5ème Etage"
     }
   ],
-  "schiri_dienste": [
-    {
-      "datum": "26.04.2026",
-      "anpfiff": "13:00",
-      "heim": "West Bärn United",
-      "gast": "Raclette Rangerz",
-      "schiri": "Pärkli Boys United"
-    }
-  ]
+  "schiri_dienste": []
 }
