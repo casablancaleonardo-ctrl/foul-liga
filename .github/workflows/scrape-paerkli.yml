@@ -2,8 +2,7 @@ name: Pärkli Scraper
 
 on:
   schedule:
-    - cron: '0 15,17,19,21 * * 6'  # Samstag 17/19/21/23 Uhr CH
-    - cron: '0 15,17,19,21 * * 0'  # Sonntag 17/19/21/23 Uhr CH
+    - cron: '0 * * * *'  # Jede Stunde, rund um die Uhr
   workflow_dispatch:
 
 permissions:
