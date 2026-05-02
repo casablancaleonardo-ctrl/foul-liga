@@ -8,7 +8,9 @@ API_URL   = "https://foul.ch/actions/graphql/api"
 TOKEN     = os.environ.get("FOUL_API_TOKEN", "").strip()
 TEAM_ID   = 1689        # Pärkli Boys United
 TEAM_NAME = "Pärkli"
-SEASON    = "2025-2026"
+SEASON_ID = 21052   # 2025-2026
+LIGA1_ID  = 240     # Liga 1
+LIGA2_ID  = 242     # Liga 2
 
 # ─── GraphQL-Hilfsfunktion ────────────────────────────────────────────────────
 def gql(query: str) -> dict:
@@ -114,11 +116,10 @@ print("   💾 data-paerkli.json gespeichert")
 # ═══════════════════════════════════════════════════════════════════════════════
 print("\n🔄 Berechne Tabelle via API ...")
 
-QUERY_ALL = """
+QUERY_LIGA1 = """
 {
-  entries(section: "gamesBoys", season: "%s", limit: 500, orderBy: "kickOff asc") {
+  entries(section: "gamesBoys", season: [%d], league: [%d], limit: 500, orderBy: "kickOff asc") {
     ... on gamesBoys_giele_Entry {
-      league    { title }
       homeTeam  { title }
       guestTeam { title }
       goalHome
@@ -128,12 +129,28 @@ QUERY_ALL = """
     }
   }
 }
-""" % SEASON
+""" % (SEASON_ID, LIGA1_ID)
 
-all_games = gql(QUERY_ALL)["entries"]
-print(f"   📦 {len(all_games)} Spiele geladen")
+QUERY_LIGA2 = """
+{
+  entries(section: "gamesBoys", season: [%d], league: [%d], limit: 500, orderBy: "kickOff asc") {
+    ... on gamesBoys_giele_Entry {
+      homeTeam  { title }
+      guestTeam { title }
+      goalHome
+      goalGuest
+      fairplayHome
+      fairplayGuest
+    }
+  }
+}
+""" % (SEASON_ID, LIGA2_ID)
 
-# Tabelle pro Liga berechnen
+games_liga1 = gql(QUERY_LIGA1)["entries"]
+games_liga2 = gql(QUERY_LIGA2)["entries"]
+print(f"   📦 Liga 1: {len(games_liga1)} Spiele, Liga 2: {len(games_liga2)} Spiele")
+
+# Tabelle berechnen
 def calc_table(games):
     teams = {}
 
@@ -199,26 +216,12 @@ def calc_table(games):
         })
     return result
 
-# Spiele nach Liga gruppieren
-by_league = {}
-for g in all_games:
-    league_title = g["league"][0]["title"] if g.get("league") else "Unbekannt"
-    by_league.setdefault(league_title, []).append(g)
-
-print(f"   📊 Ligen gefunden: {list(by_league.keys())}")
-
-# Liga 1 und Liga 2 bestimmen (nach Nummer sortiert)
-sorted_leagues = sorted(by_league.keys())
-tabelle = {"updated": datetime.now(timezone.utc).isoformat()}
-
-for i, league in enumerate(sorted_leagues, 1):
-    key = f"liga{i}"
-    tabelle[key] = calc_table(by_league[league])
-    print(f"   ✅ {league} ({key}): {len(tabelle[key])} Teams")
-
-# Sicherstellen dass liga1 und liga2 immer existieren
-tabelle.setdefault("liga1", [])
-tabelle.setdefault("liga2", [])
+tabelle = {
+    "liga1":   calc_table(games_liga1),
+    "liga2":   calc_table(games_liga2),
+    "updated": datetime.now(timezone.utc).isoformat(),
+}
+print(f"   ✅ Liga 1: {len(tabelle['liga1'])} Teams, Liga 2: {len(tabelle['liga2'])} Teams")
 
 with open("data-tabelle.json", "w", encoding="utf-8") as f:
     json.dump(tabelle, f, ensure_ascii=False, indent=2)
