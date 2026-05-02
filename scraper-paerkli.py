@@ -44,7 +44,7 @@ print("🔄 Lade Pärkli-Spiele via API ...")
 
 QUERY_PAERKLI = """
 {
-  entries(section: "gamesBoys", relatedTo: [%d], limit: 200, orderBy: "kickOff asc") {
+  entries(section: "gamesBoys", relatedToAll: [%d, %d], limit: 200, orderBy: "kickOff asc") {
     ... on gamesBoys_giele_Entry {
       kickOff
       homeTeam  { title }
@@ -57,7 +57,7 @@ QUERY_PAERKLI = """
     }
   }
 }
-""" % TEAM_ID
+""" % (TEAM_ID, SEASON_ID)
 
 raw = gql(QUERY_PAERKLI)["entries"]
 spiele = []
@@ -79,7 +79,7 @@ print(f"   ✅ Spiele: {len(spiele)}")
 
 QUERY_SCHIRI = """
 {
-  entries(section: "gamesBoys", umpire: [%d], limit: 100, orderBy: "kickOff asc") {
+  entries(section: "gamesBoys", umpire: [%d], season: [%d], limit: 100, orderBy: "kickOff asc") {
     ... on gamesBoys_giele_Entry {
       kickOff
       homeTeam  { title }
@@ -89,7 +89,7 @@ QUERY_SCHIRI = """
     }
   }
 }
-""" % TEAM_ID
+""" % (TEAM_ID, SEASON_ID)
 
 raw_s = gql(QUERY_SCHIRI)["entries"]
 schiri_dienste = []
