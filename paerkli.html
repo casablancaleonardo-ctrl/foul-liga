@@ -7,51 +7,76 @@
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f5f5f0; color: #1a1a1a; padding: 12px; max-width: 540px; margin: 0 auto; -webkit-tap-highlight-color: transparent; }
+
+/* ── Header ── */
 .header { text-align: center; margin-bottom: 16px; padding-top: 10px; }
 .header img { width: 68px; height: 68px; object-fit: contain; margin-bottom: 7px; border-radius: 50%; box-shadow: 0 2px 8px rgba(0,0,0,0.13); }
 .header h1 { font-size: 17px; font-weight: 700; }
 .header p { font-size: 12px; color: #888; margin-top: 2px; }
+
+/* ── Tabs ── */
 .tabs { display: flex; gap: 4px; margin-bottom: 14px; background: #e8e8e3; padding: 3px; border-radius: 10px; }
 .tab { flex: 1; padding: 7px 3px; font-size: 12px; font-weight: 600; border: none; border-radius: 8px; background: transparent; color: #666; cursor: pointer; text-align: center; white-space: nowrap; }
 .tab.active { background: #fff; color: #1a1a1a; box-shadow: 0 1px 3px rgba(0,0,0,0.13); }
-.section { display: none; } .section.active { display: block; }
+.section { display: none; }
+.section.active { display: block; }
 
-/* STATISTIK */
+/* ── Statistik-Leiste ── */
 .stat-bar { display: flex; gap: 7px; margin-bottom: 14px; }
 .stat-box { flex: 1; background: #fff; border-radius: 10px; padding: 9px 5px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.07); }
 .stat-box .val { font-size: 21px; font-weight: 700; }
 .stat-box .lbl { font-size: 10px; color: #999; margin-top: 2px; text-transform: uppercase; letter-spacing: 0.04em; }
-.stat-box.sieg .val { color: #1D9E75; } .stat-box.unent .val { color: #EF9F27; } .stat-box.nied .val { color: #E24B4A; } .stat-box.spiele .val { color: #888; }
+.stat-box.spiele .val { color: #555; }
+.stat-box.sieg .val { color: #1D9E75; }
+.stat-box.unent .val { color: #EF9F27; }
+.stat-box.nied .val { color: #E24B4A; }
 
-/* MATCH CARDS */
-.match-card { background: #fff; border-radius: 11px; padding: 10px 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.07); margin-bottom: 8px; border-left: 4px solid #ddd; }
-.match-card.sieg { border-left-color: #1D9E75; } .match-card.niederlage { border-left-color: #E24B4A; } .match-card.unentschieden { border-left-color: #EF9F27; }
+/* ── Abschnitts-Label ── */
+.section-label { font-size: 11px; font-weight: 700; color: #888; text-transform: uppercase; letter-spacing: 0.07em; margin: 14px 0 7px; }
+
+/* ── Turniertag-Header ── */
+.turniertag-header { display: flex; justify-content: space-between; align-items: center; margin: 18px 0 7px; padding: 0 2px; }
+.td-date { font-size: 13px; font-weight: 700; color: #1a1a1a; }
+.td-badge { font-size: 10px; color: #888; background: #e8e8e3; padding: 2px 9px; border-radius: 20px; white-space: nowrap; }
+
+/* ── Match Cards ── */
+.match-card { background: #fff; border-radius: 11px; padding: 10px 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.07); margin-bottom: 6px; border-left: 4px solid #ddd; }
+.match-card.sieg { border-left-color: #1D9E75; }
+.match-card.niederlage { border-left-color: #E24B4A; }
+.match-card.unentschieden { border-left-color: #EF9F27; }
 .match-row { display: flex; align-items: center; gap: 6px; }
-.team-name { flex: 1; font-size: 13px; line-height: 1.3; } .team-name.right { text-align: right; } .team-name.bold { font-weight: 700; }
+.team-name { flex: 1; font-size: 13px; line-height: 1.3; }
+.team-name.right { text-align: right; }
+.team-name.bold { font-weight: 700; }
 .score { font-size: 16px; font-weight: 700; min-width: 52px; text-align: center; padding: 3px 6px; background: #f0f0ea; border-radius: 7px; white-space: nowrap; }
-.match-meta { display: flex; justify-content: space-between; flex-wrap: wrap; margin-top: 7px; padding-top: 7px; border-top: 1px solid #f0f0ea; font-size: 11px; color: #bbb; gap: 4px; }
-.date-chip { background: #f0f0ea; border-radius: 5px; padding: 2px 7px; font-size: 11px; font-weight: 600; color: #666; }
+.match-meta { display: flex; justify-content: space-between; flex-wrap: wrap; margin-top: 7px; padding-top: 7px; border-top: 1px solid #f0f0ea; font-size: 11px; color: #bbb; gap: 4px; align-items: center; }
 .fp-val { font-weight: 600; color: #888; }
 .result-badge { font-size: 10px; font-weight: 700; padding: 2px 6px; border-radius: 4px; text-transform: uppercase; }
-.result-badge.sieg { background: #e6f7f1; color: #1D9E75; } .result-badge.niederlage { background: #fdeaea; color: #E24B4A; } .result-badge.unentschieden { background: #fef4e6; color: #EF9F27; }
+.result-badge.sieg { background: #e6f7f1; color: #1D9E75; }
+.result-badge.niederlage { background: #fdeaea; color: #E24B4A; }
+.result-badge.unentschieden { background: #fef4e6; color: #EF9F27; }
 
-/* NEXT CARDS */
-.section-label { font-size: 11px; font-weight: 700; color: #888; text-transform: uppercase; letter-spacing: 0.07em; margin: 14px 0 7px; }
-.next-card { background: #fff; border-radius: 11px; padding: 12px 14px; box-shadow: 0 1px 3px rgba(0,0,0,0.07); margin-bottom: 8px; border-left: 4px solid #bbb; }
-.next-card.cup-event { border-left-color: #8B5CF6; }
-.next-date-row { display: flex; align-items: center; gap: 7px; margin-bottom: 6px; }
-.next-day { font-size: 24px; font-weight: 800; color: #1a1a1a; line-height: 1; min-width: 32px; }
+/* ── Kommende Spiele ── */
+.next-card { background: #fff; border-radius: 11px; padding: 13px 14px; box-shadow: 0 1px 3px rgba(0,0,0,0.07); margin-bottom: 8px; border-left: 4px solid #3B82F6; }
+.next-date-row { display: flex; align-items: center; gap: 9px; margin-bottom: 10px; }
+.next-day { font-size: 26px; font-weight: 800; color: #1a1a1a; line-height: 1; min-width: 34px; }
 .next-month-year { display: flex; flex-direction: column; }
 .next-month { font-size: 12px; font-weight: 700; color: #555; text-transform: uppercase; letter-spacing: 0.03em; }
 .next-weekday { font-size: 11px; color: #bbb; margin-top: 1px; }
-.next-time { margin-left: auto; font-size: 14px; font-weight: 700; color: #1a1a1a; background: #f0f0ea; padding: 4px 10px; border-radius: 7px; }
-.next-teams { font-size: 14px; font-weight: 600; margin-bottom: 5px; }
-.next-teams span { color: #1D9E75; }
-.next-info { font-size: 12px; color: #888; }
-.next-info strong { color: #555; }
-.cup-badge { display: inline-block; font-size: 10px; font-weight: 700; padding: 2px 7px; border-radius: 4px; background: #ede9fe; color: #8B5CF6; margin-bottom: 6px; }
+.next-game-list { display: flex; flex-direction: column; gap: 2px; }
+.next-game-row { display: flex; align-items: center; gap: 8px; padding: 5px 0; border-top: 1px solid #f5f5f0; font-size: 12px; }
+.next-game-row:first-child { border-top: none; }
+.next-game-time { font-size: 11px; color: #bbb; min-width: 38px; flex-shrink: 0; }
+.next-game-teams { flex: 1; color: #333; }
+.next-game-teams b { color: #1a1a1a; }
 
-/* TABELLE */
+/* ── Leerer Zustand ── */
+.empty-card { background: #fff; border-radius: 11px; padding: 22px 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.07); margin-bottom: 8px; text-align: center; }
+.empty-icon { font-size: 28px; margin-bottom: 8px; }
+.empty-title { font-size: 14px; font-weight: 600; color: #555; margin-bottom: 5px; }
+.empty-sub { font-size: 12px; color: #aaa; line-height: 1.6; }
+
+/* ── Tabelle ── */
 .table-outer { background: #fff; border-radius: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); overflow: hidden; margin-bottom: 10px; }
 .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
 .scroll-hint { font-size: 10px; color: #bbb; text-align: right; padding: 4px 8px 0; }
@@ -71,119 +96,367 @@ tbody td.col-team { text-align: left; position: sticky; left: 0; z-index: 1; bac
 .team-label { font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 105px; display: block; }
 .team-label.me { font-weight: 700; color: #1a1a1a; }
 .pkt { font-weight: 700; }
-.diff-pos { color: #1D9E75; } .diff-neg { color: #E24B4A; }
+.diff-pos { color: #1D9E75; }
+.diff-neg { color: #E24B4A; }
 .legend { display: flex; gap: 10px; margin-top: 8px; flex-wrap: wrap; padding-bottom: 4px; }
 .legend-item { display: flex; align-items: center; gap: 5px; font-size: 11px; color: #888; }
 .legend-dot { width: 8px; height: 8px; border-radius: 2px; flex-shrink: 0; }
 
-/* SCHIRI */
+/* ── Schiri ── */
 .schiri-card { background: #fff; border-radius: 11px; padding: 11px 13px; box-shadow: 0 1px 3px rgba(0,0,0,0.07); margin-bottom: 8px; display: flex; align-items: center; gap: 10px; }
 .schiri-icon { width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 17px; flex-shrink: 0; }
-.schiri-icon.erledigt { background: #e6f7f1; } .schiri-icon.ausstehend { background: #fef4e6; }
-.schiri-info { flex: 1; }
-.schiri-game { font-size: 13px; font-weight: 600; line-height: 1.3; }
+.schiri-icon.erledigt { background: #e6f7f1; }
+.schiri-icon.ausstehend { background: #fef4e6; }
+.schiri-info { flex: 1; min-width: 0; }
+.schiri-game { font-size: 13px; font-weight: 600; line-height: 1.3; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .schiri-date { font-size: 11px; color: #bbb; margin-top: 2px; }
 .schiri-badge { font-size: 10px; font-weight: 700; padding: 3px 8px; border-radius: 5px; text-transform: uppercase; flex-shrink: 0; }
-.schiri-badge.erledigt { background: #e6f7f1; color: #1D9E75; } .schiri-badge.ausstehend { background: #fef4e6; color: #EF9F27; }
+.schiri-badge.erledigt { background: #e6f7f1; color: #1D9E75; }
+.schiri-badge.ausstehend { background: #fef4e6; color: #EF9F27; }
 
+/* ── Misc ── */
 .loading { text-align: center; padding: 30px; color: #bbb; font-size: 13px; }
-.update-info { text-align: center; font-size: 11px; color: #bbb; margin-top: 14px; padding-bottom: 8px; }
+.update-info { text-align: center; font-size: 11px; color: #bbb; margin-top: 14px; padding-bottom: 10px; }
+.live-dot { display: inline-block; width: 6px; height: 6px; background: #1D9E75; border-radius: 50%; margin-right: 5px; vertical-align: middle; animation: blink 2s ease-in-out infinite; }
+@keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.2; } }
 </style>
 </head>
 <body>
+
 <div class="header">
   <img src="https://foul.ch/assets/teams/paerkli-boys-united/_logo/pbu_foul.png" alt="Pärkli Boys United">
   <h1>Pärkli Boys United</h1>
-  <p>Saison 2025/26 · Liga Giele 1</p>
+  <p id="saison-label">Saison … · Liga Giele 1</p>
 </div>
+
 <div class="tabs">
   <button class="tab active" onclick="showTab('saison',this)">Saison</button>
   <button class="tab" onclick="showTab('tabelle',this)">Tabelle</button>
   <button class="tab" onclick="showTab('schiri',this)">Schiri</button>
 </div>
-<div id="saison" class="section active"><div class="loading">⏳ Lade Daten...</div></div>
-<div id="tabelle" class="section"><div class="loading">⏳ Lade Daten...</div></div>
-<div id="schiri" class="section"><div class="loading">⏳ Lade Daten...</div></div>
+
+<div id="saison" class="section active"><div class="loading">⏳ Lade Daten…</div></div>
+<div id="tabelle" class="section"><div class="loading">⏳ Lade Daten…</div></div>
+<div id="schiri" class="section"><div class="loading">⏳ Lade Daten…</div></div>
+
 <div class="update-info" id="update-info"></div>
 
 <script>
+// ═══════════════════════════════════════════════════════════════════════════
+// SAISONLOGIK – neue Saison beginnt jedes Jahr am 31. Juli
+// ═══════════════════════════════════════════════════════════════════════════
+function getSaison() {
+  const now = new Date();
+  const y = now.getFullYear();
+  return now >= new Date(y, 6, 31)
+    ? `${y}/${String(y + 1).slice(-2)}`
+    : `${y - 1}/${String(y).slice(-2)}`;
+}
+document.getElementById('saison-label').textContent = `Saison ${getSaison()} · Liga Giele 1`;
+
+// ═══════════════════════════════════════════════════════════════════════════
+// DATUM-HELFER
+// ═══════════════════════════════════════════════════════════════════════════
+const WD  = ['So','Mo','Di','Mi','Do','Fr','Sa'];
+const MON = ['Januar','Februar','März','April','Mai','Juni','Juli','August','September','Oktober','November','Dezember'];
+const MON_K = ['Jan','Feb','Mär','Apr','Mai','Jun','Jul','Aug','Sep','Okt','Nov','Dez'];
+
+// Datum-String → Date-Objekt (Mittag, damit Zeitzonen keine Rolle spielen)
+function pd(s) { return new Date(s + 'T12:00:00'); }
+
+function chipDate(s) {
+  const d = pd(s);
+  return `${WD[d.getDay()]} · ${d.getDate()}. ${MON_K[d.getMonth()]} ${d.getFullYear()}`;
+}
+function longDate(s) {
+  const d = pd(s);
+  return `${WD[d.getDay()]}, ${d.getDate()}. ${MON[d.getMonth()]} ${d.getFullYear()}`;
+}
+function dateBlock(s) {
+  const d = pd(s);
+  return `<div class="next-date-row">
+    <div class="next-day">${d.getDate()}</div>
+    <div class="next-month-year">
+      <span class="next-month">${MON[d.getMonth()]} ${d.getFullYear()}</span>
+      <span class="next-weekday">${WD[d.getDay()]}</span>
+    </div>
+  </div>`;
+}
+
+// ═══════════════════════════════════════════════════════════════════════════
+// TABS
+// ═══════════════════════════════════════════════════════════════════════════
 function showTab(id, el) {
   document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
   document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
   document.getElementById(id).classList.add('active');
   el.classList.add('active');
 }
-const WD = ['So','Mo','Di','Mi','Do','Fr','Sa'];
-const MON = ['Januar','Februar','März','April','Mai','Juni','Juli','August','September','Oktober','November','Dezember'];
-const MON_K = ['Jan','Feb','Mär','Apr','Mai','Jun','Jul','Aug','Sep','Okt','Nov','Dez'];
-function pd(s){return new Date(s+'T12:00:00');}
-function chip(s){const d=pd(s);return WD[d.getDay()]+' · '+d.getDate()+'. '+MON_K[d.getMonth()]+' '+d.getFullYear();}
-function dateBlock(s,z){const d=pd(s);return '<div class="next-date-row"><div class="next-day">'+d.getDate()+'</div><div class="next-month-year"><span class="next-month">'+MON[d.getMonth()]+' '+d.getFullYear()+'</span><span class="next-weekday">'+WD[d.getDay()]+'</span></div><div class="next-time">'+z+'</div></div>';}
-function getRes(s){const t=s.tore.trim();if(!t||t===':'||!t.includes(':'))return'ausstehend';const p=t.split(':').map(x=>parseInt(x.trim()));if(isNaN(p[0])||isNaN(p[1]))return'ausstehend';const pg=s.gast.includes('Pärkli');const pT=pg?p[1]:p[0];const gT=pg?p[0]:p[1];if(pT>gT)return'sieg';if(pT<gT)return'niederlage';return'unentschieden';}
-function rLbl(r){return{sieg:'Sieg',niederlage:'Niederlage',unentschieden:'Unent.'}[r]||'';}
 
-function renderSaison(spiele) {
-  const vg = spiele.filter(s=>getRes(s)!=='ausstehend').sort((a,b)=>b.date.localeCompare(a.date));
-  const km = spiele.filter(s=>getRes(s)==='ausstehend').sort((a,b)=>a.date.localeCompare(b.date));
-  let si=0,ni=0,un=0; vg.forEach(s=>{const r=getRes(s);if(r==='sieg')si++;else if(r==='niederlage')ni++;else un++;});
-  let h='<div class="stat-bar"><div class="stat-box spiele"><div class="val">'+vg.length+'</div><div class="lbl">Spiele</div></div><div class="stat-box sieg"><div class="val">'+si+'</div><div class="lbl">Siege</div></div><div class="stat-box unent"><div class="val">'+un+'</div><div class="lbl">Unent.</div></div><div class="stat-box nied"><div class="val">'+ni+'</div><div class="lbl">Niederl.</div></div></div>';
-  h+='<div class="section-label">📅 Kommende Spiele</div>';
-  const CUP='2026-05-23';
-  let cards=km.map(s=>{const ph=s.heim.includes('Pärkli');const g=(ph?s.gast:s.heim).replace(' Chilefäud','');const mu=ph?'<span>Pärkli Boys United</span> vs '+g:g+' vs <span>Pärkli Boys United</span>';return{date:s.date,html:'<div class="next-card">'+dateBlock(s.date,s.zeit)+'<div class="next-teams">'+mu+'</div><div class="next-info"><strong>Schiri:</strong> '+s.schiri+'</div></div>'};});
-  cards.push({date:CUP,html:'<div class="next-card cup-event">'+dateBlock(CUP,'08:00')+'<div class="cup-badge">🏆 Cup-Tagesturnier</div><div class="next-teams"><span>Pärkli Boys United</span></div><div class="next-info">Ganztages-Event · bis ca. 16:00</div></div>'});
-  cards.sort((a,b)=>a.date.localeCompare(b.date));
-  cards.forEach(c=>{h+=c.html;});
-  h+='<div class="section-label">📊 Saisonresultate</div>';
-  vg.forEach(s=>{const r=getRes(s);const ph=s.heim.includes('Pärkli');const g=(ph?s.gast:s.heim).replace(' Chilefäud','');const fp=s.fp.trim().replace(/s+/g,'');h+='<div class="match-card '+r+'"><div class="match-row"><span class="team-name right'+(ph?' bold':'')+'">'+( ph?'Pärkli Boys':g)+'</span><span class="score">'+s.tore.trim()+'</span><span class="team-name'+(!ph?' bold':'')+'">'+( ph?g:'Pärkli Boys')+'</span></div><div class="match-meta"><span class="date-chip">'+chip(s.date)+'</span>'+(fp&&fp!==':'?'<span>FP: <span class="fp-val">'+fp+'</span></span>':'')+'<span>Schiri: '+s.schiri+'</span><span class="result-badge '+r+'">'+rLbl(r)+'</span></div></div>';});
-  document.getElementById('saison').innerHTML=h;
+// ═══════════════════════════════════════════════════════════════════════════
+// RESULTAT-LOGIK
+// ═══════════════════════════════════════════════════════════════════════════
+function getRes(s) {
+  const t = (s.tore || '').trim();
+  if (!t || t === ':' || !t.includes(':')) return 'ausstehend';
+  const p = t.split(':').map(x => parseInt(x.trim()));
+  if (isNaN(p[0]) || isNaN(p[1])) return 'ausstehend';
+  const isPG = !!(s.gast && s.gast.includes('Pärkli'));
+  const pPkt = isPG ? p[1] : p[0];
+  const gPkt = isPG ? p[0] : p[1];
+  if (pPkt > gPkt) return 'sieg';
+  if (pPkt < gPkt) return 'niederlage';
+  return 'unentschieden';
+}
+function rLbl(r) {
+  return { sieg: 'Sieg', niederlage: 'Niederlage', unentschieden: 'Unent.' }[r] || '';
 }
 
-function renderTabelle(liga1) {
-  // Zone: 1=Aufstieg, 9=Barrage, 10=Abstieg
-  function zoneClass(rang){if(rang===1)return'zone-up';if(rang===9)return'zone-bar';if(rang===10)return'zone-down';return'';}
-  let h='<div class="section-label">🏆 Liga Giele 1 – Tabelle</div>';
-  h+='<div class="table-outer"><div class="scroll-hint">← wischen →</div><div class="table-scroll"><table><thead><tr><th class="col-team">Team</th><th>SP</th><th>S</th><th>N</th><th>U</th><th>G+</th><th>G-</th><th>+/-</th><th>FP</th><th>PKT</th></tr></thead><tbody>';
-  liga1.forEach(row=>{
-    const me=row.team.includes('Pärkli');
-    const diff=parseInt(row.diff);
-    const diffClass=diff>0?'diff-pos':diff<0?'diff-neg':'';
-    const zc=zoneClass(row.rang)+(me?' zone-me':'');
-    h+='<tr class="'+zc+'"><td class="col-team"><div class="row-inner"><span class="rank">'+row.rang+'</span><span class="team-label'+(me?' me':'')+'">'+row.team+'</span></div></td><td>'+row.sp+'</td><td>'+row.s+'</td><td>'+row.n+'</td><td>'+row.u+'</td><td>'+row.gplus+'</td><td>'+row.gminus+'</td><td class="'+diffClass+'">'+row.diff+'</td><td>'+row.fp+'</td><td class="pkt">'+row.pkt+'</td></tr>';
+// Hilfsfunktion: Spiele nach Datum gruppieren
+function groupByDate(arr) {
+  const map = {};
+  arr.forEach(s => {
+    if (!map[s.date]) map[s.date] = [];
+    map[s.date].push(s);
   });
-  h+='</tbody></table></div></div>';
-  h+='<div class="legend"><div class="legend-item"><div class="legend-dot" style="background:#3B82F6"></div>Pärkli Boys</div><div class="legend-item"><div class="legend-dot" style="background:#1D9E75"></div>Aufstieg</div><div class="legend-item"><div class="legend-dot" style="background:#EF9F27"></div>Barrage</div><div class="legend-item"><div class="legend-dot" style="background:#E24B4A"></div>Abstieg</div></div>';
-  document.getElementById('tabelle').innerHTML=h;
+  return map;
 }
 
-function renderSchiri(dienste) {
-  const heute=new Date().toISOString().split('T')[0];
-  const hatRes=d=>{const t=(d.tore||'').trim();return t&&t!==':'&&t.includes(':')&&t!==': ';};
-  const aus=dienste.filter(d=>d.date>heute||(d.date===heute&&!hatRes(d))).sort((a,b)=>a.date.localeCompare(b.date));
-  const erl=dienste.filter(d=>d.date<heute||(d.date===heute&&hatRes(d))).sort((a,b)=>b.date.localeCompare(a.date));
-  let h='';
-  if(aus.length){h+='<div class="section-label">⏳ Ausstehend</div>';aus.forEach(d=>{h+='<div class="schiri-card"><div class="schiri-icon ausstehend">🟡</div><div class="schiri-info"><div class="schiri-game">'+d.heim+' vs '+d.gast+'</div><div class="schiri-date">'+chip(d.date)+' · '+d.zeit+'</div></div><div class="schiri-badge ausstehend">Ausstehend</div></div>';});}
-  if(erl.length){h+='<div class="section-label" style="margin-top:18px">✅ Erledigt</div>';erl.forEach(d=>{const t=d.tore.trim();const res=t&&t!==':'?' · Resultat: '+t:'';h+='<div class="schiri-card"><div class="schiri-icon erledigt">✅</div><div class="schiri-info"><div class="schiri-game">'+d.heim+' vs '+d.gast+'</div><div class="schiri-date">'+chip(d.date)+' · '+d.zeit+res+'</div></div><div class="schiri-badge erledigt">Erledigt</div></div>';});}
-  document.getElementById('schiri').innerHTML=h||'<div class="loading">Keine Einträge.</div>';
+// ═══════════════════════════════════════════════════════════════════════════
+// SAISON-TAB
+// ═══════════════════════════════════════════════════════════════════════════
+function renderSaison(spiele) {
+  const gespielt = spiele.filter(s => getRes(s) !== 'ausstehend');
+  const kommend  = spiele.filter(s => getRes(s) === 'ausstehend')
+                         .sort((a, b) => a.date.localeCompare(b.date));
+
+  // Statistik
+  let si = 0, ni = 0, un = 0;
+  gespielt.forEach(s => {
+    const r = getRes(s);
+    if (r === 'sieg') si++;
+    else if (r === 'niederlage') ni++;
+    else un++;
+  });
+
+  let h = `<div class="stat-bar">
+    <div class="stat-box spiele"><div class="val">${gespielt.length}</div><div class="lbl">Spiele</div></div>
+    <div class="stat-box sieg"><div class="val">${si}</div><div class="lbl">Siege</div></div>
+    <div class="stat-box unent"><div class="val">${un}</div><div class="lbl">Unent.</div></div>
+    <div class="stat-box nied"><div class="val">${ni}</div><div class="lbl">Niederl.</div></div>
+  </div>`;
+
+  // ── Kommende Spiele ──────────────────────────────────────────────────────
+  h += '<div class="section-label">📅 Kommende Spiele</div>';
+
+  if (kommend.length > 0) {
+    const byDate = groupByDate(kommend);
+    Object.keys(byDate).sort().forEach(date => {
+      const games = byDate[date];
+      h += `<div class="next-card">
+        ${dateBlock(date)}
+        <div class="next-game-list">`;
+      games.forEach(s => {
+        const ph = !!(s.heim && s.heim.includes('Pärkli'));
+        const gegner = ((ph ? s.gast : s.heim) || '?').replace(' Chilefäud', '');
+        h += `<div class="next-game-row">
+          <span class="next-game-time">${s.zeit || '–'}</span>
+          <span class="next-game-teams">${ph
+            ? `<b>Pärkli Boys</b> vs ${gegner}`
+            : `${gegner} vs <b>Pärkli Boys</b>`}</span>
+        </div>`;
+      });
+      h += '</div></div>';
+    });
+  } else {
+    h += `<div class="empty-card">
+      <div class="empty-icon">📭</div>
+      <div class="empty-title">Keine geplanten Spiele</div>
+      <div class="empty-sub">Sobald Spiele auf foul.ch eingetragen werden,<br>erscheinen sie hier automatisch.</div>
+    </div>`;
+  }
+
+  // ── Saisonresultate (nach Turniertag gruppiert) ──────────────────────────
+  if (gespielt.length > 0) {
+    h += '<div class="section-label">📊 Saisonresultate</div>';
+
+    const byDate = groupByDate(gespielt);
+
+    // Neueste Turniertage zuerst
+    Object.keys(byDate).sort().reverse().forEach(date => {
+      const games = byDate[date];
+      let ds = 0, dn = 0, dd = 0;
+      games.forEach(g => {
+        const r = getRes(g);
+        if (r === 'sieg') ds++;
+        else if (r === 'niederlage') dn++;
+        else dd++;
+      });
+
+      h += `<div class="turniertag-header">
+        <span class="td-date">${longDate(date)}</span>
+        <span class="td-badge">${games.length} Sp · ${ds}S ${dn}N ${dd}U</span>
+      </div>`;
+
+      games.forEach(s => {
+        const r   = getRes(s);
+        const ph  = !!(s.heim && s.heim.includes('Pärkli'));
+        const opp = ((ph ? s.gast : s.heim) || '?').replace(' Chilefäud', '');
+        const fp  = (s.fp || '').trim();
+
+        h += `<div class="match-card ${r}">
+          <div class="match-row">
+            <span class="team-name right${ph ? ' bold' : ''}">${ph ? 'Pärkli Boys' : opp}</span>
+            <span class="score">${s.tore.trim()}</span>
+            <span class="team-name${!ph ? ' bold' : ''}">${ph ? opp : 'Pärkli Boys'}</span>
+          </div>
+          <div class="match-meta">
+            ${s.zeit ? `<span>⏰ ${s.zeit}</span>` : ''}
+            ${fp && fp !== ':' ? `<span>FP: <span class="fp-val">${fp}</span></span>` : ''}
+            ${s.schiri ? `<span>Schiri: ${s.schiri}</span>` : ''}
+            <span class="result-badge ${r}">${rLbl(r)}</span>
+          </div>
+        </div>`;
+      });
+    });
+  }
+
+  document.getElementById('saison').innerHTML = h;
 }
+
+// ═══════════════════════════════════════════════════════════════════════════
+// TABELLE-TAB (unverändert übernommen)
+// ═══════════════════════════════════════════════════════════════════════════
+function renderTabelle(liga1) {
+  function zoneClass(rang) {
+    if (rang === 1) return 'zone-up';
+    if (rang === 9) return 'zone-bar';
+    if (rang === 10) return 'zone-down';
+    return '';
+  }
+  let h = '<div class="section-label">🏆 Liga Giele 1 – Tabelle</div>';
+  h += '<div class="table-outer"><div class="scroll-hint">← wischen →</div><div class="table-scroll"><table><thead><tr>';
+  h += '<th class="col-team">Team</th><th>SP</th><th>S</th><th>N</th><th>U</th><th>G+</th><th>G-</th><th>+/-</th><th>FP</th><th>PKT</th>';
+  h += '</tr></thead><tbody>';
+  liga1.forEach(row => {
+    const me   = row.team.includes('Pärkli');
+    const diff = parseInt(row.diff);
+    const dc   = diff > 0 ? 'diff-pos' : diff < 0 ? 'diff-neg' : '';
+    const zc   = zoneClass(row.rang) + (me ? ' zone-me' : '');
+    h += `<tr class="${zc}">
+      <td class="col-team"><div class="row-inner">
+        <span class="rank">${row.rang}</span>
+        <span class="team-label${me ? ' me' : ''}">${row.team}</span>
+      </div></td>
+      <td>${row.sp}</td><td>${row.s}</td><td>${row.n}</td><td>${row.u}</td>
+      <td>${row.gplus}</td><td>${row.gminus}</td>
+      <td class="${dc}">${row.diff}</td>
+      <td>${row.fp}</td><td class="pkt">${row.pkt}</td>
+    </tr>`;
+  });
+  h += '</tbody></table></div></div>';
+  h += `<div class="legend">
+    <div class="legend-item"><div class="legend-dot" style="background:#3B82F6"></div>Pärkli Boys</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#1D9E75"></div>Aufstieg</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#EF9F27"></div>Barrage</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#E24B4A"></div>Abstieg</div>
+  </div>`;
+  document.getElementById('tabelle').innerHTML = h;
+}
+
+// ═══════════════════════════════════════════════════════════════════════════
+// SCHIRI-TAB
+// ═══════════════════════════════════════════════════════════════════════════
+function renderSchiri(dienste) {
+  const heute  = new Date().toISOString().split('T')[0];
+  const hatRes = d => {
+    const t = (d.tore || '').trim();
+    return t && t !== ':' && t.includes(':');
+  };
+
+  // Ausstehend = Datum in der Zukunft, ODER heute ohne Resultat
+  const ausstehend = dienste
+    .filter(d => d.date > heute || (d.date === heute && !hatRes(d)))
+    .sort((a, b) => a.date.localeCompare(b.date));
+
+  // Erledigt = Datum in der Vergangenheit, ODER heute mit Resultat
+  const erledigt = dienste
+    .filter(d => d.date < heute || (d.date === heute && hatRes(d)))
+    .sort((a, b) => b.date.localeCompare(a.date));
+
+  let h = '';
+
+  if (ausstehend.length) {
+    h += '<div class="section-label">⏳ Ausstehend</div>';
+    ausstehend.forEach(d => {
+      const heim = d.heim || '?';
+      const gast = d.gast || '?';
+      h += `<div class="schiri-card">
+        <div class="schiri-icon ausstehend">🟡</div>
+        <div class="schiri-info">
+          <div class="schiri-game">${heim} vs ${gast}</div>
+          <div class="schiri-date">${chipDate(d.date)} · ${d.zeit || '–'}</div>
+        </div>
+        <div class="schiri-badge ausstehend">Ausstehend</div>
+      </div>`;
+    });
+  }
+
+  if (erledigt.length) {
+    h += '<div class="section-label" style="margin-top:18px">✅ Erledigt</div>';
+    erledigt.forEach(d => {
+      const heim = d.heim || '?';
+      const gast = d.gast || '?';
+      const res  = hatRes(d) ? ` · ${d.tore}` : '';
+      h += `<div class="schiri-card">
+        <div class="schiri-icon erledigt">✅</div>
+        <div class="schiri-info">
+          <div class="schiri-game">${heim} vs ${gast}</div>
+          <div class="schiri-date">${chipDate(d.date)} · ${d.zeit || '–'}${res}</div>
+        </div>
+        <div class="schiri-badge erledigt">Erledigt</div>
+      </div>`;
+    });
+  }
+
+  if (!ausstehend.length && !erledigt.length) {
+    h = '<div class="loading">Keine Schiri-Einsätze vorhanden.</div>';
+  }
+
+  document.getElementById('schiri').innerHTML = h;
+}
+
+// ═══════════════════════════════════════════════════════════════════════════
+// DATEN LADEN – stündliche Aktualisierung
+// ═══════════════════════════════════════════════════════════════════════════
+const BASE = 'https://casablancaleonardo-ctrl.github.io/foul-liga/';
 
 async function loadData() {
   try {
+    const ts = Date.now();
     const [pResp, tResp] = await Promise.all([
-      fetch('https://casablancaleonardo-ctrl.github.io/foul-liga/data-paerkli.json?v='+Date.now()),
-      fetch('https://casablancaleonardo-ctrl.github.io/foul-liga/data-tabelle.json?v='+Date.now())
+      fetch(`${BASE}data-paerkli.json?v=${ts}`),
+      fetch(`${BASE}data-tabelle.json?v=${ts}`)
     ]);
     const p = await pResp.json();
     const t = await tResp.json();
-    renderSaison(p.spiele);
-    renderTabelle(t.liga1);
-    renderSchiri(p.schiri);
-    const d=new Date(p.updated);
-    document.getElementById('update-info').textContent='Stand: '+d.toLocaleString('de-CH');
-  } catch(e) {
-    document.getElementById('saison').innerHTML='<div class="loading">⚠️ Fehler: '+e.message+'</div>';
+
+    renderSaison(p.spiele  || []);
+    renderTabelle(t.liga1  || []);
+    renderSchiri(p.schiri  || []);
+
+    const upd = new Date(p.updated);
+    document.getElementById('update-info').innerHTML =
+      `<span class="live-dot"></span>Stand: ${upd.toLocaleString('de-CH')} · stündlich aktualisiert`;
+  } catch (e) {
+    document.getElementById('saison').innerHTML =
+      `<div class="loading">⚠️ Fehler beim Laden: ${e.message}</div>`;
   }
 }
+
+// Sofort laden + danach jede Stunde automatisch
 loadData();
+setInterval(loadData, 60 * 60 * 1000);
 </script>
 </body>
 </html>
