@@ -273,7 +273,7 @@ function renderSaison(spiele) {
           <div style="display:inline-block;font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;background:#ede9fe;color:#8B5CF6;margin-bottom:6px">🏆 Cup-Tagesturnier</div>
           <div class="next-game-list">
             <div class="next-game-row" style="border:none">
-              <span class="next-game-time">08:00</span>
+              <span class="zeit-chip">08:00</span>
               <span class="next-game-teams"><b>Pärkli Boys United</b> · Ganztages-Event bis ca. 16:00</span>
             </div>
           </div>
@@ -286,7 +286,7 @@ function renderSaison(spiele) {
           h += `<div class="next-card">
             ${dateBlock(date)}
             <div class="next-game-list"><div class="next-game-row" style="border:none">
-              <span class="next-game-time">${s.zeit || '–'}</span>
+              <span class="zeit-chip">${s.zeit || '–'}</span>
               <span class="next-game-teams">${ph ? `<b>Pärkli Boys</b> vs ${gegner}` : `${gegner} vs <b>Pärkli Boys</b>`}</span>
             </div></div>
           </div>`;
@@ -299,7 +299,7 @@ function renderSaison(spiele) {
           const ph = !!(s.heim && s.heim.includes('Pärkli'));
           const gegner = ((ph ? s.gast : s.heim) || '?').replace(' Chilefäud', '');
           h += `<div class="next-game-row">
-            <span class="next-game-time">${s.zeit || '–'}</span>
+            <span class="zeit-chip">${s.zeit || '–'}</span>
             <span class="next-game-teams">${ph
               ? `<b>Pärkli Boys</b> vs ${gegner}`
               : `${gegner} vs <b>Pärkli Boys</b>`}</span>
