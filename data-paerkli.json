@@ -1,16 +1,7 @@
 {
   "spiele": [
     {
-      "date": "2026-05-03",
-      "zeit": "09:00",
-      "heim": "Dynamo Chop",
-      "gast": "Pärkli Boys United",
-      "tore": "0 : 5",
-      "fp": "5 : 5",
-      "schiri": "West Bärn United"
-    },
-    {
-      "date": "2026-05-03",
+      "date": "2025-08-17",
       "zeit": "11:00",
       "heim": "Pärkli Boys United",
       "gast": "Deportivo Gordo Cojones",
@@ -19,16 +10,7 @@
       "schiri": "Spartak Bern FC"
     },
     {
-      "date": "2026-05-03",
-      "zeit": "11:00",
-      "heim": "Pärkli Boys United",
-      "gast": "AC Diva",
-      "tore": "10 : 2",
-      "fp": "5 : 5",
-      "schiri": "West Bärn United"
-    },
-    {
-      "date": "2026-05-03",
+      "date": "2025-08-24",
       "zeit": "13:00",
       "heim": "Obstberg United",
       "gast": "Pärkli Boys United",
@@ -37,16 +19,7 @@
       "schiri": "West Bärn United"
     },
     {
-      "date": "2026-05-03",
-      "zeit": "13:00",
-      "heim": "Sunnesite Allstars Chilefäud",
-      "gast": "Pärkli Boys United",
-      "tore": "3 : 4",
-      "fp": "5 : 5",
-      "schiri": "West Bärn United"
-    },
-    {
-      "date": "2026-05-03",
+      "date": "2025-09-28",
       "zeit": "13:00",
       "heim": "International Football Club of Berne",
       "gast": "Pärkli Boys United",
@@ -55,44 +28,89 @@
       "schiri": "Olympique Troissept"
     },
     {
-      "date": "2026-05-03",
+      "date": "2025-10-19",
+      "zeit": "09:00",
+      "heim": "Dynamo Chop",
+      "gast": "Pärkli Boys United",
+      "tore": "0 : 5",
+      "fp": "5 : 5",
+      "schiri": "West Bärn United"
+    },
+    {
+      "date": "2025-10-26",
+      "zeit": "13:00",
+      "heim": "Sunnesite Allstars Chilefäud",
+      "gast": "Pärkli Boys United",
+      "tore": "3 : 4",
+      "fp": "5 : 5",
+      "schiri": "West Bärn United"
+    },
+    {
+      "date": "2026-04-26",
+      "zeit": "11:00",
+      "heim": "Pärkli Boys United",
+      "gast": "AC Diva",
+      "tore": "10 : 2",
+      "fp": "5 : 5",
+      "schiri": "West Bärn United"
+    },
+    {
+      "date": "2026-05-02",
       "zeit": "13:00",
       "heim": "Pärkli Boys United",
       "gast": "Roter Stern Bollwerk",
       "tore": "3 : 1",
       "fp": "5 : 5",
       "schiri": "5ème Etage"
+    },
+    {
+      "date": "2026-05-17",
+      "zeit": "11:00",
+      "heim": "Pärkli Boys United",
+      "gast": "Energie Bitzius",
+      "tore": ":",
+      "fp": ":",
+      "schiri": "5ème Etage"
+    },
+    {
+      "date": "2026-06-21",
+      "zeit": "15:00",
+      "heim": "SpVgg Lokomotive",
+      "gast": "Pärkli Boys United",
+      "tore": ":",
+      "fp": ":",
+      "schiri": "5ème Etage"
     }
   ],
   "schiri": [
     {
-      "date": "2026-05-03",
+      "date": "2025-08-17",
       "zeit": "09:00",
       "heim": "West Bärn United",
       "gast": "Spartak Bern FC",
       "tore": "1 : 11"
     },
     {
-      "date": "2026-05-03",
+      "date": "2025-09-28",
+      "zeit": "15:00",
+      "heim": "Spartak Bern FC",
+      "gast": "Raclette Rangerz",
+      "tore": "6 : 1"
+    },
+    {
+      "date": "2025-10-19",
       "zeit": "11:00",
       "heim": "West Bärn United",
       "gast": "5ème Etage",
       "tore": "0 : 19"
     },
     {
-      "date": "2026-05-03",
+      "date": "2026-04-26",
       "zeit": "13:00",
       "heim": "West Bärn United",
       "gast": "Raclette Rangerz",
       "tore": "1 : 5"
-    },
-    {
-      "date": "2026-05-03",
-      "zeit": "15:00",
-      "heim": "Spartak Bern FC",
-      "gast": "Raclette Rangerz",
-      "tore": "6 : 1"
     }
   ],
-  "updated": "2026-05-03T11:06:56.021298+00:00"
+  "updated": "2026-05-03T12:55:57.145522+00:00"
 }
