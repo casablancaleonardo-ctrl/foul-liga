@@ -199,6 +199,19 @@
     },
     {
       "rang": 6,
+      "team": "Olympique Troissept",
+      "sp": "6",
+      "s": "2",
+      "n": "3",
+      "u": "1",
+      "gplus": "21",
+      "gminus": "15",
+      "diff": "+6",
+      "fp": "30",
+      "pkt": "7"
+    },
+    {
+      "rang": 7,
       "team": "BFC Cholewärch Viktoria",
       "sp": "6",
       "s": "2",
@@ -211,7 +224,7 @@
       "pkt": "6"
     },
     {
-      "rang": 7,
+      "rang": 8,
       "team": "Standfest Breitenrain",
       "sp": "6",
       "s": "2",
@@ -222,19 +235,6 @@
       "diff": "-18",
       "fp": "25",
       "pkt": "6"
-    },
-    {
-      "rang": 8,
-      "team": "Olympique Troissept",
-      "sp": "5",
-      "s": "1",
-      "n": "3",
-      "u": "1",
-      "gplus": "12",
-      "gminus": "12",
-      "diff": "0",
-      "fp": "25",
-      "pkt": "4"
     },
     {
       "rang": 9,
@@ -252,16 +252,16 @@
     {
       "rang": 10,
       "team": "West Bärn United",
-      "sp": "6",
+      "sp": "7",
       "s": "0",
-      "n": "6",
+      "n": "7",
       "u": "0",
-      "gplus": "9",
-      "gminus": "61",
-      "diff": "-52",
-      "fp": "30",
+      "gplus": "12",
+      "gminus": "70",
+      "diff": "-58",
+      "fp": "35",
       "pkt": "0"
     }
   ],
-  "updated": "2026-05-03T07:33:31.112277+00:00"
+  "updated": "2026-05-03T11:06:57.999996+00:00"
 }
