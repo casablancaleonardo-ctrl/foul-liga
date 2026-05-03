@@ -1,7 +1,8 @@
 import os
 import json
 import requests
-from datetime import datetime, timezone
+from datetime import datetime, timezone, date
+from bs4 import BeautifulSoup
 
 # ─── Konfiguration ────────────────────────────────────────────────────────────
 API_URL   = "https://foul.ch/actions/graphql/api"
@@ -102,6 +103,78 @@ for e in raw_s:
         "tore": fmt_score(e.get("goalHome"), e.get("goalGuest")),
     })
 print(f"   ✅ Schiri-Dienste: {len(schiri_dienste)}")
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# 2) KOMMENDE SPIELE via Spielplan-Scraping (foul.ch/giele/spielplan)
+# ═══════════════════════════════════════════════════════════════════════════════
+print("\n🔄 Scrape kommende Pärkli-Spiele vom Spielplan ...")
+
+today_str = date.today().isoformat()
+
+spielplan_resp = requests.get("https://foul.ch/giele/spielplan", timeout=30)
+spielplan_resp.raise_for_status()
+soup = BeautifulSoup(spielplan_resp.text, "html.parser")
+
+# Liga 1 = erstes .game-schedule Element
+liga1_sched = soup.select(".game-schedule")[0] if soup.select(".game-schedule") else None
+
+kommende_spielplan = []
+if liga1_sched:
+    for game_day in liga1_sched.select("li.game-day"):
+        time_el = game_day.select_one("time[datetime]")
+        if not time_el:
+            continue
+        date_str = time_el["datetime"]  # z.B. "2026-05-17"
+        if date_str <= today_str:
+            continue  # Nur zukünftige Tage
+
+        for row in game_day.select("tbody tr"):
+            tds = row.select("td")
+            if len(tds) < 5:
+                continue
+
+            zeit_el = tds[0].select_one("time")
+            zeit = zeit_el["datetime"] if zeit_el and zeit_el.get("datetime") else tds[0].get_text(strip=True)
+
+            teams = tds[1].select("a")
+            if len(teams) < 2:
+                continue
+            heim = teams[0].get_text(strip=True)
+            gast = teams[1].get_text(strip=True)
+
+            tore_raw = tds[2].get_text(strip=True)
+            schiri  = tds[4].get_text(strip=True)
+
+            if TEAM_NAME not in heim and TEAM_NAME not in gast:
+                continue  # Kein Pärkli-Spiel
+
+            # Nur wenn noch kein Ergebnis eingetragen
+            parts = [p.strip() for p in tore_raw.split(":")]
+            if len(parts) == 2 and parts[0].isdigit() and parts[1].isdigit():
+                continue  # Schon gespielt
+
+            kommende_spielplan.append({
+                "date":   date_str,
+                "zeit":   zeit,
+                "heim":   heim,
+                "gast":   gast,
+                "tore":   ":",
+                "fp":     ":",
+                "schiri": schiri,
+            })
+
+print(f"   ✅ Kommende Spiele vom Spielplan: {len(kommende_spielplan)}")
+
+# Merge: nur neue Einträge hinzufügen (Duplikat-Check)
+existing_keys = {(s["date"], s["heim"], s["gast"]) for s in spiele}
+for s in kommende_spielplan:
+    key = (s["date"], s["heim"], s["gast"])
+    if key not in existing_keys:
+        spiele.append(s)
+        existing_keys.add(key)
+
+spiele.sort(key=lambda x: (x["date"], x["zeit"]))
+print(f"   ✅ Total Spiele inkl. kommende: {len(spiele)}")
 
 with open("data-paerkli.json", "w", encoding="utf-8") as f:
     json.dump(
