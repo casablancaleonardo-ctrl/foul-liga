@@ -1,7 +1,7 @@
 {
   "spiele": [
     {
-      "date": "2026-05-02",
+      "date": "2026-05-03",
       "zeit": "09:00",
       "heim": "Dynamo Chop",
       "gast": "Pärkli Boys United",
@@ -10,7 +10,7 @@
       "schiri": "West Bärn United"
     },
     {
-      "date": "2026-05-02",
+      "date": "2026-05-03",
       "zeit": "11:00",
       "heim": "Pärkli Boys United",
       "gast": "Deportivo Gordo Cojones",
@@ -19,7 +19,7 @@
       "schiri": "Spartak Bern FC"
     },
     {
-      "date": "2026-05-02",
+      "date": "2026-05-03",
       "zeit": "11:00",
       "heim": "Pärkli Boys United",
       "gast": "AC Diva",
@@ -28,7 +28,7 @@
       "schiri": "West Bärn United"
     },
     {
-      "date": "2026-05-02",
+      "date": "2026-05-03",
       "zeit": "13:00",
       "heim": "Obstberg United",
       "gast": "Pärkli Boys United",
@@ -37,7 +37,7 @@
       "schiri": "West Bärn United"
     },
     {
-      "date": "2026-05-02",
+      "date": "2026-05-03",
       "zeit": "13:00",
       "heim": "Sunnesite Allstars Chilefäud",
       "gast": "Pärkli Boys United",
@@ -46,7 +46,7 @@
       "schiri": "West Bärn United"
     },
     {
-      "date": "2026-05-02",
+      "date": "2026-05-03",
       "zeit": "13:00",
       "heim": "International Football Club of Berne",
       "gast": "Pärkli Boys United",
@@ -55,44 +55,44 @@
       "schiri": "Olympique Troissept"
     },
     {
-      "date": "2026-05-02",
+      "date": "2026-05-03",
       "zeit": "13:00",
       "heim": "Pärkli Boys United",
       "gast": "Roter Stern Bollwerk",
-      "tore": ":",
-      "fp": ":",
+      "tore": "3 : 1",
+      "fp": "5 : 5",
       "schiri": "5ème Etage"
     }
   ],
   "schiri": [
     {
-      "date": "2026-05-02",
+      "date": "2026-05-03",
       "zeit": "09:00",
       "heim": "West Bärn United",
       "gast": "Spartak Bern FC",
       "tore": "1 : 11"
     },
     {
-      "date": "2026-05-02",
+      "date": "2026-05-03",
       "zeit": "11:00",
       "heim": "West Bärn United",
       "gast": "5ème Etage",
       "tore": "0 : 19"
     },
     {
-      "date": "2026-05-02",
+      "date": "2026-05-03",
       "zeit": "13:00",
       "heim": "West Bärn United",
       "gast": "Raclette Rangerz",
       "tore": "1 : 5"
     },
     {
-      "date": "2026-05-02",
+      "date": "2026-05-03",
       "zeit": "15:00",
       "heim": "Spartak Bern FC",
       "gast": "Raclette Rangerz",
       "tore": "6 : 1"
     }
   ],
-  "updated": "2026-05-02T18:37:10.292058+00:00"
+  "updated": "2026-05-03T00:08:39.533965+00:00"
 }
