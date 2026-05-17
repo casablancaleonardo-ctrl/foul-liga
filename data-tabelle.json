@@ -41,6 +41,19 @@
     },
     {
       "rang": 4,
+      "team": "International Football Club of Berne",
+      "sp": "7",
+      "s": "4",
+      "n": "3",
+      "u": "0",
+      "gplus": "28",
+      "gminus": "22",
+      "diff": "+6",
+      "fp": "34",
+      "pkt": "12"
+    },
+    {
+      "rang": 5,
       "team": "Obstberg United",
       "sp": "7",
       "s": "3",
@@ -51,19 +64,6 @@
       "diff": "+3",
       "fp": "35",
       "pkt": "10"
-    },
-    {
-      "rang": 5,
-      "team": "International Football Club of Berne",
-      "sp": "6",
-      "s": "3",
-      "n": "3",
-      "u": "0",
-      "gplus": "22",
-      "gminus": "19",
-      "diff": "+3",
-      "fp": "29",
-      "pkt": "9"
     },
     {
       "rang": 6,
@@ -120,14 +120,14 @@
     {
       "rang": 10,
       "team": "AC Diva",
-      "sp": "6",
+      "sp": "7",
       "s": "0",
-      "n": "6",
+      "n": "7",
       "u": "0",
-      "gplus": "5",
-      "gminus": "23",
-      "diff": "-18",
-      "fp": "24",
+      "gplus": "8",
+      "gminus": "29",
+      "diff": "-21",
+      "fp": "29",
       "pkt": "0"
     }
   ],
@@ -186,6 +186,19 @@
     },
     {
       "rang": 5,
+      "team": "Olympique Troissept",
+      "sp": "7",
+      "s": "3",
+      "n": "3",
+      "u": "1",
+      "gplus": "29",
+      "gminus": "16",
+      "diff": "+13",
+      "fp": "35",
+      "pkt": "10"
+    },
+    {
+      "rang": 6,
       "team": "Valti Traktor",
       "sp": "7",
       "s": "2",
@@ -196,19 +209,6 @@
       "diff": "+2",
       "fp": "35",
       "pkt": "8"
-    },
-    {
-      "rang": 6,
-      "team": "Olympique Troissept",
-      "sp": "6",
-      "s": "2",
-      "n": "3",
-      "u": "1",
-      "gplus": "21",
-      "gminus": "15",
-      "diff": "+6",
-      "fp": "30",
-      "pkt": "7"
     },
     {
       "rang": 7,
@@ -239,14 +239,14 @@
     {
       "rang": 9,
       "team": "Standfest Breitenrain",
-      "sp": "6",
+      "sp": "7",
       "s": "2",
-      "n": "4",
+      "n": "5",
       "u": "0",
-      "gplus": "11",
-      "gminus": "29",
-      "diff": "-18",
-      "fp": "25",
+      "gplus": "12",
+      "gminus": "37",
+      "diff": "-25",
+      "fp": "28",
       "pkt": "6"
     },
     {
@@ -263,5 +263,5 @@
       "pkt": "0"
     }
   ],
-  "updated": "2026-05-17T15:51:24.108051+00:00"
+  "updated": "2026-05-17T16:47:29.046228+00:00"
 }
