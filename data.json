@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-17T15:58:13.524237",
+  "updated": "2026-05-17T17:57:01.471287",
   "tabelle": {
     "Liga 1": [
       {
@@ -70,6 +70,23 @@
             "zone": ""
           },
           {
+            "team": "International Football Club of Berne",
+            "cols": [
+              "7",
+              "4",
+              "3",
+              "0",
+              "28",
+              "22",
+              "6",
+              "34",
+              "0",
+              "0",
+              "12"
+            ],
+            "zone": ""
+          },
+          {
             "team": "Obstberg United",
             "cols": [
               "7",
@@ -80,23 +97,6 @@
               "17",
               "3",
               "35",
-              "0",
-              "0",
-              "10"
-            ],
-            "zone": ""
-          },
-          {
-            "team": "International Football Club of Berne",
-            "cols": [
-              "7",
-              "3",
-              "3",
-              "1",
-              "22",
-              "19",
-              "3",
-              "29",
               "0",
               "0",
               "10"
@@ -176,15 +176,15 @@
             "cols": [
               "7",
               "0",
-              "6",
-              "1",
-              "5",
-              "23",
-              "-18",
-              "24",
+              "7",
+              "0",
+              "8",
+              "29",
+              "-21",
+              "29",
               "2",
               "0",
-              "1"
+              "0"
             ],
             "zone": ""
           }
@@ -277,6 +277,23 @@
             "zone": ""
           },
           {
+            "team": "Olympique Troissept",
+            "cols": [
+              "7",
+              "3",
+              "3",
+              "1",
+              "29",
+              "16",
+              "13",
+              "35",
+              "0",
+              "0",
+              "10"
+            ],
+            "zone": ""
+          },
+          {
             "team": "Valti Traktor",
             "cols": [
               "7",
@@ -287,23 +304,6 @@
               "23",
               "2",
               "35",
-              "0",
-              "0",
-              "8"
-            ],
-            "zone": ""
-          },
-          {
-            "team": "Olympique Troissept",
-            "cols": [
-              "7",
-              "2",
-              "3",
-              "2",
-              "21",
-              "15",
-              "6",
-              "30",
               "0",
               "0",
               "8"
@@ -328,23 +328,6 @@
             "zone": ""
           },
           {
-            "team": "Standfest Breitenrain",
-            "cols": [
-              "7",
-              "2",
-              "4",
-              "1",
-              "11",
-              "29",
-              "-18",
-              "25",
-              "0",
-              "0",
-              "7"
-            ],
-            "zone": ""
-          },
-          {
             "team": "BFC Cholewärch Viktoria",
             "cols": [
               "7",
@@ -356,6 +339,23 @@
               "-18",
               "35",
               "0",
+              "0",
+              "6"
+            ],
+            "zone": ""
+          },
+          {
+            "team": "Standfest Breitenrain",
+            "cols": [
+              "7",
+              "2",
+              "5",
+              "0",
+              "12",
+              "37",
+              "-25",
+              "28",
+              "5",
               "0",
               "6"
             ],
@@ -488,8 +488,8 @@
           "anpfiff": "13:00",
           "heim": "AC Diva",
           "gast": "International Football Club of Berne",
-          "tore": ":",
-          "fp": ":",
+          "tore": "3 : 6",
+          "fp": "5 : 5",
           "schiri": "BFC Cholewärch Viktoria"
         },
         {
@@ -916,8 +916,8 @@
           "anpfiff": "15:00",
           "heim": "Olympique Troissept",
           "gast": "Standfest Breitenrain",
-          "tore": ":",
-          "fp": ":",
+          "tore": "8 : 1",
+          "fp": "5 : 3",
           "schiri": "AC Diva"
         }
       ]
