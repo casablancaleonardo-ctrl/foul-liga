@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-16T21:43:44.745508",
+  "updated": "2026-05-17T15:58:13.524237",
   "tabelle": {
     "Liga 1": [
       {
@@ -21,82 +21,99 @@
           {
             "team": "Pärkli Boys United",
             "cols": [
-              "7",
-              "7",
+              "8",
+              "8",
               "0",
               "0",
-              "36",
+              "41",
               "7",
-              "29",
               "34",
+              "39",
               "2",
               "0",
-              "21"
+              "24"
             ],
             "zone": ""
           },
           {
             "team": "Sunnesite Allstars Chilefäud",
             "cols": [
-              "6",
+              "7",
               "4",
               "1",
-              "1",
-              "20",
-              "12",
+              "2",
+              "23",
+              "15",
               "8",
-              "30",
+              "35",
               "0",
               "0",
-              "13"
+              "14"
             ],
             "zone": ""
           },
           {
             "team": "Roter Stern Bollwerk",
             "cols": [
-              "6",
+              "7",
               "4",
               "2",
-              "0",
-              "12",
-              "10",
+              "1",
+              "15",
+              "13",
               "2",
-              "30",
+              "35",
               "2",
               "0",
-              "12"
+              "13"
             ],
             "zone": ""
           },
           {
-            "team": "Deportivo Gordo Cojones",
+            "team": "Obstberg United",
             "cols": [
-              "6",
+              "7",
               "3",
               "3",
-              "0",
-              "10",
+              "1",
+              "20",
               "17",
-              "-7",
-              "30",
+              "3",
+              "35",
               "0",
               "0",
-              "9"
+              "10"
             ],
             "zone": ""
           },
           {
             "team": "International Football Club of Berne",
             "cols": [
-              "6",
+              "7",
               "3",
               "3",
-              "0",
+              "1",
               "22",
               "19",
               "3",
               "29",
+              "0",
+              "0",
+              "10"
+            ],
+            "zone": ""
+          },
+          {
+            "team": "Deportivo Gordo Cojones",
+            "cols": [
+              "7",
+              "3",
+              "4",
+              "0",
+              "10",
+              "20",
+              "-10",
+              "35",
               "0",
               "0",
               "9"
@@ -138,33 +155,16 @@
             "zone": ""
           },
           {
-            "team": "Obstberg United",
-            "cols": [
-              "6",
-              "2",
-              "3",
-              "1",
-              "17",
-              "17",
-              "0",
-              "30",
-              "0",
-              "0",
-              "7"
-            ],
-            "zone": ""
-          },
-          {
             "team": "Energie Bitzius",
             "cols": [
-              "7",
+              "8",
               "2",
-              "5",
+              "6",
               "0",
               "12",
-              "21",
-              "-9",
-              "35",
+              "26",
+              "-14",
+              "40",
               "0",
               "0",
               "6"
@@ -174,17 +174,17 @@
           {
             "team": "AC Diva",
             "cols": [
-              "6",
+              "7",
               "0",
               "6",
-              "0",
+              "1",
               "5",
               "23",
               "-18",
               "24",
               "2",
               "0",
-              "0"
+              "1"
             ],
             "zone": ""
           }
@@ -209,16 +209,33 @@
         ],
         "rows": [
           {
+            "team": "5ème Etage",
+            "cols": [
+              "8",
+              "6",
+              "0",
+              "2",
+              "61",
+              "10",
+              "51",
+              "39",
+              "2",
+              "0",
+              "20"
+            ],
+            "zone": ""
+          },
+          {
             "team": "Les Mecs Sportifs",
             "cols": [
-              "7",
+              "8",
               "6",
-              "1",
+              "2",
               "0",
-              "23",
-              "12",
-              "11",
-              "35",
+              "25",
+              "16",
+              "9",
+              "40",
               "2",
               "0",
               "18"
@@ -226,19 +243,19 @@
             "zone": ""
           },
           {
-            "team": "5ème Etage",
+            "team": "Spartak Bern FC",
             "cols": [
               "7",
               "5",
-              "0",
-              "2",
-              "57",
-              "8",
-              "49",
+              "1",
+              "1",
+              "36",
+              "13",
+              "23",
               "34",
               "0",
               "0",
-              "17"
+              "16"
             ],
             "zone": ""
           },
@@ -260,33 +277,16 @@
             "zone": ""
           },
           {
-            "team": "Spartak Bern FC",
-            "cols": [
-              "6",
-              "4",
-              "1",
-              "1",
-              "29",
-              "11",
-              "18",
-              "29",
-              "0",
-              "0",
-              "13"
-            ],
-            "zone": ""
-          },
-          {
             "team": "Valti Traktor",
             "cols": [
-              "6",
-              "2",
-              "2",
-              "2",
-              "23",
-              "16",
               "7",
-              "30",
+              "2",
+              "3",
+              "2",
+              "25",
+              "23",
+              "2",
+              "35",
               "0",
               "0",
               "8"
@@ -296,14 +296,48 @@
           {
             "team": "Olympique Troissept",
             "cols": [
-              "6",
+              "7",
               "2",
               "3",
-              "1",
+              "2",
               "21",
               "15",
               "6",
               "30",
+              "0",
+              "0",
+              "8"
+            ],
+            "zone": ""
+          },
+          {
+            "team": "Raclette Rangerz",
+            "cols": [
+              "7",
+              "2",
+              "4",
+              "1",
+              "17",
+              "22",
+              "-5",
+              "35",
+              "0",
+              "0",
+              "7"
+            ],
+            "zone": ""
+          },
+          {
+            "team": "Standfest Breitenrain",
+            "cols": [
+              "7",
+              "2",
+              "4",
+              "1",
+              "11",
+              "29",
+              "-18",
+              "25",
               "0",
               "0",
               "7"
@@ -313,51 +347,17 @@
           {
             "team": "BFC Cholewärch Viktoria",
             "cols": [
-              "6",
+              "7",
               "2",
-              "4",
+              "5",
               "0",
               "18",
-              "32",
-              "-14",
-              "30",
-              "0",
-              "0",
-              "6"
-            ],
-            "zone": ""
-          },
-          {
-            "team": "Standfest Breitenrain",
-            "cols": [
-              "6",
-              "2",
-              "4",
-              "0",
-              "11",
-              "29",
+              "36",
               "-18",
-              "25",
+              "35",
               "0",
               "0",
               "6"
-            ],
-            "zone": ""
-          },
-          {
-            "team": "Raclette Rangerz",
-            "cols": [
-              "6",
-              "1",
-              "4",
-              "1",
-              "13",
-              "22",
-              "-9",
-              "30",
-              "0",
-              "0",
-              "4"
             ],
             "zone": ""
           },
@@ -472,16 +472,16 @@
           "anpfiff": "11:00",
           "heim": "Deportivo Gordo Cojones",
           "gast": "Obstberg United",
-          "tore": ":",
-          "fp": ":",
+          "tore": "0 : 3",
+          "fp": "5 : 5",
           "schiri": "Spartak Bern FC"
         },
         {
           "anpfiff": "11:00",
           "heim": "Pärkli Boys United",
           "gast": "Energie Bitzius",
-          "tore": ":",
-          "fp": ":",
+          "tore": "5 : 0",
+          "fp": "5 : 5",
           "schiri": "5ème Etage"
         },
         {
@@ -496,8 +496,8 @@
           "anpfiff": "15:00",
           "heim": "Sunnesite Allstars Chilefäud",
           "gast": "Roter Stern Bollwerk",
-          "tore": ":",
-          "fp": ":",
+          "tore": "3 : 3",
+          "fp": "5 : 5",
           "schiri": "Les Mecs Sportifs"
         }
       ]
@@ -892,24 +892,24 @@
           "anpfiff": "13:00",
           "heim": "Valti Traktor",
           "gast": "Spartak Bern FC",
-          "tore": ":",
-          "fp": ":",
+          "tore": "2 : 7",
+          "fp": "5 : 5",
           "schiri": "Energie Bitzius"
         },
         {
           "anpfiff": "13:00",
           "heim": "5ème Etage",
           "gast": "Les Mecs Sportifs",
-          "tore": ":",
-          "fp": ":",
+          "tore": "4 : 2",
+          "fp": "5 : 5",
           "schiri": "Deportivo Gordo Cojones"
         },
         {
           "anpfiff": "15:00",
           "heim": "Raclette Rangerz",
           "gast": "BFC Cholewärch Viktoria",
-          "tore": ":",
-          "fp": ":",
+          "tore": "4 : 0",
+          "fp": "5 : 5",
           "schiri": "International Football Club of Berne"
         },
         {
