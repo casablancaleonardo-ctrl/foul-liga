@@ -1,6 +1,15 @@
 {
-  "updated": "2026-05-16T21:38:01.495980",
+  "updated": "2026-05-17T16:01:22.749204",
   "gespielt": [
+    {
+      "datum": "17.05.2026",
+      "anpfiff": "11:00",
+      "heim": "Pärkli Boys United",
+      "gast": "Energie Bitzius",
+      "tore": "5 : 0",
+      "fp": "5 : 5",
+      "schiri": "5ème Etage"
+    },
     {
       "datum": "02.05.2026",
       "anpfiff": "13:00",
@@ -71,15 +80,6 @@
       "anpfiff": "15:00",
       "heim": "SpVgg Lokomotive",
       "gast": "Pärkli Boys United",
-      "tore": ":",
-      "fp": ":",
-      "schiri": "5ème Etage"
-    },
-    {
-      "datum": "17.05.2026",
-      "anpfiff": "11:00",
-      "heim": "Pärkli Boys United",
-      "gast": "Energie Bitzius",
       "tore": ":",
       "fp": ":",
       "schiri": "5ème Etage"
