@@ -3,44 +3,57 @@
     {
       "rang": 1,
       "team": "Pärkli Boys United",
-      "sp": "7",
-      "s": "7",
+      "sp": "8",
+      "s": "8",
       "n": "0",
       "u": "0",
-      "gplus": "36",
+      "gplus": "41",
       "gminus": "7",
-      "diff": "+29",
-      "fp": "34",
-      "pkt": "21"
+      "diff": "+34",
+      "fp": "39",
+      "pkt": "24"
     },
     {
       "rang": 2,
       "team": "Sunnesite Allstars",
-      "sp": "6",
+      "sp": "7",
       "s": "4",
       "n": "1",
-      "u": "1",
-      "gplus": "20",
-      "gminus": "12",
+      "u": "2",
+      "gplus": "23",
+      "gminus": "15",
       "diff": "+8",
-      "fp": "30",
-      "pkt": "13"
+      "fp": "35",
+      "pkt": "14"
     },
     {
       "rang": 3,
       "team": "Roter Stern Bollwerk",
-      "sp": "6",
+      "sp": "7",
       "s": "4",
       "n": "2",
-      "u": "0",
-      "gplus": "12",
-      "gminus": "10",
+      "u": "1",
+      "gplus": "15",
+      "gminus": "13",
       "diff": "+2",
-      "fp": "30",
-      "pkt": "12"
+      "fp": "35",
+      "pkt": "13"
     },
     {
       "rang": 4,
+      "team": "Obstberg United",
+      "sp": "7",
+      "s": "3",
+      "n": "3",
+      "u": "1",
+      "gplus": "20",
+      "gminus": "17",
+      "diff": "+3",
+      "fp": "35",
+      "pkt": "10"
+    },
+    {
+      "rang": 5,
       "team": "International Football Club of Berne",
       "sp": "6",
       "s": "3",
@@ -53,7 +66,7 @@
       "pkt": "9"
     },
     {
-      "rang": 5,
+      "rang": 6,
       "team": "SpVgg Lokomotive",
       "sp": "7",
       "s": "3",
@@ -66,20 +79,20 @@
       "pkt": "9"
     },
     {
-      "rang": 6,
+      "rang": 7,
       "team": "Deportivo Gordo Cojones",
-      "sp": "6",
+      "sp": "7",
       "s": "3",
-      "n": "3",
+      "n": "4",
       "u": "0",
       "gplus": "10",
-      "gminus": "17",
-      "diff": "-7",
-      "fp": "30",
+      "gminus": "20",
+      "diff": "-10",
+      "fp": "35",
       "pkt": "9"
     },
     {
-      "rang": 7,
+      "rang": 8,
       "team": "Dynamo Chop",
       "sp": "7",
       "s": "2",
@@ -92,29 +105,16 @@
       "pkt": "8"
     },
     {
-      "rang": 8,
-      "team": "Obstberg United",
-      "sp": "6",
-      "s": "2",
-      "n": "3",
-      "u": "1",
-      "gplus": "17",
-      "gminus": "17",
-      "diff": "0",
-      "fp": "30",
-      "pkt": "7"
-    },
-    {
       "rang": 9,
       "team": "Energie Bitzius",
-      "sp": "7",
+      "sp": "8",
       "s": "2",
-      "n": "5",
+      "n": "6",
       "u": "0",
       "gplus": "12",
-      "gminus": "21",
-      "diff": "-9",
-      "fp": "35",
+      "gminus": "26",
+      "diff": "-14",
+      "fp": "40",
       "pkt": "6"
     },
     {
@@ -134,42 +134,42 @@
   "liga2": [
     {
       "rang": 1,
-      "team": "Les Mecs Sportifs",
-      "sp": "7",
+      "team": "5ème Etage",
+      "sp": "8",
       "s": "6",
-      "n": "1",
-      "u": "0",
-      "gplus": "23",
-      "gminus": "12",
-      "diff": "+11",
-      "fp": "35",
-      "pkt": "18"
+      "n": "0",
+      "u": "2",
+      "gplus": "61",
+      "gminus": "10",
+      "diff": "+51",
+      "fp": "39",
+      "pkt": "20"
     },
     {
       "rang": 2,
-      "team": "5ème Etage",
-      "sp": "7",
-      "s": "5",
-      "n": "0",
-      "u": "2",
-      "gplus": "57",
-      "gminus": "8",
-      "diff": "+49",
-      "fp": "34",
-      "pkt": "17"
+      "team": "Les Mecs Sportifs",
+      "sp": "8",
+      "s": "6",
+      "n": "2",
+      "u": "0",
+      "gplus": "25",
+      "gminus": "16",
+      "diff": "+9",
+      "fp": "40",
+      "pkt": "18"
     },
     {
       "rang": 3,
       "team": "Spartak Bern FC",
-      "sp": "6",
-      "s": "4",
+      "sp": "7",
+      "s": "5",
       "n": "1",
       "u": "1",
-      "gplus": "29",
-      "gminus": "11",
-      "diff": "+18",
-      "fp": "29",
-      "pkt": "13"
+      "gplus": "36",
+      "gminus": "13",
+      "diff": "+23",
+      "fp": "34",
+      "pkt": "16"
     },
     {
       "rang": 4,
@@ -187,14 +187,14 @@
     {
       "rang": 5,
       "team": "Valti Traktor",
-      "sp": "6",
+      "sp": "7",
       "s": "2",
-      "n": "2",
+      "n": "3",
       "u": "2",
-      "gplus": "23",
-      "gminus": "16",
-      "diff": "+7",
-      "fp": "30",
+      "gplus": "25",
+      "gminus": "23",
+      "diff": "+2",
+      "fp": "35",
       "pkt": "8"
     },
     {
@@ -212,19 +212,32 @@
     },
     {
       "rang": 7,
-      "team": "BFC Cholewärch Viktoria",
-      "sp": "6",
+      "team": "Raclette Rangerz",
+      "sp": "7",
       "s": "2",
       "n": "4",
-      "u": "0",
-      "gplus": "18",
-      "gminus": "32",
-      "diff": "-14",
-      "fp": "30",
-      "pkt": "6"
+      "u": "1",
+      "gplus": "17",
+      "gminus": "22",
+      "diff": "-5",
+      "fp": "35",
+      "pkt": "7"
     },
     {
       "rang": 8,
+      "team": "BFC Cholewärch Viktoria",
+      "sp": "7",
+      "s": "2",
+      "n": "5",
+      "u": "0",
+      "gplus": "18",
+      "gminus": "36",
+      "diff": "-18",
+      "fp": "35",
+      "pkt": "6"
+    },
+    {
+      "rang": 9,
       "team": "Standfest Breitenrain",
       "sp": "6",
       "s": "2",
@@ -235,19 +248,6 @@
       "diff": "-18",
       "fp": "25",
       "pkt": "6"
-    },
-    {
-      "rang": 9,
-      "team": "Raclette Rangerz",
-      "sp": "6",
-      "s": "1",
-      "n": "4",
-      "u": "1",
-      "gplus": "13",
-      "gminus": "22",
-      "diff": "-9",
-      "fp": "30",
-      "pkt": "4"
     },
     {
       "rang": 10,
@@ -263,5 +263,5 @@
       "pkt": "0"
     }
   ],
-  "updated": "2026-05-17T14:26:01.173572+00:00"
+  "updated": "2026-05-17T15:51:24.108051+00:00"
 }
