@@ -1,4 +1,5 @@
 import os
+import sys
 import json
 import requests
 from requests.adapters import HTTPAdapter
@@ -56,8 +57,13 @@ def fmt_score(raw: str) -> str:
 # ═══════════════════════════════════════════════════════════════════════════════
 print("Scrape Spielplan von foul.ch/giele/spielplan ...")
 
-spielplan_resp = session.get("https://foul.ch/giele/spielplan", timeout=60)
-spielplan_resp.raise_for_status()
+try:
+    spielplan_resp = session.get("https://foul.ch/giele/spielplan", timeout=60)
+    spielplan_resp.raise_for_status()
+except requests.exceptions.RequestException as e:
+    print(f"WARNUNG: foul.ch nicht erreichbar ({e}). Ueberspringe diesen Lauf.")
+    sys.exit(0)
+
 soup = BeautifulSoup(spielplan_resp.text, "html.parser")
 
 schedules = soup.select(".game-schedule")
@@ -144,8 +150,13 @@ QUERY_LIGA2 = """
 }
 """ % (SEASON_ID, LIGA2_ID)
 
-games_liga1 = gql(QUERY_LIGA1)["entries"]
-games_liga2 = gql(QUERY_LIGA2)["entries"]
+try:
+    games_liga1 = gql(QUERY_LIGA1)["entries"]
+    games_liga2 = gql(QUERY_LIGA2)["entries"]
+except requests.exceptions.RequestException as e:
+    print(f"WARNUNG: Tabellen-API nicht erreichbar ({e}). Ueberspringe Tabellen-Update.")
+    sys.exit(0)
+
 print(f" Liga 1: {len(games_liga1)} Spiele, Liga 2: {len(games_liga2)} Spiele")
 
 def calc_table(games):
