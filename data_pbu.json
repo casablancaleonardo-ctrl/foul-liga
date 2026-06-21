@@ -1,6 +1,15 @@
 {
-  "updated": "2026-06-20T21:57:50.495639",
+  "updated": "2026-06-21T16:47:26.425043",
   "gespielt": [
+    {
+      "datum": "21.06.2026",
+      "anpfiff": "15:00",
+      "heim": "SpVgg Lokomotive",
+      "gast": "Pärkli Boys United",
+      "tore": "4 : 8",
+      "fp": "5 : 5",
+      "schiri": "5ème Etage"
+    },
     {
       "datum": "17.05.2026",
       "anpfiff": "11:00",
@@ -74,16 +83,6 @@
       "schiri": "Spartak Bern FC"
     }
   ],
-  "kommend": [
-    {
-      "datum": "21.06.2026",
-      "anpfiff": "15:00",
-      "heim": "SpVgg Lokomotive",
-      "gast": "Pärkli Boys United",
-      "tore": ":",
-      "fp": ":",
-      "schiri": "5ème Etage"
-    }
-  ],
+  "kommend": [],
   "schiri_dienste": []
 }
