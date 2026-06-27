@@ -1,116 +1,116 @@
 {
   "spiele": [
     {
-      "date": "2025-08-17",
-      "zeit": "11:00",
-      "heim": "Pärkli Boys United",
-      "gast": "Deportivo Gordo Cojones",
-      "tore": "4 : 0",
-      "fp": "5 : 5",
-      "schiri": "Spartak Bern FC"
-    },
-    {
-      "date": "2025-08-24",
-      "zeit": "13:00",
-      "heim": "Obstberg United",
+      "date": "2026-08-09",
+      "zeit": "15:00",
+      "heim": "Spartak Bern FC",
       "gast": "Pärkli Boys United",
-      "tore": "1 : 7",
-      "fp": "5 : 5",
-      "schiri": "West Bärn United"
-    },
-    {
-      "date": "2025-09-28",
-      "zeit": "13:00",
-      "heim": "International Football Club of Berne",
-      "gast": "Pärkli Boys United",
-      "tore": "0 : 3",
-      "fp": "4 : 4",
+      "tore": ":",
+      "fp": ":",
       "schiri": "Olympique Troissept"
     },
     {
-      "date": "2025-10-19",
-      "zeit": "09:00",
-      "heim": "Dynamo Chop",
+      "date": "2026-08-23",
+      "zeit": "13:00",
+      "heim": "5ème Etage",
       "gast": "Pärkli Boys United",
-      "tore": "0 : 5",
-      "fp": "5 : 5",
-      "schiri": "West Bärn United"
+      "tore": ":",
+      "fp": ":",
+      "schiri": "Valti Traktor"
     },
     {
-      "date": "2025-10-26",
-      "zeit": "13:00",
+      "date": "2026-08-30",
+      "zeit": "11:00",
       "heim": "Sunnesite Allstars Chilefäud",
       "gast": "Pärkli Boys United",
-      "tore": "3 : 4",
-      "fp": "5 : 5",
-      "schiri": "West Bärn United"
+      "tore": ":",
+      "fp": ":",
+      "schiri": "Mistery Team 1"
     },
     {
-      "date": "2026-04-26",
-      "zeit": "11:00",
-      "heim": "Pärkli Boys United",
-      "gast": "AC Diva",
-      "tore": "10 : 2",
-      "fp": "5 : 5",
-      "schiri": "West Bärn United"
-    },
-    {
-      "date": "2026-05-02",
+      "date": "2026-09-27",
       "zeit": "13:00",
       "heim": "Pärkli Boys United",
-      "gast": "Roter Stern Bollwerk",
-      "tore": "3 : 1",
-      "fp": "5 : 5",
-      "schiri": "5ème Etage"
+      "gast": "International Football Club of Berne",
+      "tore": ":",
+      "fp": ":",
+      "schiri": "Fortuna Galgenfeld"
     },
     {
-      "date": "2026-05-17",
-      "zeit": "11:00",
+      "date": "2026-10-18",
+      "zeit": "15:00",
+      "heim": "Pärkli Boys United",
+      "gast": "Deportivo Gordo Cojones",
+      "tore": ":",
+      "fp": ":",
+      "schiri": "West Bärn United"
+    },
+    {
+      "date": "2027-04-18",
+      "zeit": "13:00",
       "heim": "Pärkli Boys United",
       "gast": "Energie Bitzius",
-      "tore": "5 : 0",
-      "fp": "5 : 5",
-      "schiri": "5ème Etage"
+      "tore": ":",
+      "fp": ":",
+      "schiri": "West Bärn United"
     },
     {
-      "date": "2026-06-21",
+      "date": "2027-04-18",
       "zeit": "15:00",
-      "heim": "SpVgg Lokomotive",
+      "heim": "Pärkli Boys United",
+      "gast": "Obstberg United",
+      "tore": ":",
+      "fp": ":",
+      "schiri": "Fortuna Galgenfeld"
+    },
+    {
+      "date": "2027-04-18",
+      "zeit": "15:00",
+      "heim": "Roter Stern Bollwerk",
       "gast": "Pärkli Boys United",
-      "tore": "4 : 8",
-      "fp": "5 : 5",
-      "schiri": "5ème Etage"
+      "tore": ":",
+      "fp": ":",
+      "schiri": "Valti Traktor"
+    },
+    {
+      "date": "2027-04-18",
+      "zeit": "15:00",
+      "heim": "Les Mecs Sportifs",
+      "gast": "Pärkli Boys United",
+      "tore": ":",
+      "fp": ":",
+      "schiri": "Standfest Breitenrain"
     }
   ],
   "schiri": [
     {
-      "date": "2025-08-17",
-      "zeit": "09:00",
-      "heim": "West Bärn United",
-      "gast": "Spartak Bern FC",
-      "tore": "1 : 11"
-    },
-    {
-      "date": "2025-09-28",
-      "zeit": "15:00",
-      "heim": "Spartak Bern FC",
-      "gast": "Raclette Rangerz",
-      "tore": "6 : 1"
-    },
-    {
-      "date": "2025-10-19",
+      "date": "2026-09-27",
       "zeit": "11:00",
-      "heim": "West Bärn United",
-      "gast": "5ème Etage",
-      "tore": "0 : 19"
+      "heim": "Fortuna Galgenfeld",
+      "gast": "Raclette Rangerz",
+      "tore": ":"
     },
     {
-      "date": "2026-04-26",
-      "zeit": "13:00",
+      "date": "2026-10-18",
+      "zeit": "15:00",
       "heim": "West Bärn United",
-      "gast": "Raclette Rangerz",
-      "tore": "1 : 5"
+      "gast": "Mistery Team 1",
+      "tore": ":"
+    },
+    {
+      "date": "2027-04-18",
+      "zeit": "15:00",
+      "heim": "Valti Traktor",
+      "gast": "Fortuna Galgenfeld",
+      "tore": ":"
+    },
+    {
+      "date": "2027-04-18",
+      "zeit": "15:00",
+      "heim": "West Bärn United",
+      "gast": "Fortuna Galgenfeld",
+      "tore": ":"
     }
   ],
-  "updated": "2026-06-27T20:03:14.917426+00:00"
+  "updated": "2026-06-27T22:55:48.085782+00:00"
 }
