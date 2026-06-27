@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-27T20:06:00.228017",
+  "updated": "2026-06-27T21:59:48.987341",
   "tabelle": {
     "Liga 1": [
       {
@@ -19,170 +19,170 @@
         ],
         "rows": [
           {
-            "team": "Pärkli Boys United",
+            "team": "Les Mecs Sportifs",
             "cols": [
-              "9",
-              "9",
               "0",
               "0",
-              "49",
-              "11",
-              "38",
-              "44",
-              "2",
               "0",
-              "27"
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
             ],
             "zone": ""
           },
           {
-            "team": "Sunnesite Allstars Chilefäud",
+            "team": "Spartak Bern FC",
             "cols": [
-              "9",
-              "6",
-              "1",
-              "2",
-              "38",
-              "16",
-              "22",
-              "45",
               "0",
               "0",
-              "20"
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "zone": ""
+          },
+          {
+            "team": "5ème Etage",
+            "cols": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
             ],
             "zone": ""
           },
           {
             "team": "Roter Stern Bollwerk",
             "cols": [
-              "9",
-              "5",
-              "2",
-              "2",
-              "23",
-              "16",
-              "7",
-              "45",
-              "2",
-              "0",
-              "17"
-            ],
-            "zone": ""
-          },
-          {
-            "team": "Obstberg United",
-            "cols": [
-              "9",
-              "5",
-              "3",
-              "1",
-              "34",
-              "19",
-              "15",
-              "45",
               "0",
               "0",
-              "16"
-            ],
-            "zone": ""
-          },
-          {
-            "team": "International Football Club of Berne",
-            "cols": [
-              "9",
-              "4",
-              "4",
-              "1",
-              "31",
-              "30",
-              "1",
-              "44",
               "0",
               "0",
-              "13"
-            ],
-            "zone": ""
-          },
-          {
-            "team": "SpVgg Lokomotive",
-            "cols": [
-              "9",
-              "4",
-              "5",
               "0",
-              "22",
-              "29",
-              "-7",
-              "42",
-              "6",
               "0",
-              "12"
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
             ],
             "zone": ""
           },
           {
             "team": "Deportivo Gordo Cojones",
             "cols": [
-              "9",
-              "3",
-              "6",
-              "0",
-              "12",
-              "34",
-              "-22",
-              "45",
               "0",
               "0",
-              "9"
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "zone": ""
+          },
+          {
+            "team": "Sunnesite Allstars Chilefäud",
+            "cols": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
             ],
             "zone": ""
           },
           {
             "team": "Energie Bitzius",
             "cols": [
-              "9",
-              "3",
-              "6",
               "0",
-              "14",
-              "27",
-              "-13",
-              "45",
-              "2",
               "0",
-              "9"
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
             ],
             "zone": ""
           },
           {
-            "team": "Dynamo Chop",
+            "team": "International Football Club of Berne",
             "cols": [
-              "9",
-              "2",
-              "5",
-              "2",
-              "15",
-              "21",
-              "-6",
-              "45",
               "0",
               "0",
-              "8"
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
             ],
             "zone": ""
           },
           {
-            "team": "AC Diva",
+            "team": "Pärkli Boys United",
             "cols": [
-              "9",
               "0",
-              "9",
               "0",
-              "9",
-              "44",
-              "-35",
-              "39",
-              "2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "zone": ""
+          },
+          {
+            "team": "Obstberg United",
+            "cols": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
               "0",
               "0"
             ],
@@ -209,170 +209,170 @@
         ],
         "rows": [
           {
-            "team": "5ème Etage",
+            "team": "Mistery Team 1",
             "cols": [
-              "9",
-              "7",
               "0",
-              "2",
-              "64",
-              "11",
-              "53",
-              "44",
-              "2",
               "0",
-              "23"
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
             ],
             "zone": ""
           },
           {
-            "team": "Les Mecs Sportifs",
+            "team": "Dynamo Chop",
             "cols": [
-              "9",
-              "7",
-              "2",
               "0",
-              "32",
-              "17",
-              "15",
-              "45",
-              "2",
               "0",
-              "21"
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
             ],
             "zone": ""
           },
           {
-            "team": "Spartak Bern FC",
+            "team": "AC Diva",
             "cols": [
-              "9",
-              "6",
-              "1",
-              "2",
-              "40",
-              "14",
-              "26",
-              "44",
               "0",
               "0",
-              "20"
-            ],
-            "zone": ""
-          },
-          {
-            "team": "Fortuna Galgenfeld",
-            "cols": [
-              "9",
-              "5",
-              "3",
-              "1",
-              "36",
-              "19",
-              "17",
-              "45",
               "0",
               "0",
-              "16"
-            ],
-            "zone": ""
-          },
-          {
-            "team": "Olympique Troissept",
-            "cols": [
-              "9",
-              "3",
-              "3",
-              "3",
-              "32",
-              "19",
-              "13",
-              "43",
               "0",
               "0",
-              "12"
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
             ],
             "zone": ""
           },
           {
             "team": "Raclette Rangerz",
             "cols": [
-              "9",
-              "3",
-              "4",
-              "2",
-              "27",
-              "29",
-              "-2",
-              "45",
               "0",
               "0",
-              "11"
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
             ],
             "zone": ""
           },
           {
             "team": "Valti Traktor",
             "cols": [
-              "9",
-              "2",
-              "3",
-              "4",
-              "36",
-              "34",
-              "2",
-              "45",
               "0",
               "0",
-              "10"
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
             ],
             "zone": ""
           },
           {
-            "team": "BFC Cholewärch Viktoria",
+            "team": "Fortuna Galgenfeld",
             "cols": [
-              "9",
-              "2",
-              "5",
-              "2",
-              "24",
-              "42",
-              "-18",
-              "40",
               "0",
               "0",
-              "8"
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
             ],
             "zone": ""
           },
           {
-            "team": "Standfest Breitenrain",
+            "team": "Olympique Troissept",
             "cols": [
-              "9",
-              "2",
-              "7",
               "0",
-              "12",
-              "43",
-              "-31",
-              "28",
-              "5",
               "0",
-              "6"
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
             ],
             "zone": ""
           },
           {
             "team": "West Bärn United",
             "cols": [
-              "9",
               "0",
-              "9",
               "0",
-              "13",
-              "88",
-              "-75",
-              "45",
-              "2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "zone": ""
+          },
+          {
+            "team": "Standfest Breitenrain",
+            "cols": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "zone": ""
+          },
+          {
+            "team": "BFC Cholewärch Viktoria",
+            "cols": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
               "0",
               "0"
             ],
@@ -382,6 +382,797 @@
       }
     ]
   },
-  "spielplan": [],
+  "spielplan": [
+    {
+      "datum": "18.04.2027",
+      "spiele": [
+        {
+          "anpfiff": "11:00",
+          "heim": "5ème Etage",
+          "gast": "Energie Bitzius",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Raclette Rangerz"
+        },
+        {
+          "anpfiff": "11:00",
+          "heim": "International Football Club of Berne",
+          "gast": "Les Mecs Sportifs",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Olympique Troissept"
+        },
+        {
+          "anpfiff": "11:00",
+          "heim": "Obstberg United",
+          "gast": "Sunnesite Allstars Chilefäud",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Standfest Breitenrain"
+        },
+        {
+          "anpfiff": "11:00",
+          "heim": "Roter Stern Bollwerk",
+          "gast": "Deportivo Gordo Cojones",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "BFC Cholewärch Viktoria"
+        },
+        {
+          "anpfiff": "11:00",
+          "heim": "Obstberg United",
+          "gast": "Spartak Bern FC",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Olympique Troissept"
+        },
+        {
+          "anpfiff": "13:00",
+          "heim": "Sunnesite Allstars Chilefäud",
+          "gast": "Roter Stern Bollwerk",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Valti Traktor"
+        },
+        {
+          "anpfiff": "13:00",
+          "heim": "Spartak Bern FC",
+          "gast": "Les Mecs Sportifs",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Mistery Team 1"
+        },
+        {
+          "anpfiff": "13:00",
+          "heim": "International Football Club of Berne",
+          "gast": "5ème Etage",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Fortuna Galgenfeld"
+        },
+        {
+          "anpfiff": "13:00",
+          "heim": "Les Mecs Sportifs",
+          "gast": "Energie Bitzius",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Standfest Breitenrain"
+        },
+        {
+          "anpfiff": "13:00",
+          "heim": "Spartak Bern FC",
+          "gast": "Energie Bitzius",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Raclette Rangerz"
+        },
+        {
+          "anpfiff": "13:00",
+          "heim": "Roter Stern Bollwerk",
+          "gast": "Energie Bitzius",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Olympique Troissept"
+        },
+        {
+          "anpfiff": "13:00",
+          "heim": "Obstberg United",
+          "gast": "5ème Etage",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "BFC Cholewärch Viktoria"
+        },
+        {
+          "anpfiff": "13:00",
+          "heim": "Pärkli Boys United",
+          "gast": "Energie Bitzius",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "West Bärn United"
+        },
+        {
+          "anpfiff": "15:00",
+          "heim": "Pärkli Boys United",
+          "gast": "Obstberg United",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Fortuna Galgenfeld"
+        },
+        {
+          "anpfiff": "15:00",
+          "heim": "Deportivo Gordo Cojones",
+          "gast": "International Football Club of Berne",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "AC Diva"
+        },
+        {
+          "anpfiff": "15:00",
+          "heim": "Roter Stern Bollwerk",
+          "gast": "Pärkli Boys United",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Valti Traktor"
+        },
+        {
+          "anpfiff": "15:00",
+          "heim": "Spartak Bern FC",
+          "gast": "Deportivo Gordo Cojones",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "BFC Cholewärch Viktoria"
+        },
+        {
+          "anpfiff": "15:00",
+          "heim": "Deportivo Gordo Cojones",
+          "gast": "5ème Etage",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Valti Traktor"
+        },
+        {
+          "anpfiff": "15:00",
+          "heim": "Les Mecs Sportifs",
+          "gast": "Pärkli Boys United",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Standfest Breitenrain"
+        },
+        {
+          "anpfiff": "15:00",
+          "heim": "Sunnesite Allstars Chilefäud",
+          "gast": "International Football Club of Berne",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Fortuna Galgenfeld"
+        },
+        {
+          "anpfiff": "15:00",
+          "heim": "Sunnesite Allstars Chilefäud",
+          "gast": "Les Mecs Sportifs",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "AC Diva"
+        }
+      ]
+    },
+    {
+      "datum": "18.10.2026",
+      "spiele": [
+        {
+          "anpfiff": "13:00",
+          "heim": "Roter Stern Bollwerk",
+          "gast": "Obstberg United",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Standfest Breitenrain"
+        },
+        {
+          "anpfiff": "13:00",
+          "heim": "International Football Club of Berne",
+          "gast": "Spartak Bern FC",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "BFC Cholewärch Viktoria"
+        },
+        {
+          "anpfiff": "15:00",
+          "heim": "Sunnesite Allstars Chilefäud",
+          "gast": "5ème Etage",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "AC Diva"
+        },
+        {
+          "anpfiff": "15:00",
+          "heim": "Pärkli Boys United",
+          "gast": "Deportivo Gordo Cojones",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "West Bärn United"
+        }
+      ]
+    },
+    {
+      "datum": "04.10.2026",
+      "spiele": [
+        {
+          "anpfiff": "11:00",
+          "heim": "Sunnesite Allstars Chilefäud",
+          "gast": "Spartak Bern FC",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Dynamo Chop"
+        },
+        {
+          "anpfiff": "11:00",
+          "heim": "Energie Bitzius",
+          "gast": "Deportivo Gordo Cojones",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "West Bärn United"
+        },
+        {
+          "anpfiff": "13:00",
+          "heim": "5ème Etage",
+          "gast": "Les Mecs Sportifs",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Standfest Breitenrain"
+        },
+        {
+          "anpfiff": "15:00",
+          "heim": "International Football Club of Berne",
+          "gast": "Roter Stern Bollwerk",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Mistery Team 1"
+        }
+      ]
+    },
+    {
+      "datum": "27.09.2026",
+      "spiele": [
+        {
+          "anpfiff": "13:00",
+          "heim": "Energie Bitzius",
+          "gast": "Obstberg United",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "AC Diva"
+        },
+        {
+          "anpfiff": "13:00",
+          "heim": "Pärkli Boys United",
+          "gast": "International Football Club of Berne",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Fortuna Galgenfeld"
+        },
+        {
+          "anpfiff": "15:00",
+          "heim": "5ème Etage",
+          "gast": "Spartak Bern FC",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Mistery Team 1"
+        },
+        {
+          "anpfiff": "15:00",
+          "heim": "Les Mecs Sportifs",
+          "gast": "Deportivo Gordo Cojones",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Dynamo Chop"
+        }
+      ]
+    },
+    {
+      "datum": "30.08.2026",
+      "spiele": [
+        {
+          "anpfiff": "11:00",
+          "heim": "Energie Bitzius",
+          "gast": "International Football Club of Berne",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "West Bärn United"
+        },
+        {
+          "anpfiff": "11:00",
+          "heim": "Sunnesite Allstars Chilefäud",
+          "gast": "Pärkli Boys United",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Mistery Team 1"
+        },
+        {
+          "anpfiff": "13:00",
+          "heim": "5ème Etage",
+          "gast": "Roter Stern Bollwerk",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Raclette Rangerz"
+        },
+        {
+          "anpfiff": "15:00",
+          "heim": "Deportivo Gordo Cojones",
+          "gast": "Obstberg United",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Dynamo Chop"
+        }
+      ]
+    },
+    {
+      "datum": "23.08.2026",
+      "spiele": [
+        {
+          "anpfiff": "13:00",
+          "heim": "5ème Etage",
+          "gast": "Pärkli Boys United",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Valti Traktor"
+        },
+        {
+          "anpfiff": "13:00",
+          "heim": "Spartak Bern FC",
+          "gast": "Roter Stern Bollwerk",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Mistery Team 1"
+        },
+        {
+          "anpfiff": "15:00",
+          "heim": "Energie Bitzius",
+          "gast": "Sunnesite Allstars Chilefäud",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Fortuna Galgenfeld"
+        },
+        {
+          "anpfiff": "15:00",
+          "heim": "Les Mecs Sportifs",
+          "gast": "Obstberg United",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Dynamo Chop"
+        }
+      ]
+    },
+    {
+      "datum": "09.08.2026",
+      "spiele": [
+        {
+          "anpfiff": "11:00",
+          "heim": "Deportivo Gordo Cojones",
+          "gast": "Sunnesite Allstars Chilefäud",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "BFC Cholewärch Viktoria"
+        },
+        {
+          "anpfiff": "11:00",
+          "heim": "Roter Stern Bollwerk",
+          "gast": "Les Mecs Sportifs",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Raclette Rangerz"
+        },
+        {
+          "anpfiff": "13:00",
+          "heim": "Obstberg United",
+          "gast": "International Football Club of Berne",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Valti Traktor"
+        },
+        {
+          "anpfiff": "15:00",
+          "heim": "Spartak Bern FC",
+          "gast": "Pärkli Boys United",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Olympique Troissept"
+        }
+      ]
+    },
+    {
+      "datum": "18.04.2027",
+      "spiele": [
+        {
+          "anpfiff": "11:00",
+          "heim": "Mistery Team 1",
+          "gast": "Dynamo Chop",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Spartak Bern FC"
+        },
+        {
+          "anpfiff": "11:00",
+          "heim": "Standfest Breitenrain",
+          "gast": "Mistery Team 1",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Les Mecs Sportifs"
+        },
+        {
+          "anpfiff": "11:00",
+          "heim": "Fortuna Galgenfeld",
+          "gast": "Dynamo Chop",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "International Football Club of Berne"
+        },
+        {
+          "anpfiff": "11:00",
+          "heim": "BFC Cholewärch Viktoria",
+          "gast": "Dynamo Chop",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Obstberg United"
+        },
+        {
+          "anpfiff": "11:00",
+          "heim": "Olympique Troissept",
+          "gast": "Mistery Team 1",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Roter Stern Bollwerk"
+        },
+        {
+          "anpfiff": "13:00",
+          "heim": "West Bärn United",
+          "gast": "BFC Cholewärch Viktoria",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Deportivo Gordo Cojones"
+        },
+        {
+          "anpfiff": "13:00",
+          "heim": "Raclette Rangerz",
+          "gast": "Standfest Breitenrain",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "5ème Etage"
+        },
+        {
+          "anpfiff": "13:00",
+          "heim": "Valti Traktor",
+          "gast": "Raclette Rangerz",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Roter Stern Bollwerk"
+        },
+        {
+          "anpfiff": "13:00",
+          "heim": "Standfest Breitenrain",
+          "gast": "Fortuna Galgenfeld",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Obstberg United"
+        },
+        {
+          "anpfiff": "13:00",
+          "heim": "Olympique Troissept",
+          "gast": "West Bärn United",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "International Football Club of Berne"
+        },
+        {
+          "anpfiff": "13:00",
+          "heim": "Standfest Breitenrain",
+          "gast": "West Bärn United",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Les Mecs Sportifs"
+        },
+        {
+          "anpfiff": "13:00",
+          "heim": "Olympique Troissept",
+          "gast": "Valti Traktor",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Obstberg United"
+        },
+        {
+          "anpfiff": "13:00",
+          "heim": "BFC Cholewärch Viktoria",
+          "gast": "Raclette Rangerz",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Roter Stern Bollwerk"
+        },
+        {
+          "anpfiff": "15:00",
+          "heim": "AC Diva",
+          "gast": "Olympique Troissept",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "International Football Club of Berne"
+        },
+        {
+          "anpfiff": "15:00",
+          "heim": "Valti Traktor",
+          "gast": "Fortuna Galgenfeld",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Pärkli Boys United"
+        },
+        {
+          "anpfiff": "15:00",
+          "heim": "BFC Cholewärch Viktoria",
+          "gast": "AC Diva",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Spartak Bern FC"
+        },
+        {
+          "anpfiff": "15:00",
+          "heim": "Raclette Rangerz",
+          "gast": "Mistery Team 1",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Spartak Bern FC"
+        },
+        {
+          "anpfiff": "15:00",
+          "heim": "Valti Traktor",
+          "gast": "Dynamo Chop",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Deportivo Gordo Cojones"
+        },
+        {
+          "anpfiff": "15:00",
+          "heim": "Fortuna Galgenfeld",
+          "gast": "AC Diva",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Sunnesite Allstars Chilefäud"
+        },
+        {
+          "anpfiff": "15:00",
+          "heim": "West Bärn United",
+          "gast": "Fortuna Galgenfeld",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Pärkli Boys United"
+        },
+        {
+          "anpfiff": "15:00",
+          "heim": "AC Diva",
+          "gast": "Dynamo Chop",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Sunnesite Allstars Chilefäud"
+        }
+      ]
+    },
+    {
+      "datum": "18.10.2026",
+      "spiele": [
+        {
+          "anpfiff": "11:00",
+          "heim": "BFC Cholewärch Viktoria",
+          "gast": "Olympique Troissept",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "International Football Club of Berne"
+        },
+        {
+          "anpfiff": "11:00",
+          "heim": "Standfest Breitenrain",
+          "gast": "Valti Traktor",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Roter Stern Bollwerk"
+        },
+        {
+          "anpfiff": "13:00",
+          "heim": "AC Diva",
+          "gast": "Raclette Rangerz",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Sunnesite Allstars Chilefäud"
+        },
+        {
+          "anpfiff": "15:00",
+          "heim": "West Bärn United",
+          "gast": "Mistery Team 1",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Pärkli Boys United"
+        }
+      ]
+    },
+    {
+      "datum": "04.10.2026",
+      "spiele": [
+        {
+          "anpfiff": "13:00",
+          "heim": "West Bärn United",
+          "gast": "Valti Traktor",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Energie Bitzius"
+        },
+        {
+          "anpfiff": "13:00",
+          "heim": "Dynamo Chop",
+          "gast": "Raclette Rangerz",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Sunnesite Allstars Chilefäud"
+        },
+        {
+          "anpfiff": "15:00",
+          "heim": "Standfest Breitenrain",
+          "gast": "BFC Cholewärch Viktoria",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "5ème Etage"
+        },
+        {
+          "anpfiff": "15:00",
+          "heim": "Mistery Team 1",
+          "gast": "Fortuna Galgenfeld",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "International Football Club of Berne"
+        }
+      ]
+    },
+    {
+      "datum": "27.09.2026",
+      "spiele": [
+        {
+          "anpfiff": "11:00",
+          "heim": "Fortuna Galgenfeld",
+          "gast": "Raclette Rangerz",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Pärkli Boys United"
+        },
+        {
+          "anpfiff": "11:00",
+          "heim": "AC Diva",
+          "gast": "Standfest Breitenrain",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Energie Bitzius"
+        },
+        {
+          "anpfiff": "13:00",
+          "heim": "Mistery Team 1",
+          "gast": "Valti Traktor",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "5ème Etage"
+        },
+        {
+          "anpfiff": "15:00",
+          "heim": "Dynamo Chop",
+          "gast": "Olympique Troissept",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Les Mecs Sportifs"
+        }
+      ]
+    },
+    {
+      "datum": "30.08.2026",
+      "spiele": [
+        {
+          "anpfiff": "13:00",
+          "heim": "Mistery Team 1",
+          "gast": "BFC Cholewärch Viktoria",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Sunnesite Allstars Chilefäud"
+        },
+        {
+          "anpfiff": "13:00",
+          "heim": "West Bärn United",
+          "gast": "AC Diva",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Energie Bitzius"
+        },
+        {
+          "anpfiff": "15:00",
+          "heim": "Raclette Rangerz",
+          "gast": "Olympique Troissept",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "5ème Etage"
+        },
+        {
+          "anpfiff": "15:00",
+          "heim": "Dynamo Chop",
+          "gast": "Standfest Breitenrain",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Deportivo Gordo Cojones"
+        }
+      ]
+    },
+    {
+      "datum": "23.08.2026",
+      "spiele": [
+        {
+          "anpfiff": "11:00",
+          "heim": "Mistery Team 1",
+          "gast": "AC Diva",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Spartak Bern FC"
+        },
+        {
+          "anpfiff": "11:00",
+          "heim": "Valti Traktor",
+          "gast": "BFC Cholewärch Viktoria",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "5ème Etage"
+        },
+        {
+          "anpfiff": "13:00",
+          "heim": "Fortuna Galgenfeld",
+          "gast": "Olympique Troissept",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Energie Bitzius"
+        },
+        {
+          "anpfiff": "15:00",
+          "heim": "Dynamo Chop",
+          "gast": "West Bärn United",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Les Mecs Sportifs"
+        }
+      ]
+    },
+    {
+      "datum": "09.08.2026",
+      "spiele": [
+        {
+          "anpfiff": "13:00",
+          "heim": "Raclette Rangerz",
+          "gast": "West Bärn United",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Roter Stern Bollwerk"
+        },
+        {
+          "anpfiff": "13:00",
+          "heim": "BFC Cholewärch Viktoria",
+          "gast": "Fortuna Galgenfeld",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Deportivo Gordo Cojones"
+        },
+        {
+          "anpfiff": "15:00",
+          "heim": "Valti Traktor",
+          "gast": "AC Diva",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Obstberg United"
+        },
+        {
+          "anpfiff": "15:00",
+          "heim": "Olympique Troissept",
+          "gast": "Standfest Breitenrain",
+          "tore": ":",
+          "fp": ":",
+          "schiri": "Spartak Bern FC"
+        }
+      ]
+    }
+  ],
   "letzter_spieltag": null
 }
