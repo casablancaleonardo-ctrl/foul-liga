@@ -44,42 +44,6 @@
       "tore": ":",
       "fp": ":",
       "schiri": "West Bärn United"
-    },
-    {
-      "date": "2027-04-18",
-      "zeit": "13:00",
-      "heim": "Pärkli Boys United",
-      "gast": "Energie Bitzius",
-      "tore": ":",
-      "fp": ":",
-      "schiri": "West Bärn United"
-    },
-    {
-      "date": "2027-04-18",
-      "zeit": "15:00",
-      "heim": "Pärkli Boys United",
-      "gast": "Obstberg United",
-      "tore": ":",
-      "fp": ":",
-      "schiri": "Fortuna Galgenfeld"
-    },
-    {
-      "date": "2027-04-18",
-      "zeit": "15:00",
-      "heim": "Roter Stern Bollwerk",
-      "gast": "Pärkli Boys United",
-      "tore": ":",
-      "fp": ":",
-      "schiri": "Valti Traktor"
-    },
-    {
-      "date": "2027-04-18",
-      "zeit": "15:00",
-      "heim": "Les Mecs Sportifs",
-      "gast": "Pärkli Boys United",
-      "tore": ":",
-      "fp": ":",
-      "schiri": "Standfest Breitenrain"
     }
   ],
   "schiri": [
@@ -96,21 +60,7 @@
       "heim": "West Bärn United",
       "gast": "Mistery Team 1",
       "tore": ":"
-    },
-    {
-      "date": "2027-04-18",
-      "zeit": "15:00",
-      "heim": "Valti Traktor",
-      "gast": "Fortuna Galgenfeld",
-      "tore": ":"
-    },
-    {
-      "date": "2027-04-18",
-      "zeit": "15:00",
-      "heim": "West Bärn United",
-      "gast": "Fortuna Galgenfeld",
-      "tore": ":"
     }
   ],
-  "updated": "2026-06-29T10:23:37.202455+00:00"
+  "updated": "2026-06-29T14:42:07.883368+00:00"
 }
