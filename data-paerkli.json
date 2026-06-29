@@ -7,7 +7,7 @@
       "gast": "Pärkli Boys United",
       "tore": ":",
       "fp": ":",
-      "schiri": "Olympique Troissept"
+      "schiri": "Fortuna Galgenfeld"
     },
     {
       "date": "2026-08-23",
@@ -43,24 +43,24 @@
       "gast": "Deportivo Gordo Cojones",
       "tore": ":",
       "fp": ":",
-      "schiri": "West Bärn United"
+      "schiri": "Raclette Rangerz"
     }
   ],
   "schiri": [
+    {
+      "date": "2026-08-23",
+      "zeit": "15:00",
+      "heim": "Dynamo Chop",
+      "gast": "West Bärn United",
+      "tore": ":"
+    },
     {
       "date": "2026-09-27",
       "zeit": "11:00",
       "heim": "Fortuna Galgenfeld",
       "gast": "Raclette Rangerz",
       "tore": ":"
-    },
-    {
-      "date": "2026-10-18",
-      "zeit": "15:00",
-      "heim": "West Bärn United",
-      "gast": "Mistery Team 1",
-      "tore": ":"
     }
   ],
-  "updated": "2026-06-29T14:42:07.883368+00:00"
+  "updated": "2026-06-29T17:28:07.956157+00:00"
 }
