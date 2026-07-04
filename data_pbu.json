@@ -1,43 +1,7 @@
 {
-  "updated": "2026-06-28T22:04:30.920785",
+  "updated": "2026-07-04T15:52:35.694437",
   "gespielt": [],
   "kommend": [
-    {
-      "datum": "18.04.2027",
-      "anpfiff": "13:00",
-      "heim": "Pärkli Boys United",
-      "gast": "Energie Bitzius",
-      "tore": ":",
-      "fp": ":",
-      "schiri": "West Bärn United"
-    },
-    {
-      "datum": "18.04.2027",
-      "anpfiff": "15:00",
-      "heim": "Pärkli Boys United",
-      "gast": "Obstberg United",
-      "tore": ":",
-      "fp": ":",
-      "schiri": "Fortuna Galgenfeld"
-    },
-    {
-      "datum": "18.04.2027",
-      "anpfiff": "15:00",
-      "heim": "Roter Stern Bollwerk",
-      "gast": "Pärkli Boys United",
-      "tore": ":",
-      "fp": ":",
-      "schiri": "Valti Traktor"
-    },
-    {
-      "datum": "18.04.2027",
-      "anpfiff": "15:00",
-      "heim": "Les Mecs Sportifs",
-      "gast": "Pärkli Boys United",
-      "tore": ":",
-      "fp": ":",
-      "schiri": "Standfest Breitenrain"
-    },
     {
       "datum": "18.10.2026",
       "anpfiff": "15:00",
@@ -45,7 +9,7 @@
       "gast": "Deportivo Gordo Cojones",
       "tore": ":",
       "fp": ":",
-      "schiri": "West Bärn United"
+      "schiri": "Raclette Rangerz"
     },
     {
       "datum": "27.09.2026",
@@ -63,7 +27,7 @@
       "gast": "Pärkli Boys United",
       "tore": ":",
       "fp": ":",
-      "schiri": "Mistery Team 1"
+      "schiri": "Mystery Team 1"
     },
     {
       "datum": "23.08.2026",
@@ -72,7 +36,7 @@
       "gast": "Pärkli Boys United",
       "tore": ":",
       "fp": ":",
-      "schiri": "Valti Traktor"
+      "schiri": "Dynamo Chop"
     },
     {
       "datum": "09.08.2026",
@@ -81,36 +45,22 @@
       "gast": "Pärkli Boys United",
       "tore": ":",
       "fp": ":",
-      "schiri": "Olympique Troissept"
+      "schiri": "Fortuna Galgenfeld"
     }
   ],
   "schiri_dienste": [
-    {
-      "datum": "18.04.2027",
-      "anpfiff": "15:00",
-      "heim": "Valti Traktor",
-      "gast": "Fortuna Galgenfeld",
-      "schiri": "Pärkli Boys United"
-    },
-    {
-      "datum": "18.04.2027",
-      "anpfiff": "15:00",
-      "heim": "West Bärn United",
-      "gast": "Fortuna Galgenfeld",
-      "schiri": "Pärkli Boys United"
-    },
-    {
-      "datum": "18.10.2026",
-      "anpfiff": "15:00",
-      "heim": "West Bärn United",
-      "gast": "Mistery Team 1",
-      "schiri": "Pärkli Boys United"
-    },
     {
       "datum": "27.09.2026",
       "anpfiff": "11:00",
       "heim": "Fortuna Galgenfeld",
       "gast": "Raclette Rangerz",
+      "schiri": "Pärkli Boys United"
+    },
+    {
+      "datum": "23.08.2026",
+      "anpfiff": "15:00",
+      "heim": "Dynamo Chop",
+      "gast": "West Bärn United",
       "schiri": "Pärkli Boys United"
     }
   ]
