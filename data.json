@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-05T22:00:09.709134",
+  "updated": "2026-07-11T15:51:56.428548",
   "tabelle": {
     "Liga 1": [
       {
@@ -360,23 +360,6 @@
               "0"
             ],
             "zone": ""
-          },
-          {
-            "team": "BFC Cholewärch Viktoria",
-            "cols": [
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0"
-            ],
-            "zone": ""
           }
         ]
       }
@@ -400,7 +383,7 @@
           "gast": "Spartak Bern FC",
           "tore": ":",
           "fp": ":",
-          "schiri": "BFC Cholewärch Viktoria"
+          "schiri": "Boca Seniors Viktoria"
         },
         {
           "anpfiff": "15:00",
@@ -577,7 +560,7 @@
           "gast": "Sunnesite Allstars Chilefäud",
           "tore": ":",
           "fp": ":",
-          "schiri": "BFC Cholewärch Viktoria"
+          "schiri": "Boca Seniors Viktoria"
         },
         {
           "anpfiff": "11:00",
@@ -610,7 +593,7 @@
       "spiele": [
         {
           "anpfiff": "11:00",
-          "heim": "BFC Cholewärch Viktoria",
+          "heim": "Boca Seniors Viktoria",
           "gast": "Olympique Troissept",
           "tore": ":",
           "fp": ":",
@@ -664,7 +647,7 @@
         {
           "anpfiff": "15:00",
           "heim": "Standfest Breitenrain",
-          "gast": "BFC Cholewärch Viktoria",
+          "gast": "Boca Seniors Viktoria",
           "tore": ":",
           "fp": ":",
           "schiri": "5ème Etage"
@@ -722,7 +705,7 @@
         {
           "anpfiff": "13:00",
           "heim": "Mystery Team 1",
-          "gast": "BFC Cholewärch Viktoria",
+          "gast": "Boca Seniors Viktoria",
           "tore": ":",
           "fp": ":",
           "schiri": "Sunnesite Allstars Chilefäud"
@@ -767,7 +750,7 @@
         {
           "anpfiff": "11:00",
           "heim": "Valti Traktor",
-          "gast": "BFC Cholewärch Viktoria",
+          "gast": "Boca Seniors Viktoria",
           "tore": ":",
           "fp": ":",
           "schiri": "5ème Etage"
@@ -803,7 +786,7 @@
         },
         {
           "anpfiff": "13:00",
-          "heim": "BFC Cholewärch Viktoria",
+          "heim": "Boca Seniors Viktoria",
           "gast": "Fortuna Galgenfeld",
           "tore": ":",
           "fp": ":",
