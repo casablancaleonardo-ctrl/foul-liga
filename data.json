@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-12T21:48:45.772964",
+  "updated": "2026-07-18T15:52:25.620687",
   "tabelle": {
     "Liga 1": [
       {
@@ -208,23 +208,6 @@
           "PKT"
         ],
         "rows": [
-          {
-            "team": "Mystery Team 1",
-            "cols": [
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0"
-            ],
-            "zone": ""
-          },
           {
             "team": "Dynamo Chop",
             "cols": [
@@ -465,7 +448,7 @@
           "gast": "Spartak Bern FC",
           "tore": ":",
           "fp": ":",
-          "schiri": "Mystery Team 1"
+          "schiri": "Senegambia Bern"
         },
         {
           "anpfiff": "15:00",
@@ -494,7 +477,7 @@
           "gast": "Pärkli Boys United",
           "tore": ":",
           "fp": ":",
-          "schiri": "Mystery Team 1"
+          "schiri": "Senegambia Bern"
         },
         {
           "anpfiff": "13:00",
@@ -531,7 +514,7 @@
           "gast": "Roter Stern Bollwerk",
           "tore": ":",
           "fp": ":",
-          "schiri": "Mystery Team 1"
+          "schiri": "Senegambia Bern"
         },
         {
           "anpfiff": "15:00",
@@ -618,7 +601,7 @@
         {
           "anpfiff": "15:00",
           "heim": "West Bärn United",
-          "gast": "Mystery Team 1",
+          "gast": "Senegambia Bern",
           "tore": ":",
           "fp": ":",
           "schiri": "Spartak Bern FC"
@@ -654,7 +637,7 @@
         },
         {
           "anpfiff": "15:00",
-          "heim": "Mystery Team 1",
+          "heim": "Senegambia Bern",
           "gast": "Fortuna Galgenfeld",
           "tore": ":",
           "fp": ":",
@@ -683,7 +666,7 @@
         },
         {
           "anpfiff": "13:00",
-          "heim": "Mystery Team 1",
+          "heim": "Senegambia Bern",
           "gast": "Valti Traktor",
           "tore": ":",
           "fp": ":",
@@ -704,7 +687,7 @@
       "spiele": [
         {
           "anpfiff": "13:00",
-          "heim": "Mystery Team 1",
+          "heim": "Senegambia Bern",
           "gast": "Boca Seniors Viktoria",
           "tore": ":",
           "fp": ":",
@@ -741,7 +724,7 @@
       "spiele": [
         {
           "anpfiff": "11:00",
-          "heim": "Mystery Team 1",
+          "heim": "Senegambia Bern",
           "gast": "AC Diva",
           "tore": ":",
           "fp": ":",
