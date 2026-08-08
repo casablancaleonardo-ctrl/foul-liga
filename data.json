@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-02T21:54:14.229950",
+  "updated": "2026-08-08T15:24:59.011812",
   "tabelle": {
     "Liga 1": [
       {
@@ -821,12 +821,48 @@
           "anpfiff": "15:00",
           "heim": "Olympique Troissept",
           "gast": "Standfest Breitenrain",
-          "tore": ":",
-          "fp": ":",
+          "tore": "3 : 0",
+          "fp": "5 : 0",
           "schiri": "International Football Club of Berne"
         }
       ]
     }
   ],
-  "letzter_spieltag": null
+  "letzter_spieltag": {
+    "datum": "09.08.2026",
+    "spiele": [
+      {
+        "anpfiff": "13:00",
+        "heim": "Raclette Rangerz",
+        "gast": "West Bärn United",
+        "tore": ":",
+        "fp": ":",
+        "schiri": "Les Mecs Sportifs"
+      },
+      {
+        "anpfiff": "13:00",
+        "heim": "Boca Seniors Viktoria",
+        "gast": "Fortuna Galgenfeld",
+        "tore": ":",
+        "fp": ":",
+        "schiri": "Deportivo Gordo Cojones"
+      },
+      {
+        "anpfiff": "15:00",
+        "heim": "Valti Traktor",
+        "gast": "AC Diva",
+        "tore": ":",
+        "fp": ":",
+        "schiri": "Obstberg United"
+      },
+      {
+        "anpfiff": "15:00",
+        "heim": "Olympique Troissept",
+        "gast": "Standfest Breitenrain",
+        "tore": "3 : 0",
+        "fp": "5 : 0",
+        "schiri": "International Football Club of Berne"
+      }
+    ]
+  }
 }
