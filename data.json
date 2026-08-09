@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-09T15:29:06.418063",
+  "updated": "2026-08-09T17:29:37.827370",
   "tabelle": {
     "Liga 1": [
       {
@@ -19,16 +19,118 @@
         ],
         "rows": [
           {
+            "team": "Pärkli Boys United",
+            "cols": [
+              "1",
+              "1",
+              "0",
+              "0",
+              "7",
+              "1",
+              "6",
+              "5",
+              "0",
+              "0",
+              "3"
+            ],
+            "zone": ""
+          },
+          {
+            "team": "Obstberg United",
+            "cols": [
+              "1",
+              "1",
+              "0",
+              "0",
+              "5",
+              "1",
+              "4",
+              "5",
+              "0",
+              "0",
+              "3"
+            ],
+            "zone": ""
+          },
+          {
+            "team": "Sunnesite Allstars Chilefäud",
+            "cols": [
+              "1",
+              "1",
+              "0",
+              "0",
+              "3",
+              "0",
+              "3",
+              "5",
+              "0",
+              "0",
+              "3"
+            ],
+            "zone": ""
+          },
+          {
+            "team": "Roter Stern Bollwerk",
+            "cols": [
+              "1",
+              "1",
+              "0",
+              "0",
+              "3",
+              "2",
+              "1",
+              "5",
+              "0",
+              "0",
+              "3"
+            ],
+            "zone": ""
+          },
+          {
             "team": "Les Mecs Sportifs",
             "cols": [
+              "1",
+              "0",
+              "1",
+              "0",
+              "2",
+              "3",
+              "-1",
+              "5",
               "0",
               "0",
+              "0"
+            ],
+            "zone": ""
+          },
+          {
+            "team": "Deportivo Gordo Cojones",
+            "cols": [
+              "1",
+              "0",
+              "1",
               "0",
               "0",
+              "3",
+              "-3",
+              "5",
               "0",
               "0",
+              "0"
+            ],
+            "zone": ""
+          },
+          {
+            "team": "International Football Club of Berne",
+            "cols": [
+              "1",
               "0",
+              "1",
               "0",
+              "1",
+              "5",
+              "-4",
+              "5",
               "0",
               "0",
               "0"
@@ -38,14 +140,14 @@
           {
             "team": "Spartak Bern FC",
             "cols": [
+              "1",
               "0",
+              "1",
               "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
+              "1",
+              "7",
+              "-6",
+              "5",
               "0",
               "0",
               "0"
@@ -70,109 +172,7 @@
             "zone": ""
           },
           {
-            "team": "Roter Stern Bollwerk",
-            "cols": [
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0"
-            ],
-            "zone": ""
-          },
-          {
-            "team": "Deportivo Gordo Cojones",
-            "cols": [
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0"
-            ],
-            "zone": ""
-          },
-          {
-            "team": "Sunnesite Allstars Chilefäud",
-            "cols": [
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0"
-            ],
-            "zone": ""
-          },
-          {
             "team": "Energie Bitzius",
-            "cols": [
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0"
-            ],
-            "zone": ""
-          },
-          {
-            "team": "International Football Club of Berne",
-            "cols": [
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0"
-            ],
-            "zone": ""
-          },
-          {
-            "team": "Pärkli Boys United",
-            "cols": [
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0"
-            ],
-            "zone": ""
-          },
-          {
-            "team": "Obstberg United",
             "cols": [
               "0",
               "0",
@@ -209,7 +209,92 @@
         ],
         "rows": [
           {
-            "team": "Mystery Team 1",
+            "team": "Valti Traktor",
+            "cols": [
+              "1",
+              "1",
+              "0",
+              "0",
+              "3",
+              "0",
+              "3",
+              "5",
+              "0",
+              "0",
+              "3"
+            ],
+            "zone": ""
+          },
+          {
+            "team": "Olympique Troissept",
+            "cols": [
+              "1",
+              "1",
+              "0",
+              "0",
+              "3",
+              "0",
+              "3",
+              "5",
+              "0",
+              "0",
+              "3"
+            ],
+            "zone": ""
+          },
+          {
+            "team": "West Bärn United",
+            "cols": [
+              "1",
+              "1",
+              "0",
+              "0",
+              "3",
+              "1",
+              "2",
+              "5",
+              "0",
+              "0",
+              "3"
+            ],
+            "zone": ""
+          },
+          {
+            "team": "Fortuna Galgenfeld",
+            "cols": [
+              "1",
+              "1",
+              "0",
+              "0",
+              "3",
+              "2",
+              "1",
+              "5",
+              "0",
+              "0",
+              "3"
+            ],
+            "zone": ""
+          },
+          {
+            "team": "Boca Seniors Viktoria",
+            "cols": [
+              "1",
+              "0",
+              "1",
+              "0",
+              "2",
+              "3",
+              "-1",
+              "5",
+              "0",
+              "0",
+              "0"
+            ],
+            "zone": ""
+          },
+          {
+            "team": "Senegambia Bern",
             "cols": [
               "0",
               "0",
@@ -245,98 +330,13 @@
           {
             "team": "AC Diva",
             "cols": [
+              "1",
+              "0",
+              "1",
               "0",
               "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0"
-            ],
-            "zone": ""
-          },
-          {
-            "team": "Raclette Rangerz",
-            "cols": [
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0"
-            ],
-            "zone": ""
-          },
-          {
-            "team": "Valti Traktor",
-            "cols": [
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0"
-            ],
-            "zone": ""
-          },
-          {
-            "team": "Fortuna Galgenfeld",
-            "cols": [
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0"
-            ],
-            "zone": ""
-          },
-          {
-            "team": "Olympique Troissept",
-            "cols": [
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0"
-            ],
-            "zone": ""
-          },
-          {
-            "team": "West Bärn United",
-            "cols": [
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
+              "3",
+              "-3",
               "0",
               "0",
               "0",
@@ -347,13 +347,13 @@
           {
             "team": "Standfest Breitenrain",
             "cols": [
+              "1",
+              "0",
+              "1",
               "0",
               "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
+              "3",
+              "-3",
               "0",
               "0",
               "0",
@@ -362,19 +362,19 @@
             "zone": ""
           },
           {
-            "team": "BFC Cholewärch Viktoria",
+            "team": "Raclette Rangerz",
             "cols": [
+              "1",
               "0",
+              "1",
               "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0"
+              "1",
+              "3",
+              "-2",
+              "5",
+              "5",
+              "3",
+              "-3"
             ],
             "zone": ""
           }
@@ -575,32 +575,32 @@
           "anpfiff": "11:00",
           "heim": "Deportivo Gordo Cojones",
           "gast": "Sunnesite Allstars Chilefäud",
-          "tore": ":",
-          "fp": ":",
+          "tore": "0 : 3",
+          "fp": "5 : 5",
           "schiri": "Boca Seniors Viktoria"
         },
         {
           "anpfiff": "11:00",
           "heim": "Roter Stern Bollwerk",
           "gast": "Les Mecs Sportifs",
-          "tore": ":",
-          "fp": ":",
+          "tore": "3 : 2",
+          "fp": "5 : 5",
           "schiri": "Raclette Rangerz"
         },
         {
           "anpfiff": "13:00",
           "heim": "Obstberg United",
           "gast": "International Football Club of Berne",
-          "tore": ":",
-          "fp": ":",
+          "tore": "5 : 1",
+          "fp": "5 : 5",
           "schiri": "Valti Traktor"
         },
         {
           "anpfiff": "15:00",
           "heim": "Spartak Bern FC",
           "gast": "Pärkli Boys United",
-          "tore": ":",
-          "fp": ":",
+          "tore": "1 : 7",
+          "fp": "5 : 5",
           "schiri": "Fortuna Galgenfeld"
         }
       ]
@@ -797,24 +797,24 @@
           "anpfiff": "13:00",
           "heim": "Raclette Rangerz",
           "gast": "West Bärn United",
-          "tore": ":",
-          "fp": ":",
+          "tore": "1 : 3",
+          "fp": "5 : 5",
           "schiri": "Les Mecs Sportifs"
         },
         {
           "anpfiff": "13:00",
           "heim": "Boca Seniors Viktoria",
           "gast": "Fortuna Galgenfeld",
-          "tore": ":",
-          "fp": ":",
+          "tore": "2 : 3",
+          "fp": "5 : 5",
           "schiri": "Deportivo Gordo Cojones"
         },
         {
           "anpfiff": "15:00",
           "heim": "Valti Traktor",
           "gast": "AC Diva",
-          "tore": ":",
-          "fp": ":",
+          "tore": "3 : 0",
+          "fp": "5 : 0",
           "schiri": "Obstberg United"
         },
         {
@@ -835,24 +835,24 @@
         "anpfiff": "13:00",
         "heim": "Raclette Rangerz",
         "gast": "West Bärn United",
-        "tore": ":",
-        "fp": ":",
+        "tore": "1 : 3",
+        "fp": "5 : 5",
         "schiri": "Les Mecs Sportifs"
       },
       {
         "anpfiff": "13:00",
         "heim": "Boca Seniors Viktoria",
         "gast": "Fortuna Galgenfeld",
-        "tore": ":",
-        "fp": ":",
+        "tore": "2 : 3",
+        "fp": "5 : 5",
         "schiri": "Deportivo Gordo Cojones"
       },
       {
         "anpfiff": "15:00",
         "heim": "Valti Traktor",
         "gast": "AC Diva",
-        "tore": ":",
-        "fp": ":",
+        "tore": "3 : 0",
+        "fp": "5 : 0",
         "schiri": "Obstberg United"
       },
       {
