@@ -1,6 +1,16 @@
 {
-  "updated": "2026-08-09T15:35:07.087909",
-  "gespielt": [],
+  "updated": "2026-08-09T17:34:16.940215",
+  "gespielt": [
+    {
+      "datum": "09.08.2026",
+      "anpfiff": "15:00",
+      "heim": "Spartak Bern FC",
+      "gast": "Pärkli Boys United",
+      "tore": "1 : 7",
+      "fp": "5 : 5",
+      "schiri": "Fortuna Galgenfeld"
+    }
+  ],
   "kommend": [
     {
       "datum": "18.10.2026",
@@ -37,15 +47,6 @@
       "tore": ":",
       "fp": ":",
       "schiri": "Dynamo Chop"
-    },
-    {
-      "datum": "09.08.2026",
-      "anpfiff": "15:00",
-      "heim": "Spartak Bern FC",
-      "gast": "Pärkli Boys United",
-      "tore": ":",
-      "fp": ":",
-      "schiri": "Fortuna Galgenfeld"
     }
   ],
   "schiri_dienste": [
