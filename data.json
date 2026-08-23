@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-23T15:20:06.878276",
+  "updated": "2026-08-23T17:18:21.903899",
   "tabelle": {
     "Liga 1": [
       {
@@ -19,16 +19,50 @@
         ],
         "rows": [
           {
+            "team": "Sunnesite Allstars Chilefäud",
+            "cols": [
+              "2",
+              "2",
+              "0",
+              "0",
+              "10",
+              "1",
+              "9",
+              "10",
+              "0",
+              "0",
+              "6"
+            ],
+            "zone": ""
+          },
+          {
             "team": "Pärkli Boys United",
+            "cols": [
+              "2",
+              "2",
+              "0",
+              "0",
+              "14",
+              "6",
+              "8",
+              "10",
+              "0",
+              "0",
+              "6"
+            ],
+            "zone": ""
+          },
+          {
+            "team": "Roter Stern Bollwerk",
             "cols": [
               "2",
               "1",
               "0",
               "1",
-              "7",
-              "1",
-              "6",
               "5",
+              "4",
+              "1",
+              "10",
               "0",
               "0",
               "4"
@@ -53,36 +87,19 @@
             "zone": ""
           },
           {
-            "team": "Sunnesite Allstars Chilefäud",
+            "team": "Spartak Bern FC",
             "cols": [
               "2",
-              "1",
               "0",
               "1",
-              "3",
-              "0",
-              "3",
-              "5",
-              "0",
-              "0",
-              "4"
-            ],
-            "zone": ""
-          },
-          {
-            "team": "Roter Stern Bollwerk",
-            "cols": [
-              "2",
-              "1",
-              "0",
               "1",
               "3",
-              "2",
-              "1",
-              "5",
+              "9",
+              "-6",
+              "10",
               "0",
               "0",
-              "4"
+              "1"
             ],
             "zone": ""
           },
@@ -104,53 +121,19 @@
             "zone": ""
           },
           {
-            "team": "Spartak Bern FC",
-            "cols": [
-              "2",
-              "0",
-              "1",
-              "1",
-              "1",
-              "7",
-              "-6",
-              "5",
-              "0",
-              "0",
-              "1"
-            ],
-            "zone": ""
-          },
-          {
             "team": "5ème Etage",
             "cols": [
               "1",
               "0",
-              "0",
               "1",
               "0",
+              "5",
+              "7",
+              "-2",
+              "5",
               "0",
               "0",
-              "0",
-              "0",
-              "0",
-              "1"
-            ],
-            "zone": ""
-          },
-          {
-            "team": "Energie Bitzius",
-            "cols": [
-              "1",
-              "0",
-              "0",
-              "1",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "1"
+              "0"
             ],
             "zone": ""
           },
@@ -187,6 +170,23 @@
               "0"
             ],
             "zone": ""
+          },
+          {
+            "team": "Energie Bitzius",
+            "cols": [
+              "1",
+              "0",
+              "1",
+              "0",
+              "1",
+              "7",
+              "-6",
+              "5",
+              "0",
+              "0",
+              "0"
+            ],
+            "zone": ""
           }
         ]
       }
@@ -209,50 +209,16 @@
         ],
         "rows": [
           {
-            "team": "Valti Traktor",
-            "cols": [
-              "2",
-              "1",
-              "0",
-              "1",
-              "3",
-              "0",
-              "3",
-              "5",
-              "0",
-              "0",
-              "4"
-            ],
-            "zone": ""
-          },
-          {
             "team": "Olympique Troissept",
             "cols": [
               "2",
               "1",
               "0",
               "1",
+              "6",
               "3",
-              "0",
               "3",
-              "5",
-              "0",
-              "0",
-              "4"
-            ],
-            "zone": ""
-          },
-          {
-            "team": "West Bärn United",
-            "cols": [
-              "2",
-              "1",
-              "0",
-              "1",
-              "3",
-              "1",
-              "2",
-              "5",
+              "10",
               "0",
               "0",
               "4"
@@ -266,10 +232,10 @@
               "1",
               "0",
               "1",
-              "3",
-              "2",
-              "1",
+              "6",
               "5",
+              "1",
+              "10",
               "0",
               "0",
               "4"
@@ -277,36 +243,53 @@
             "zone": ""
           },
           {
-            "team": "Boca Seniors Viktoria",
+            "team": "West Bärn United",
             "cols": [
               "2",
+              "1",
+              "1",
               "0",
-              "1",
-              "1",
-              "2",
               "3",
+              "4",
               "-1",
-              "5",
+              "10",
               "0",
               "0",
-              "1"
+              "3"
             ],
             "zone": ""
           },
           {
-            "team": "Senegambia Bern",
+            "team": "Valti Traktor",
             "cols": [
+              "2",
+              "1",
               "1",
               "0",
+              "5",
+              "9",
+              "-4",
+              "10",
               "0",
+              "0",
+              "3"
+            ],
+            "zone": ""
+          },
+          {
+            "team": "Boca Seniors Viktoria",
+            "cols": [
+              "2",
+              "1",
               "1",
               "0",
+              "11",
+              "5",
+              "6",
+              "10",
+              "2",
               "0",
-              "0",
-              "0",
-              "0",
-              "0",
-              "1"
+              "3"
             ],
             "zone": ""
           },
@@ -314,16 +297,33 @@
             "team": "Dynamo Chop",
             "cols": [
               "1",
-              "0",
-              "0",
               "1",
               "0",
               "0",
+              "3",
+              "0",
+              "3",
+              "5",
               "0",
               "0",
+              "3"
+            ],
+            "zone": ""
+          },
+          {
+            "team": "Senegambia Bern",
+            "cols": [
+              "1",
+              "1",
               "0",
               "0",
-              "1"
+              "3",
+              "1",
+              "2",
+              "5",
+              "0",
+              "0",
+              "3"
             ],
             "zone": ""
           },
@@ -332,15 +332,15 @@
             "cols": [
               "2",
               "0",
+              "2",
+              "0",
               "1",
-              "1",
-              "0",
-              "3",
-              "-3",
-              "0",
+              "6",
+              "-5",
+              "5",
               "0",
               "0",
-              "1"
+              "0"
             ],
             "zone": ""
           },
@@ -538,24 +538,24 @@
           "anpfiff": "13:00",
           "heim": "5ème Etage",
           "gast": "Pärkli Boys United",
-          "tore": ":",
-          "fp": ":",
+          "tore": "5 : 7",
+          "fp": "5 : 5",
           "schiri": "Dynamo Chop"
         },
         {
           "anpfiff": "13:00",
           "heim": "Spartak Bern FC",
           "gast": "Roter Stern Bollwerk",
-          "tore": ":",
-          "fp": ":",
+          "tore": "2 : 2",
+          "fp": "5 : 5",
           "schiri": "Senegambia Bern"
         },
         {
           "anpfiff": "15:00",
           "heim": "Energie Bitzius",
           "gast": "Sunnesite Allstars Chilefäud",
-          "tore": ":",
-          "fp": ":",
+          "tore": "1 : 7",
+          "fp": "5 : 5",
           "schiri": "Fortuna Galgenfeld"
         },
         {
@@ -760,32 +760,32 @@
           "anpfiff": "11:00",
           "heim": "Senegambia Bern",
           "gast": "AC Diva",
-          "tore": ":",
-          "fp": ":",
+          "tore": "3 : 1",
+          "fp": "5 : 5",
           "schiri": "Spartak Bern FC"
         },
         {
           "anpfiff": "11:00",
           "heim": "Valti Traktor",
           "gast": "Boca Seniors Viktoria",
-          "tore": ":",
-          "fp": ":",
+          "tore": "2 : 9",
+          "fp": "5 : 5",
           "schiri": "5ème Etage"
         },
         {
           "anpfiff": "13:00",
           "heim": "Fortuna Galgenfeld",
           "gast": "Olympique Troissept",
-          "tore": ":",
-          "fp": ":",
+          "tore": "3 : 3",
+          "fp": "5 : 5",
           "schiri": "Energie Bitzius"
         },
         {
           "anpfiff": "15:00",
           "heim": "Dynamo Chop",
           "gast": "West Bärn United",
-          "tore": ":",
-          "fp": ":",
+          "tore": "3 : 0",
+          "fp": "5 : 5",
           "schiri": "Pärkli Boys United"
         }
       ]
