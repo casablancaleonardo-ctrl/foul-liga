@@ -14,8 +14,8 @@
       "zeit": "13:00",
       "heim": "5ème Etage",
       "gast": "Pärkli Boys United",
-      "tore": ":",
-      "fp": ":",
+      "tore": "5 : 7",
+      "fp": "5 : 5",
       "schiri": "Dynamo Chop"
     },
     {
@@ -52,7 +52,7 @@
       "zeit": "15:00",
       "heim": "Dynamo Chop",
       "gast": "West Bärn United",
-      "tore": ":"
+      "tore": "3 : 0"
     },
     {
       "date": "2026-09-27",
@@ -62,5 +62,5 @@
       "tore": ":"
     }
   ],
-  "updated": "2026-08-23T16:14:00.970664+00:00"
+  "updated": "2026-08-23T17:12:42.260355+00:00"
 }
