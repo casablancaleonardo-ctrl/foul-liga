@@ -1,6 +1,15 @@
 {
-  "updated": "2026-08-23T15:26:04.893259",
+  "updated": "2026-08-23T17:23:12.075812",
   "gespielt": [
+    {
+      "datum": "23.08.2026",
+      "anpfiff": "13:00",
+      "heim": "5ème Etage",
+      "gast": "Pärkli Boys United",
+      "tore": "5 : 7",
+      "fp": "5 : 5",
+      "schiri": "Dynamo Chop"
+    },
     {
       "datum": "09.08.2026",
       "anpfiff": "15:00",
@@ -38,15 +47,6 @@
       "tore": ":",
       "fp": ":",
       "schiri": "Senegambia Bern"
-    },
-    {
-      "datum": "23.08.2026",
-      "anpfiff": "13:00",
-      "heim": "5ème Etage",
-      "gast": "Pärkli Boys United",
-      "tore": ":",
-      "fp": ":",
-      "schiri": "Dynamo Chop"
     }
   ],
   "schiri_dienste": [
