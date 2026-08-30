@@ -1,6 +1,15 @@
 {
-  "updated": "2026-08-30T18:29:53.105709",
+  "updated": "2026-08-30T21:51:39.450785",
   "gespielt": [
+    {
+      "datum": "30.08.2026",
+      "anpfiff": "11:00",
+      "heim": "Sunnesite Allstars Chilefäud",
+      "gast": "Pärkli Boys United",
+      "tore": "1 : 5",
+      "fp": "5 : 5",
+      "schiri": "Senegambia Bern"
+    },
     {
       "datum": "23.08.2026",
       "anpfiff": "13:00",
@@ -38,15 +47,6 @@
       "tore": ":",
       "fp": ":",
       "schiri": "Fortuna Galgenfeld"
-    },
-    {
-      "datum": "30.08.2026",
-      "anpfiff": "11:00",
-      "heim": "Sunnesite Allstars Chilefäud",
-      "gast": "Pärkli Boys United",
-      "tore": ":",
-      "fp": ":",
-      "schiri": "Senegambia Bern"
     }
   ],
   "schiri_dienste": [
