@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-06T21:02:41.897718",
+  "updated": "2026-09-12T17:39:56.525999",
   "tabelle": {
     "Liga 1": [
       {
@@ -392,7 +392,7 @@
           "gast": "Obstberg United",
           "tore": ":",
           "fp": ":",
-          "schiri": "Standfest Breitenrain"
+          "schiri": "West Bärn United"
         },
         {
           "anpfiff": "13:00",
@@ -445,7 +445,7 @@
           "gast": "Les Mecs Sportifs",
           "tore": ":",
           "fp": ":",
-          "schiri": "Standfest Breitenrain"
+          "schiri": "Fortuna Galgenfeld"
         },
         {
           "anpfiff": "15:00",
@@ -466,7 +466,7 @@
           "gast": "Obstberg United",
           "tore": ":",
           "fp": ":",
-          "schiri": "AC Diva"
+          "schiri": "Raclette Rangerz"
         },
         {
           "anpfiff": "13:00",
@@ -620,8 +620,8 @@
           "anpfiff": "11:00",
           "heim": "Standfest Breitenrain",
           "gast": "Valti Traktor",
-          "tore": ":",
-          "fp": ":",
+          "tore": "0 : 3",
+          "fp": "0 : 5",
           "schiri": "Roter Stern Bollwerk"
         },
         {
@@ -665,8 +665,8 @@
           "anpfiff": "15:00",
           "heim": "Standfest Breitenrain",
           "gast": "Boca Seniors Viktoria",
-          "tore": ":",
-          "fp": ":",
+          "tore": "0 : 3",
+          "fp": "0 : 5",
           "schiri": "5ème Etage"
         },
         {
@@ -694,8 +694,8 @@
           "anpfiff": "11:00",
           "heim": "AC Diva",
           "gast": "Standfest Breitenrain",
-          "tore": ":",
-          "fp": ":",
+          "tore": "3 : 0",
+          "fp": "5 : 0",
           "schiri": "Energie Bitzius"
         },
         {
