@@ -1,6 +1,15 @@
 {
-  "updated": "2026-09-26T21:40:30.029474",
+  "updated": "2026-09-27T18:56:00.971660",
   "gespielt": [
+    {
+      "datum": "27.09.2026",
+      "anpfiff": "13:00",
+      "heim": "Pärkli Boys United",
+      "gast": "International Football Club of Berne",
+      "tore": "3 : 1",
+      "fp": "5 : 5",
+      "schiri": "Fortuna Galgenfeld"
+    },
     {
       "datum": "30.08.2026",
       "anpfiff": "11:00",
@@ -38,15 +47,6 @@
       "tore": ":",
       "fp": ":",
       "schiri": "Raclette Rangerz"
-    },
-    {
-      "datum": "27.09.2026",
-      "anpfiff": "13:00",
-      "heim": "Pärkli Boys United",
-      "gast": "International Football Club of Berne",
-      "tore": ":",
-      "fp": ":",
-      "schiri": "Fortuna Galgenfeld"
     }
   ],
   "schiri_dienste": [
