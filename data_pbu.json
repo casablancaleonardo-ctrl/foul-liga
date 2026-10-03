@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-27T18:56:00.971660",
+  "updated": "2026-10-03T18:24:32.089588",
   "gespielt": [
     {
       "datum": "27.09.2026",
@@ -49,13 +49,5 @@
       "schiri": "Raclette Rangerz"
     }
   ],
-  "schiri_dienste": [
-    {
-      "datum": "27.09.2026",
-      "anpfiff": "11:00",
-      "heim": "Fortuna Galgenfeld",
-      "gast": "Raclette Rangerz",
-      "schiri": "Pärkli Boys United"
-    }
-  ]
+  "schiri_dienste": []
 }
