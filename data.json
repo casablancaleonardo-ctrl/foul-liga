@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-03T21:57:16.840156",
+  "updated": "2026-10-04T18:31:27.794747",
   "tabelle": {
     "Liga 1": [
       {
@@ -55,31 +55,48 @@
           {
             "team": "Roter Stern Bollwerk",
             "cols": [
+              "4",
               "3",
-              "2",
               "0",
               "1",
-              "6",
+              "8",
               "4",
-              "2",
-              "15",
+              "4",
+              "20",
               "0",
               "0",
-              "7"
+              "10"
             ],
             "zone": ""
           },
           {
             "team": "Sunnesite Allstars Chilefäud",
             "cols": [
+              "4",
               "3",
-              "2",
               "1",
               "0",
-              "11",
-              "6",
-              "5",
               "15",
+              "7",
+              "8",
+              "20",
+              "0",
+              "0",
+              "9"
+            ],
+            "zone": ""
+          },
+          {
+            "team": "Les Mecs Sportifs",
+            "cols": [
+              "4",
+              "2",
+              "2",
+              "0",
+              "9",
+              "10",
+              "-1",
+              "20",
               "0",
               "0",
               "6"
@@ -87,33 +104,33 @@
             "zone": ""
           },
           {
-            "team": "5ème Etage",
+            "team": "Energie Bitzius",
             "cols": [
-              "3",
+              "4",
               "1",
               "2",
+              "1",
+              "8",
+              "14",
+              "-6",
+              "20",
               "0",
-              "9",
-              "9",
               "0",
-              "15",
-              "0",
-              "0",
-              "3"
+              "4"
             ],
             "zone": ""
           },
           {
-            "team": "Les Mecs Sportifs",
+            "team": "5ème Etage",
             "cols": [
-              "3",
+              "4",
               "1",
-              "2",
+              "3",
               "0",
-              "6",
-              "8",
-              "-2",
-              "15",
+              "11",
+              "12",
+              "-1",
+              "20",
               "0",
               "0",
               "3"
@@ -123,14 +140,14 @@
           {
             "team": "International Football Club of Berne",
             "cols": [
-              "3",
+              "4",
               "0",
-              "2",
+              "3",
               "1",
               "4",
-              "10",
-              "-6",
-              "15",
+              "12",
+              "-8",
+              "20",
               "0",
               "0",
               "1"
@@ -140,31 +157,14 @@
           {
             "team": "Spartak Bern FC",
             "cols": [
-              "3",
-              "0",
-              "2",
-              "1",
               "4",
-              "13",
-              "-9",
-              "15",
               "0",
-              "0",
-              "1"
-            ],
-            "zone": ""
-          },
-          {
-            "team": "Energie Bitzius",
-            "cols": [
               "3",
-              "0",
-              "2",
               "1",
-              "4",
-              "14",
-              "-10",
-              "15",
+              "5",
+              "17",
+              "-12",
+              "20",
               "0",
               "0",
               "1"
@@ -174,17 +174,17 @@
           {
             "team": "Deportivo Gordo Cojones",
             "cols": [
-              "3",
+              "4",
               "0",
-              "3",
+              "4",
               "0",
               "1",
-              "8",
-              "-7",
-              "10",
+              "12",
+              "-11",
+              "15",
               "0",
-              "0",
-              "0"
+              "1",
+              "-1"
             ],
             "zone": ""
           }
@@ -226,51 +226,85 @@
             "zone": ""
           },
           {
+            "team": "Dynamo Chop",
+            "cols": [
+              "4",
+              "3",
+              "1",
+              "0",
+              "11",
+              "4",
+              "7",
+              "20",
+              "0",
+              "0",
+              "9"
+            ],
+            "zone": ""
+          },
+          {
             "team": "Fortuna Galgenfeld",
             "cols": [
-              "3",
+              "4",
               "2",
               "0",
-              "1",
+              "2",
+              "11",
               "9",
-              "7",
               "2",
-              "15",
+              "20",
               "0",
               "0",
-              "7"
+              "8"
             ],
             "zone": ""
           },
           {
             "team": "Senegambia Bern",
             "cols": [
-              "3",
+              "4",
               "2",
               "0",
-              "1",
-              "9",
-              "5",
+              "2",
+              "11",
+              "7",
               "4",
-              "13",
+              "17",
               "0",
+              "0",
+              "8"
+            ],
+            "zone": ""
+          },
+          {
+            "team": "Boca Seniors Viktoria",
+            "cols": [
+              "4",
+              "2",
+              "1",
+              "1",
+              "15",
+              "6",
+              "9",
+              "19",
+              "2",
               "0",
               "7"
             ],
             "zone": ""
           },
           {
-            "team": "Dynamo Chop",
+            "team": "Valti Traktor",
             "cols": [
-              "3",
-              "2",
-              "1",
-              "0",
-              "7",
-              "3",
               "4",
-              "15",
+              "2",
+              "2",
               "0",
+              "14",
+              "14",
+              "0",
+              "20",
+              "2",
               "0",
               "6"
             ],
@@ -294,50 +328,16 @@
             "zone": ""
           },
           {
-            "team": "Boca Seniors Viktoria",
-            "cols": [
-              "3",
-              "1",
-              "1",
-              "1",
-              "12",
-              "6",
-              "6",
-              "14",
-              "2",
-              "0",
-              "4"
-            ],
-            "zone": ""
-          },
-          {
             "team": "West Bärn United",
             "cols": [
-              "3",
+              "4",
               "1",
-              "2",
+              "3",
               "0",
               "3",
-              "8",
-              "-5",
-              "15",
-              "0",
-              "0",
-              "3"
-            ],
-            "zone": ""
-          },
-          {
-            "team": "Valti Traktor",
-            "cols": [
-              "3",
-              "1",
-              "2",
-              "0",
-              "8",
               "14",
-              "-6",
-              "15",
+              "-11",
+              "20",
               "0",
               "0",
               "3"
@@ -347,13 +347,13 @@
           {
             "team": "Standfest Breitenrain",
             "cols": [
-              "3",
+              "4",
               "0",
-              "3",
+              "4",
               "0",
               "0",
-              "9",
-              "-9",
+              "12",
+              "-12",
               "0",
               "0",
               "0",
@@ -364,14 +364,14 @@
           {
             "team": "Raclette Rangerz",
             "cols": [
-              "3",
-              "0",
-              "3",
+              "4",
               "0",
               "4",
-              "9",
-              "-5",
-              "15",
+              "0",
+              "5",
+              "13",
+              "-8",
+              "20",
               "5",
               "3",
               "-3"
@@ -427,32 +427,32 @@
           "anpfiff": "11:00",
           "heim": "Sunnesite Allstars Chilefäud",
           "gast": "Spartak Bern FC",
-          "tore": ":",
-          "fp": ":",
+          "tore": "4 : 1",
+          "fp": "5 : 5",
           "schiri": "Dynamo Chop"
         },
         {
           "anpfiff": "11:00",
           "heim": "Energie Bitzius",
           "gast": "Deportivo Gordo Cojones",
-          "tore": ":",
-          "fp": ":",
+          "tore": "4 : 0",
+          "fp": "5 : 5",
           "schiri": "West Bärn United"
         },
         {
           "anpfiff": "13:00",
           "heim": "5ème Etage",
           "gast": "Les Mecs Sportifs",
-          "tore": ":",
-          "fp": ":",
+          "tore": "2 : 3",
+          "fp": "5 : 5",
           "schiri": "Fortuna Galgenfeld"
         },
         {
           "anpfiff": "15:00",
           "heim": "International Football Club of Berne",
           "gast": "Roter Stern Bollwerk",
-          "tore": ":",
-          "fp": ":",
+          "tore": "0 : 2",
+          "fp": "5 : 5",
           "schiri": "Raclette Rangerz"
         }
       ]
@@ -649,16 +649,16 @@
           "anpfiff": "13:00",
           "heim": "West Bärn United",
           "gast": "Valti Traktor",
-          "tore": ":",
-          "fp": ":",
+          "tore": "0 : 6",
+          "fp": "5 : 5",
           "schiri": "Energie Bitzius"
         },
         {
           "anpfiff": "13:00",
           "heim": "Dynamo Chop",
           "gast": "Raclette Rangerz",
-          "tore": ":",
-          "fp": ":",
+          "tore": "4 : 1",
+          "fp": "5 : 5",
           "schiri": "Sunnesite Allstars Chilefäud"
         },
         {
@@ -673,8 +673,8 @@
           "anpfiff": "15:00",
           "heim": "Senegambia Bern",
           "gast": "Fortuna Galgenfeld",
-          "tore": ":",
-          "fp": ":",
+          "tore": "2 : 2",
+          "fp": "4 : 5",
           "schiri": "Les Mecs Sportifs"
         }
       ]
