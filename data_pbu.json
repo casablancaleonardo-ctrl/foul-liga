@@ -1,6 +1,15 @@
 {
-  "updated": "2026-10-17T21:06:36.820571",
+  "updated": "2026-10-18T17:54:10.481077",
   "gespielt": [
+    {
+      "datum": "18.10.2026",
+      "anpfiff": "15:00",
+      "heim": "Pärkli Boys United",
+      "gast": "Deportivo Gordo Cojones",
+      "tore": "3 : 1",
+      "fp": "5 : 5",
+      "schiri": "Raclette Rangerz"
+    },
     {
       "datum": "27.09.2026",
       "anpfiff": "13:00",
@@ -38,16 +47,6 @@
       "schiri": "Fortuna Galgenfeld"
     }
   ],
-  "kommend": [
-    {
-      "datum": "18.10.2026",
-      "anpfiff": "15:00",
-      "heim": "Pärkli Boys United",
-      "gast": "Deportivo Gordo Cojones",
-      "tore": ":",
-      "fp": ":",
-      "schiri": "Raclette Rangerz"
-    }
-  ],
+  "kommend": [],
   "schiri_dienste": []
 }
